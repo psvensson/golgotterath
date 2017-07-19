@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "PeterSvensson 7/19/2017 13:28",
+	"commentStamp" : "PS 7/19/2017 19:10",
 	"super" : "Object",
 	"category" : "golgotterath",
 	"classinstvars" : [ ],
@@ -7,7 +7,9 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"name",
-		"frames"
+		"direction",
+		"frames",
+		"frame"
 	],
 	"name" : "Animation",
 	"type" : "normal"

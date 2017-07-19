@@ -1,0 +1,1 @@
+This is the subclass for Human Sprites

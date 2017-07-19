@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "PS 7/19/2017 18:49",
+	"super" : "Sprite",
+	"category" : "golgotterath",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "Human",
+	"type" : "normal"
+}

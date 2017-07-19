@@ -10,8 +10,10 @@
 		"image",
 		"spriteImages",
 		"direction",
-		"animation",
-		"aimationStep"
+		"animations",
+		"aimationStep",
+		"sheetWidth",
+		"spritesPerRow"
 	],
 	"name" : "Sprite",
 	"type" : "normal"

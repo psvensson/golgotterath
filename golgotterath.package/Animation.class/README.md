@@ -1,1 +1,1 @@
-Hold a number of animation images (frames) which can be played at speed
+Holds a number of frames, where each frame is an orderedcollection of eight images of the sprite frame in each direction.
