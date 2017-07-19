@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "PeterSvensson 7/17/2017 16:22",
+	"super" : "Object",
+	"category" : "golgotterath",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"sheet",
+		"image",
+		"spriteImages"
+	],
+	"name" : "Sprite",
+	"type" : "normal"
+}

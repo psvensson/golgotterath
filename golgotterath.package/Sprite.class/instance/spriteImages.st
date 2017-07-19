@@ -1,0 +1,3 @@
+accessing
+spriteImages
+	^ spriteImages
