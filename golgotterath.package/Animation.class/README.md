@@ -1,0 +1,1 @@
+Hold a number of animation images (frames) which can be played at speed

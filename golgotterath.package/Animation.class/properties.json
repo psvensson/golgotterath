@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "PeterSvensson 7/19/2017 13:28",
+	"super" : "Object",
+	"category" : "golgotterath",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"name",
+		"frames"
+	],
+	"name" : "Animation",
+	"type" : "normal"
+}

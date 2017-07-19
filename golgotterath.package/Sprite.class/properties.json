@@ -8,7 +8,10 @@
 	"instvars" : [
 		"sheet",
 		"image",
-		"spriteImages"
+		"spriteImages",
+		"direction",
+		"animation",
+		"aimationStep"
 	],
 	"name" : "Sprite",
 	"type" : "normal"
