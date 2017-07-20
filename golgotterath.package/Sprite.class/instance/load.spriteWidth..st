@@ -3,7 +3,7 @@ load: fileName spriteWidth: w
 	"loads a png sprite file and splits it up into individuel sprite images by the spriteWidth argument"
 
 	| sprites |
-	sheetWidth := w.
+	spriteWidth := w.
 	image := fileName asFileReference
 		binaryReadStreamDo: [ :stream | PNGReadWriter formFromStream: stream ].
 	Transcript

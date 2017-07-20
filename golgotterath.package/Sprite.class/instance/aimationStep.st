@@ -1,3 +1,0 @@
-accessing
-aimationStep
-	^ aimationStep

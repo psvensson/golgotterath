@@ -4,6 +4,7 @@ load: fileName spriteWidth: w spritesPerRow: spr
 
 	| sprites index |
 	index := 1. 
+	spriteWidth := w.
 	spritesPerRow := spr.
 	image := fileName asFileReference
 		binaryReadStreamDo: [ :stream | PNGReadWriter formFromStream: stream ].	

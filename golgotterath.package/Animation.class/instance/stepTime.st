@@ -1,5 +1,5 @@
-animating
-play
+model-stepping
+stepTime
 	"Play animation starting from sprite 1"
- 	self startStepping.
+ 	^ 200.
 	
