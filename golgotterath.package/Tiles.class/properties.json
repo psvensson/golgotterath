@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "PS 7/20/2017 19:09",
+	"super" : "Sprite",
+	"category" : "golgotterath",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "Tiles",
+	"type" : "normal"
+}

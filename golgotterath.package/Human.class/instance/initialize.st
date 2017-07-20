@@ -1,18 +1,17 @@
 initialization
 initialize
+	| walk hit shoot hurt die |
 	super initialize.
 	self load: 'images/male_unarmored.png' spriteWidth: 256 spritesPerRow: 8.
-	#('walk')
-		do: [ :animationName | 
-			| animation |
-			animation := Animation new.
-			animation named: animationName.
-			1 to: 4 do: [ :frame | 
-				| dir |
-				dir := 1.
-				(self getSpriteImagesColumn: frame)
-					do: [ :img | 
-						animation addFrame: frame direction: dir image: img.
-						dir := dir + 1 ].
-				self addAnimation: animation ] ].
+	
+	walk := self createAnimation: 'walk' start: 1 end: 4.
+	self addAnimation: walk.
+	hit := self createAnimation: 'hit' start: 4 end: 5.
+	self addAnimation: hit.
+	shoot := self createAnimation: 'shoot' start: 6 end: 6.
+	self addAnimation: shoot.
+	hurt := self createAnimation: 'hurt' start: 7 end: 7.
+	self addAnimation: hurt.
+	die := self createAnimation: 'die' start: 8 end: 8.
+	self addAnimation: die.
 	
