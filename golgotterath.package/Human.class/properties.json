@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "PS 7/19/2017 18:49",
-	"super" : "Sprite",
+	"super" : "AnimatedSprite",
 	"category" : "golgotterath",
 	"classinstvars" : [ ],
 	"pools" : [ ],

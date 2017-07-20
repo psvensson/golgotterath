@@ -10,8 +10,6 @@
 		"image",
 		"spriteImages",
 		"direction",
-		"animations",
-		"animationStep",
 		"spritesPerRow",
 		"spriteWidth"
 	],
