@@ -4,6 +4,6 @@ getSpriteImagesColumn: c
 	column := OrderedCollection new.
 	1 to: 8 do: [ :i | 
 		| img |
-		img := spriteImages at: ((i - 1) * spritesPerRow) + c.
+		img := spriteImages at: ((c - 1) * spritesPerRow) + i.
 		column add: img ].
 	^ column
