@@ -1,13 +1,14 @@
 {
-	"commentStamp" : "PS 7/20/2017 19:09",
-	"super" : "Sprite",
+	"commentStamp" : "PS 7/20/2017 20:22",
+	"super" : "Morph",
 	"category" : "golgotterath",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"tiles"
+		"map",
+		"viewPort"
 	],
-	"name" : "Tiles",
+	"name" : "GameBoard",
 	"type" : "normal"
 }
