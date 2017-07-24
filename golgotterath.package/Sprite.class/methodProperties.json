@@ -1,0 +1,19 @@
+{
+	"instance" : {
+		"load:spriteWidth:spritesPerRow:" : "PS 7/20/2017 18:56",
+		"sheet:" : "PeterSvensson 7/19/2017 14:32:05",
+		"animation:" : "PS 7/19/2017 22:03",
+		"load:" : "PeterSvensson 7/19/2017 14:32:05",
+		"direction:" : "PeterSvensson 7/19/2017 14:32:05",
+		"spriteImages:" : "PeterSvensson 7/19/2017 14:32:05",
+		"initialize" : "PS 7/22/2017 20:09",
+		"spriteImages" : "PeterSvensson 7/19/2017 14:32:05",
+		"direction" : "PeterSvensson 7/19/2017 14:32:05",
+		"image:" : "PeterSvensson 7/19/2017 14:32:05",
+		"image" : "PeterSvensson 7/19/2017 14:32:05",
+		"load:spriteWidth:" : "PS 7/22/2017 20:08",
+		"sheet" : "PeterSvensson 7/19/2017 14:32:05",
+		"getSpriteImagesColumn:" : "PS 7/20/2017 15:35"
+	},
+	"class" : { }
+}

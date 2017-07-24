@@ -1,0 +1,16 @@
+{
+	"instance" : {
+		"addFrame:direction:image:" : "PS 7/20/2017 19:04",
+		"stepTime" : "PS 7/20/2017 10:19",
+		"named:" : "PS 7/19/2017 21:26",
+		"play" : "PS 7/20/2017 10:16",
+		"direction:" : "PS 7/19/2017 19:13",
+		"step" : "PS 7/20/2017 15:33",
+		"name:" : "PeterSvensson 7/19/2017 14:32:05",
+		"initialize" : "PS 7/20/2017 10:43",
+		"drawOn:" : "PS 7/20/2017 12:14",
+		"direction" : "PS 7/19/2017 19:13",
+		"named" : "PS 7/19/2017 21:26"
+	},
+	"class" : { }
+}

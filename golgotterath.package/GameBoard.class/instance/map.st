@@ -1,0 +1,3 @@
+initialization
+map
+	^ map.
