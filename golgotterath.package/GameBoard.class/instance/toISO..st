@@ -1,4 +1,4 @@
-as yet unclassified
+convertion
 toISO: point
  	"isoX = cartX - cartY;
  	isoY = (cartX + cartY) / 2;"

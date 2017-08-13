@@ -1,7 +1,9 @@
 {
 	"instance" : {
-		"initialize" : "PS 7/20/2017 20:21",
+		"initialize" : "PeterSvensson 8/13/2017 22:13",
 		"tile:" : "PeterSvensson 8/13/2017 17:28"
 	},
-	"class" : { }
+	"class" : {
+		"imageSource" : "PeterSvensson 8/13/2017 22:12"
+	}
 }

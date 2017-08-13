@@ -1,8 +1,10 @@
 {
 	"instance" : {
-		"createAnimation:start:end:" : "PS 7/20/2017 19:12",
+		"getAnimation:" : "PeterSvensson 8/13/2017 22:07",
 		"addAnimation:" : "PS 7/20/2017 18:53",
-		"addAnimation:named:" : "PS 7/20/2017 18:54"
+		"initialize" : "PeterSvensson 8/13/2017 22:03",
+		"addAnimation:named:" : "PS 7/20/2017 18:54",
+		"createAnimation:start:end:" : "PS 7/20/2017 19:12"
 	},
 	"class" : { }
 }

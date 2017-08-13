@@ -17,3 +17,12 @@ sprite := Sprite new.
 	animation direction: 6.
 	animation openInWorld .
 	animation play.		
+
+form := PNGReadWriter formFromStream: 'images/male_unarmored.png' asFileReference  readStream .
+w := WriteStream on: ByteArray new.
+PNGReadWriter putForm: form onStream: w.
+w contents.
+
+encodedContent := w contents base64Encoded.
+
+PNGReadWriter formFromStream: (Base64MimeConverter mimeDecodeToBytes: encodedContent readStream).

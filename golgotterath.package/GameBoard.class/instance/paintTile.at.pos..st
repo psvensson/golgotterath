@@ -1,4 +1,4 @@
-as yet unclassified
+drawing
 paintTile: tilepos at: aCanvas pos: pos
  	| floor isoPoint position adjustCentre |
  	floor := map at: tilepos x asString , '_' , tilepos y asString.
