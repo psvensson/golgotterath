@@ -1,8 +1,11 @@
 {
 	"instance" : {
-		"initialize" : "PeterSvensson 8/13/2017 14:52",
 		"addTile:at:" : "PS 7/20/2017 21:43",
-		"drawOn:" : "PS 7/20/2017 21:47"
+		"map" : "PeterSvensson 8/13/2017 17:29",
+		"initialize" : "PeterSvensson 8/13/2017 17:25",
+		"toISO:" : "PeterSvensson 8/13/2017 17:26",
+		"paintTile:at:pos:" : "PeterSvensson 8/13/2017 17:25",
+		"drawOn:" : "PeterSvensson 8/13/2017 17:31"
 	},
 	"class" : { }
 }
