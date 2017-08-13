@@ -7,9 +7,7 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"map",
-		"viewPort",
-		"tiles",
-		"tileSize"
+		"viewPort"
 	],
 	"name" : "GameBoard",
 	"type" : "normal"

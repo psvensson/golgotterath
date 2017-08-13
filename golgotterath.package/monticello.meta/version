@@ -1,1 +1,2 @@
-(name 'golgotterath-PS.1' message 'empty log message' id 'fe30e4e7-7011-0d00-a8b9-fd0e0bea3d29' date '24 July 2017' time '2:15:21.739659 pm' author 'PS' ancestors () stepChildren ())
+(name 'golgotterath-PeterSvensson.1500580093' message 'Added tile loader and started on gameboard' id '703eaed4-0313-0d00-a0eb-9f81030c9de7' date '13 August 2017' time '2:57:51.25725 pm' author 'PeterSvensson' ancestors ((name 'golgotterath-peter.1500580092' message 'Added tile loader and started on gameboard
+' id 'e32df39b-02ed-5d9d-b8fb-a2d2463af3ee' date '20 July 2017' time '9:48:12 pm' author 'peter' ancestors () stepChildren ())) stepChildren ())

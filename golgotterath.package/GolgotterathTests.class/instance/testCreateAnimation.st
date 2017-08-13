@@ -1,7 +1,7 @@
 tests
 testCreateAnimation
 	| sprite animation |
-	sprite := AnimatedSprite new.
+	sprite := Sprite new.
 	sprite load: 'images/male_unarmored.png' spriteWidth: 256 spritesPerRow: 8.
 	animation := Animation new.
 	animation named: 'walk'.

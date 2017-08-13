@@ -1,12 +1,8 @@
 {
 	"instance" : {
-		"addSprite:at:" : "PS 7/23/2017 13:07",
+		"initialize" : "PeterSvensson 8/13/2017 14:52",
 		"addTile:at:" : "PS 7/20/2017 21:43",
-		"map" : "PS 7/23/2017 12:51",
-		"initialize" : "PS 7/23/2017 12:17",
-		"toISO:" : "PS 7/23/2017 10:10",
-		"paintTile:at:pos:" : "PS 7/23/2017 13:17",
-		"drawOn:" : "PS 7/23/2017 12:42"
+		"drawOn:" : "PS 7/20/2017 21:47"
 	},
 	"class" : { }
 }

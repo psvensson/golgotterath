@@ -6,7 +6,9 @@ load: fileName spriteWidth: w
 	spriteWidth := w.
 	image := fileName asFileReference
 		binaryReadStreamDo: [ :stream | PNGReadWriter formFromStream: stream ].
-	
+	Transcript
+		show: 'Loading sprite file with width ';
+		show: w greaseString.
 	sprites := Dictionary new.
 	index := 1.
 	0 to: image width - w by: w do:
