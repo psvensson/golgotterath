@@ -1,5 +1,17 @@
-acccessing
-imageSource
+"
+Collection of floor and wall tiles for dungeon
+"
+Class {
+	#name : #Tiles,
+	#superclass : #Sprite,
+	#instVars : [
+		'tiles'
+	],
+	#category : 'golgotterath'
+}
+
+{ #category : #acccessing }
+Tiles class >> imageSource [
 	^ 'iVBORw0KGgoAAAANSUhEUgAAAgAAAADACAMAAABF0StVAAADAFBMVEX/AADgAAC/AACgAACA
 AABfAABAAAAwAAAfAAAXAAAPAACAQECgUFC/X1/gb2//gID/QADgOAC/MACgJwCAHwBfFwBA
 DwAwCwAfHwAXFwAPDwCAgECgoFC/v1/g4G///4D/gADgbwC/XwCgUACAQABfMABAHwAwFwAA
@@ -125,3 +137,19 @@ VsO34fsDIH+dAuvI5//2UyDuEt14Py8e1m9fMfybKWC1/v3L69M/C1TxXfpGEMSfN4LlnL/U
 30/zD32Bu9b9p2eBS379V9/vp/nhLNBA3V+pCB5XDduvvN9P89MUuHndX22o2p98v5/m7/oC
 XTOLf/tXsS/Q/vC3OwVuXve3f9WnQPvD3/gUqA3/19e//dv/soxI491cjk0AAAAASUVORK5C
 YII='
+]
+
+{ #category : #initialization }
+Tiles >> initialize [
+	| floor |
+	super initialize.
+	self loadSpriteImage: (self imageSource)  spriteWidth: 64 spritesPerRow: 8.
+	tiles := Dictionary new.
+	floor := spriteImages at: 15.
+	tiles at: 'floor' put: floor
+]
+
+{ #category : #initialization }
+Tiles >> tile: name [
+	^ tiles at: name. 
+]

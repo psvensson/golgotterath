@@ -1,1 +1,0 @@
-Remembers seen parts of the map and keeps track ov viewport into map

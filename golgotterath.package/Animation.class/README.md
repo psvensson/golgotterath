@@ -1,1 +1,0 @@
-Holds a number of frames, where each frame is an orderedcollection of eight images of the sprite frame in each direction.
