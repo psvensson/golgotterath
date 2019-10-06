@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Morph",
+	"category" : "golgotterath",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"map",
+		"viewPort",
+		"tiles",
+		"tileSize"
+	],
+	"name" : "GameBoard",
+	"type" : "normal"
+}

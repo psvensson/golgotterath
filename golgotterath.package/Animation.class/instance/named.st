@@ -1,0 +1,3 @@
+accessing enum
+named 
+	^ name

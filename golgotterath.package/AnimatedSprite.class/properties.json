@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Sprite",
+	"category" : "golgotterath",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"animationsanimationStep"
+	],
+	"name" : "AnimatedSprite",
+	"type" : "normal"
+}

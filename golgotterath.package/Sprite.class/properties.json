@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "GlamorousAuthor 10/6/2019 16:37",
+	"super" : "Morph",
+	"category" : "golgotterath",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"sheet",
+		"image",
+		"spriteImages",
+		"direction",
+		"spritesPerRow",
+		"spriteWidth",
+		"animations"
+	],
+	"name" : "Sprite",
+	"type" : "normal"
+}
