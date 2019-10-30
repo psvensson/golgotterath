@@ -2,6 +2,7 @@ Base class for animated sprites
 
 Usage: 
 -----------------------
+
 |sprite animation|
 sprite := Sprite new.
 sprite load: 'images/male_unarmored.png' spriteWidth: 256 spritesPerRow: 8.

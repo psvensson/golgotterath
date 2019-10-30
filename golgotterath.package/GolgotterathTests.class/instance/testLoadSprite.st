@@ -1,6 +1,5 @@
 tests
 testLoadSprite
 	| sprite | 
-	sprite := Sprite new.
-	sprite load: 'images/male_unarmored.png' spriteWidth: 256.
+	sprite := Human new.
 	self assert: (sprite spriteImages) size equals: 64
