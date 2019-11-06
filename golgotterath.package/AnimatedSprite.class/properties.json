@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"animationsanimationStep"
+		"animations",
+		"oldAnimation"
 	],
 	"name" : "AnimatedSprite",
 	"type" : "normal"

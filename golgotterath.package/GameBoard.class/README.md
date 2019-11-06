@@ -21,6 +21,6 @@ method := (String streamContents: [:s |
         nextPutAll: encoded;
         nextPut: $']).
 "Add the method to the Sprite subclass"
-Human compile: method.
+Human compile: method
 
 ------

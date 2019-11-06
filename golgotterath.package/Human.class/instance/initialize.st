@@ -13,4 +13,5 @@ initialize
 	hurt := self createAnimation: 'hurt' start: 7 end: 7.
 	self addAnimation: hurt.
 	die := self createAnimation: 'die' start: 8 end: 8.
-	self addAnimation: die
+	self addAnimation: die.
+	^ self.

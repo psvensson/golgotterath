@@ -1,3 +1,3 @@
 accessing enum
-named 
+name 
 	^ name
