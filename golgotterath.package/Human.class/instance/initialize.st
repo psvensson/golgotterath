@@ -2,6 +2,7 @@ initialization
 initialize
 	| walk hit shoot hurt die img |
 	super initialize.
+	direction := 1.
 	img := self spriteImage.
 	self loadSpriteImage: img spriteWidth: 256 spritesPerRow: 8.
 	walk := self createAnimation: 'walk' start: 1 end: 4.

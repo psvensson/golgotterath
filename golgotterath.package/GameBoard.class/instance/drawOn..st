@@ -9,4 +9,6 @@ drawOn: aCanvas
 	aCanvas fillRectangle: self bounds color: Color black.
 	top to: bottom do: 
 		[ :y | left to: right do: 
-			[ :x | self paintTile: x @ y at: aCanvas pos: (x @ y) ] ]
+			[ :x | 
+				self paintTile: x @ y at: aCanvas pos: (x @ y).
+				self paintEntity: x @ y at: aCanvas pos: (x @ y) ] ]

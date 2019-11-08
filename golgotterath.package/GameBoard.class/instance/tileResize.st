@@ -1,0 +1,3 @@
+accessing
+tileResize
+	^ 256.

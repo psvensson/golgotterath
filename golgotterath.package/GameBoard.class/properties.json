@@ -9,7 +9,8 @@
 		"map",
 		"viewPort",
 		"tiles",
-		"tileSize"
+		"tileSize",
+		"entities"
 	],
 	"name" : "GameBoard",
 	"type" : "normal"
