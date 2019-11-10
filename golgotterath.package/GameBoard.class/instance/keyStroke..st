@@ -2,7 +2,7 @@ accessing
 keyStroke: anEvent
 	| keyValue | 
 		keyValue := anEvent keyValue. 
-		Transcript show: 'key ',keyValue asString;cr .
+		"Transcript show: 'key ',keyValue asString;cr ."
     		keyValue = 30    "up arrow" 
        		ifTrue: [self moveEntity: (self player) dir: 'up']. 
     		keyValue = 31    "down arrow" 

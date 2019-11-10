@@ -1,4 +1,4 @@
 accessing
 mouseLeave: anEvent 
-	Transcript show: 'mouseLeave';cr.
+	"Transcript show: 'mouseLeave';cr."
 	anEvent hand newKeyboardFocus: nil

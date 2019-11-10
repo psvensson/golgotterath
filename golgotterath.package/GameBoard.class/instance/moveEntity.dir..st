@@ -11,4 +11,4 @@ moveEntity: entity dir: dir
 	entities removeKey: (entity boardx@entity boardy).
 	entity boardx: x; boardy: y.
 	entities at: x@y put: entity.
-	self layoutChanged .
+	self changed .
