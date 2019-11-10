@@ -11,7 +11,9 @@
 		"spriteImages",
 		"direction",
 		"spritesPerRow",
-		"spriteWidth"
+		"spriteWidth",
+		"boardx",
+		"boardy"
 	],
 	"name" : "Sprite",
 	"type" : "normal"

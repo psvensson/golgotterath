@@ -4,6 +4,7 @@ createDefaultEntities
 	entities := Dictionary new.
 	player1 := Human new.
 	player1 play: 'walk'.
+	player := player1.
 	self addEntity: player1 at: 0@0.
 	player2 := Human new.
 	player2 play: 'walk'.
