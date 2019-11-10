@@ -1,3 +1,3 @@
 accessing
-tileResize
+tileSize
 	^ 128.

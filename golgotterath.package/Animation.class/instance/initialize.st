@@ -4,3 +4,4 @@ initialize
 	frames := Dictionary new.
 	frame := 1.
 	direction := 1.
+	

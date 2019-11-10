@@ -1,7 +1,10 @@
 accessing
 createDefaultEntities
-	| player |
+	| player1 player2 |
 	entities := Dictionary new.
-	player := Human new.
-	player play: 'walk'.
-	self addEntity: player at: 1@1.
+	player1 := Human new.
+	player1 play: 'walk'.
+	self addEntity: player1 at: 0@0.
+	player2 := Human new.
+	player2 play: 'walk'.
+	self addEntity: player2 at: 3@3.

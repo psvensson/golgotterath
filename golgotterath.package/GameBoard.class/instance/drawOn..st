@@ -1,14 +1,13 @@
 drawing
 drawOn: aCanvas
-	" Draw all map tiles visible in the viewport. Also draw entities sorted in correct z-order for a given tile position. "
-	| top bottom right left |
-	top := viewPort at: #top.
-	bottom := viewPort at: #bottom.
-	right := viewPort at: #right.
-	left := viewPort at: #left.
+	" Draw all map tiles visible in the viewport. Also draw entities sorted in correct y-order for a given tile position. " 
+	| sortedcol|
+	sortedcol := self sortedThings.
 	aCanvas fillRectangle: self bounds color: Color black.
-	top to: bottom do: 
-		[ :y | left to: right do: 
-			[ :x | 
-				self paintTile: x @ y at: aCanvas pos: (x @ y).
-				self paintEntity: x @ y at: aCanvas pos: (x @ y) ] ]
+	sortedcol do: 	[ :something || x y obj isSprite |
+		x:= something at: 'x'.
+		y := something at: 'y'.
+		obj := something at: 'obj'.
+		isSprite := obj isKindOf: AnimatedSprite  .
+		"Transcript show: 'drawOn at ',x asString,',',y asString,' isSprite = ',isSprite asString;cr."
+		obj paint: self at: aCanvas pos: (x @ y).	 ]
