@@ -6,7 +6,7 @@ sortedThings
 	right := viewPort at: #right.
 	left := viewPort at: #left.
 	sortedcol := SortedCollection sortBlock: [:c1 :c2 | 
-		 ( (c2 isKindOf: AnimatedSprite )  or: (c1 at: 'y') <=  (c2 at: 'y'))]. 	
+		  (c1 at: 'x') <=  (c2 at: 'x')]. 	
 	top to: bottom do: 
 		[ :y | left to: right do: 
 			[ :x || tmpobj entity tile |			

@@ -2,8 +2,7 @@ accessing
 toISO: point
 	"isoX = cartX - cartY;
  	isoY = (cartX + cartY) / 2;"
- 	| isoX isoY x y |
- 	
+ 	| isoX isoY x y | 	
  	x := point x.
  	y := point y.
  	isoX := x - y.

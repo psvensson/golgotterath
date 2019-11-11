@@ -11,7 +11,8 @@
 		"tiles",
 		"tileSize",
 		"entities",
-		"player"
+		"player",
+		"runningAnimations"
 	],
 	"name" : "GameBoard",
 	"type" : "normal"

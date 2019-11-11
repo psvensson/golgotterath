@@ -13,7 +13,8 @@
 		"spritesPerRow",
 		"spriteWidth",
 		"boardx",
-		"boardy"
+		"boardy",
+		"name"
 	],
 	"name" : "Sprite",
 	"type" : "normal"

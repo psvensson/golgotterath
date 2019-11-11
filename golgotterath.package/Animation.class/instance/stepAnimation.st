@@ -1,5 +1,5 @@
 stepping and presenter
-step
+stepAnimation
 	| aFrame directionFrames |
 	currentFrame ifNotNil: [ self removeMorph: currentFrame ].
 	directionFrames := frames at: frame.
@@ -7,8 +7,8 @@ step
 	aFrame position: (self position - (64@64)).
 	self addMorph: aFrame.
 	currentFrame := aFrame .
-	frame := frame + 1.
+	frame := frame + 1. 
 	frame > frames size
-		ifFalse: [ ^ self ].
+		ifFalse: [ ^ false ].
 	frame := 1.
-	self stopStepping
+	^ true.

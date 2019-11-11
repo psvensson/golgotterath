@@ -5,4 +5,4 @@ play
 	show: self name;
 	show: ' direction ';
 	show: direction ;cr.
- 	self startStepping.
+ 	
