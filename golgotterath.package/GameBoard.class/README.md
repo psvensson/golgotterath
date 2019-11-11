@@ -2,7 +2,7 @@ How to read in and convert sprite sheets;
 
 ------
 "Make and encode the original image file bytes"
-img := PNGReadWriter formFromStream: imageFile binaryReadStream.
+img := PNGReadWriter formFromStream: 'imagefile.png' asFileReference binaryReadStream.
 writeStream := WriteStream on: ByteArray new.
 PNGReadWriter putForm: img onStream: writeStream.
 encoded := writeStream contents base64Encoded.
@@ -24,3 +24,5 @@ method := (String streamContents: [:s |
 Human compile: method
 
 ------
+
+Note!  The getEncoded method created does not have the return charatcer, so you need to edit the method and formally return the value using ^

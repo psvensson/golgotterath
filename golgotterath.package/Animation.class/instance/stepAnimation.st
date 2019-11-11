@@ -2,7 +2,7 @@ stepping and presenter
 stepAnimation
 	| aFrame directionFrames |
 	"currentFrame ifNotNil: [ self removeMorph: currentFrame ]."
-	Transcript show: 'stepping animation.';cr.
+	"Transcript show: 'stepping animation.';cr."
 	directionFrames := frames at: frame.
 	aFrame := directionFrames at: direction.	
 	aFrame position: (self position).

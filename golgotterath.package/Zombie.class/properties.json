@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "AnimatedSprite",
+	"category" : "golgotterath",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "Zombie",
+	"type" : "normal"
+}

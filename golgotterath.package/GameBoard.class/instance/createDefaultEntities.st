@@ -2,7 +2,7 @@ accessing
 createDefaultEntities
 	| player1 player2 |
 	entities := Dictionary new.
-	player1 := Human new.
+	player1 := Zombie new.
 	player1 play: 'walk'.
 	player := player1.
 	self addEntity: player1 at: 0@0.

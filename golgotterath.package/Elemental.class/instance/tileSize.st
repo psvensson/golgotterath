@@ -1,0 +1,4 @@
+access
+tileSize
+	^ 64.
+	
