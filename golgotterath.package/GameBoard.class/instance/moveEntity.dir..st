@@ -8,10 +8,10 @@ moveEntity: entity dir: dir
 	dir = 'down' ifTrue: [ y := y + 1 . entity direction: 8].
 	dir = 'left' ifTrue: [ x := x - 1 . entity direction: 1].
 	dir = 'right' ifTrue: [ x := x + 1 . entity direction: 5].		
-	entities removeKey: (entity boardx@entity boardy).
-	entity boardx: x; boardy: y.
+	
+	entity targetx: x; targety: y.
 	Transcript show: 'entity moved to ',x asString,',',y asString;cr.
-	entities at: x@y put: entity.
+	
 	entity play: 'walk'.
 	self addRunningAnimation: entity.
 	

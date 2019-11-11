@@ -6,7 +6,9 @@ step
 	].
 	self changed.
 	animatinsToRemove do: [ :entityToRemove | 
-		runningAnimations remove: entityToRemove ifAbsent: [
-			Transcript show: 'unable to remove anim: not found';cr.] ] .
+		entities removeKey: (entityToRemove boardx@entityToRemove boardy).
+		entityToRemove boardx: entityToRemove targetx; boardy: entityToRemove targety.
+		entities at: (entityToRemove  boardx@entityToRemove boardy) put: entityToRemove .
+		runningAnimations remove: entityToRemove  ] .
 	runningAnimations ifEmpty: [ 
 		self stopStepping ]

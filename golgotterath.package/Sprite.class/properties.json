@@ -14,7 +14,9 @@
 		"spriteWidth",
 		"boardx",
 		"boardy",
-		"name"
+		"name",
+		"targetx",
+		"targety"
 	],
 	"name" : "Sprite",
 	"type" : "normal"
