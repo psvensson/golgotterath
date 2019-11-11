@@ -15,5 +15,5 @@ paint: gameboard  at: aCanvas pos: pos
 	animation currentFrame
 		ifNotNil: [ 
 			img := animation currentFrame.
-			img position: position - (64@64).
+			img position: position .
 			img drawOn: aCanvas ]
