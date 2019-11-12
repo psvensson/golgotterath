@@ -6,6 +6,10 @@ board openInWorld.
 
 ------
 
+Animated sprites (c) Clint Bellanger and used through CC license; https://opengameart.org/content/isometric-hero-and-creatures
+
+------
+
 How to read in and convert sprite sheets;
 
 ------
