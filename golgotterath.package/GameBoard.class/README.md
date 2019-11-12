@@ -1,3 +1,11 @@
+How to open a default GameBoard, in a playground do;
+
+| board |
+board := GameBoard new.
+board openInWorld.
+
+------
+
 How to read in and convert sprite sheets;
 
 ------
