@@ -1,0 +1,1 @@
+This is the Zombie subclass of AnimatedSprite

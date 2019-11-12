@@ -1,0 +1,1 @@
+This is the Werewolf monster subclass of AnimatedSprite

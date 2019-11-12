@@ -1,0 +1,1 @@
+This is the magician subclass of AnimatedSprite

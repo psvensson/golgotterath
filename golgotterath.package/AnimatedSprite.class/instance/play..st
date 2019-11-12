@@ -1,7 +1,7 @@
 accessing
-play: name
+play: animName
 	| animation |
-	animation := self getAnimation: name.
+	animation := self getAnimation: animName.
 	animation position: self position.
 	animation direction: self direction.
 	oldAnimation isNil ifFalse: [ 
@@ -9,4 +9,3 @@ play: name
 		self removeMorph: oldAnimation ].
 	oldAnimation := animation.
 	self addMorph: animation.
-	animation play.
