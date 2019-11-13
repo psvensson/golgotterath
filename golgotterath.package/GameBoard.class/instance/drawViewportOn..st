@@ -8,14 +8,14 @@ drawViewportOn: aCanvas
 	top to: bottom by: 1 do: 
 		[ :y | left to: right by: 1 do: 
 			[ :x || entity tile |		
-				self map at: x@y ifPresent: [
-					tile := (self map) at: x@y.
+				gameMap mapAt: x@y ifPresent: [
+					tile := gameMap mapAt: x@y.
 					tile boardx: y; boardy: y.
 					tile paint: self at: aCanvas pos: (x @ y).
 					self paintOverlappingEntity: x@y at: aCanvas.
 				].			
-				self entities at: x@y ifPresent: [ 
-					entity := self entities at: x@y.
+				gameMap entitiesAt: x@y ifPresent: [ 
+					entity := gameMap entitiesAt: x@y.
 					entity paint: self at: aCanvas pos: (x @ y).					
 				]	
 	 ] ].

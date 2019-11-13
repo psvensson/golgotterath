@@ -3,8 +3,7 @@ createDefaultEntities
 	| player1 player2 player3 |
 	entities := Dictionary new.
 	player1 := MaleLight new.
-	player1 play: 'walk'.
-	player := player1.
+	player1 play: 'walk'.	
 	self addEntity: player1 at: 0@0.
 	player2 := Skeleton new.
 	player2 play: 'walk'.

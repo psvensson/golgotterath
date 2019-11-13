@@ -8,7 +8,7 @@ moveEntity: entity dir: dir
 	dir = 'down' ifTrue: [ y := y + 1 . entity direction: 8].
 	dir = 'left' ifTrue: [ x := x - 1 . entity direction: 2].
 	dir = 'right' ifTrue: [ x := x + 1 . entity direction: 6].		
-	possibleCollision := map at: x@y.
+	possibleCollision := gameMap mapAt: x@y.
 	cname := possibleCollision name.
 	(cname findString: 'floor') > 0 ifTrue: [ 
 		entity targetx: x; targety: y.

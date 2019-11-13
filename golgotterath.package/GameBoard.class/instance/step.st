@@ -6,9 +6,8 @@ step
 	].
 	self changed.
 	animatinsToRemove do: [ :entityToRemove | 
-		entities removeKey: (entityToRemove boardx@entityToRemove boardy).
-		entityToRemove boardx: entityToRemove targetx; boardy: entityToRemove targety.
-		entities at: entityToRemove boardx @ entityToRemove boardy put: entityToRemove .
+		gameMap removeEntityAt: (entityToRemove boardx@entityToRemove boardy).
+		gameMap addEntity: entityToRemove at: entityToRemove targetx @ entityToRemove targety .
 		runningAnimations remove: entityToRemove  ] .
 	runningAnimations ifEmpty: [ 
 		self stopStepping ]

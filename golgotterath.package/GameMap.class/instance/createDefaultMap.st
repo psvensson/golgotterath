@@ -1,6 +1,6 @@
 accessing
 createDefaultMap
-	| floor wall |
+	| floor wall tiles |
 	map := Dictionary new.
 	tiles := Tiles new.
 	floor := (Sprite new) image: (tiles tile: 'floor_grey'); name: 'floor_grey'.

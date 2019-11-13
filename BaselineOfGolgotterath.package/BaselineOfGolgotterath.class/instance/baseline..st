@@ -6,5 +6,5 @@ baseline: spec
 		do: [
 			spec
 				package: 'golgotterath';
-				package: 'golgoterath-ests' with: [ spec requires: #('golgotterath') ] 
+				package: 'golgoterath-tests' with: [ spec requires: #('golgotterath') ] 
 		].

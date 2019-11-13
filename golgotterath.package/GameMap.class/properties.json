@@ -1,11 +1,14 @@
 {
 	"commentStamp" : "GlamorousAuthor 11/13/2019 11:24",
-	"super" : "Array2D",
+	"super" : "Object",
 	"category" : "golgotterath",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"entities",
+		"map"
+	],
 	"name" : "GameMap",
 	"type" : "normal"
 }
