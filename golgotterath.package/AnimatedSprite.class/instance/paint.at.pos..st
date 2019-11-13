@@ -11,9 +11,9 @@ paint: gameboard  at: aCanvas pos: pos
 				, adjustCentre asString , ' tileSize ' , self tileSize asString;
 		cr."
 	animation := self getOldAnimation.	
-	animation position: position .
+	animation position: (position + gameboard position).
 	animation currentFrame
 		ifNotNil: [ 
 			img := animation currentFrame.
-			img position: position + self getAnimationStep.
+			img position: position + self getAnimationStep + gameboard position.
 			img drawOn: aCanvas ]
