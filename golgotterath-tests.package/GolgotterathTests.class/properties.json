@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "GlamorousAuthor 11/12/2019 19:24",
 	"super" : "TestCase",
-	"category" : "golgotterath",
+	"category" : "golgotterath-tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
