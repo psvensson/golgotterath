@@ -13,6 +13,8 @@ board openInWorld.
 ------
 
 Animated sprites (c) Clint Bellanger and used through CC license; https://opengameart.org/content/isometric-hero-and-creatures
+Dungeon Tiles (c) Mitsuhiro Itakura and used through CC lciense;
+https://opengameart.org/content/64x64-isometric-roguelike-tiles
 
 ------
 

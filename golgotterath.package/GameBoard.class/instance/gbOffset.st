@@ -1,0 +1,3 @@
+accessing
+gbOffset
+	^ self position.
