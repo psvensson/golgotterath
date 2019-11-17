@@ -13,10 +13,10 @@
 		"spritesPerRow",
 		"spriteWidth",
 		"boardx",
-		"boardy",
 		"name",
-		"targetx",
-		"targety"
+		"boardpos",
+		"pos",
+		"target"
 	],
 	"name" : "Sprite",
 	"type" : "normal"

@@ -8,12 +8,14 @@
 	"instvars" : [
 		"map",
 		"viewPort",
-		"tiles",
-		"tileSize",
-		"entities",
 		"player",
 		"runningAnimations",
-		"gameMap"
+		"gameMap",
+		"worldAnimationFrame",
+		"worldCoords",
+		"worldTargetCoords",
+		"boardDrawOffset",
+		"moveCallback"
 	],
 	"name" : "GameBoard",
 	"type" : "normal"

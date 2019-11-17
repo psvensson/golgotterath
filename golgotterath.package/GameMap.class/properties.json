@@ -7,7 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"entities",
-		"map"
+		"map",
+		"tiles"
 	],
 	"name" : "GameMap",
 	"type" : "normal"

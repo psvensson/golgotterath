@@ -1,13 +1,16 @@
 accessing
 step
-	| animatinsToRemove |
-	animatinsToRemove := 	runningAnimations select: [ :entity |
+	| animationsToRemove |
+	animationsToRemove := 	runningAnimations select: [ :entity |
 		(entity getOldAnimation) stepAnimation .	
 	].
+	self stepWorld.
 	self changed.
-	animatinsToRemove do: [ :entityToRemove | 
-		gameMap removeEntityAt: (entityToRemove boardx@entityToRemove boardy).
-		gameMap addEntity: entityToRemove at: entityToRemove targetx @ entityToRemove targety .
+	animationsToRemove do: [ :entityToRemove | 
+		gameMap removeEntityAt: (entityToRemove boardpos).
+		gameMap addEntity: entityToRemove at: entityToRemove target.
 		runningAnimations remove: entityToRemove  ] .
+		boardDrawOffset := 0@0.
 	runningAnimations ifEmpty: [ 
+		worldAnimationFrame := 0.
 		self stopStepping ]
