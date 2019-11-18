@@ -12,4 +12,5 @@ step
 		boardDrawOffset := 0@0.
 	runningAnimations ifEmpty: [ 
 		worldAnimationFrame := 0.
-		self stopStepping ]
+		self stopStepping ].
+	^ self
