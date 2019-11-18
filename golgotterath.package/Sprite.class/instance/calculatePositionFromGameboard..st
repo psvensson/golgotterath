@@ -1,10 +1,13 @@
 accesing
 calculatePositionFromGameboard: gameboard
-	| isoPoint position adjustCentre gw boardOffset|
+	| isoPoint adjustCentre gw boardOffset wc dx dy |
 	isoPoint := self toISO: boardpos.
 	gw := gameboard width / 2.
  	adjustCentre := self toISO: gw@0.
- 	position := adjustCentre + 
-		((isoPoint x * self tileResize) @ (isoPoint y * self tileResize )).
-	boardOffset := gameboard boardDrawOffset.	
-	^ position + boardOffset 
+ 	
+	wc := gameboard worldCoords .
+	dx := (wc x - boardpos x) * self tileResize.
+	dy := (wc y - boardpos y) * self tileResize.
+	
+	boardOffset := gameboard boardDrawOffset - (self toISO:(dx@dy)).
+	^ boardOffset + adjustCentre 

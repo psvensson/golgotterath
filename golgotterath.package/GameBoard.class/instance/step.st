@@ -5,7 +5,6 @@ step
 		(entity getOldAnimation) stepAnimation .	
 	].
 	self stepWorld.
-	self changed.
 	animationsToRemove do: [ :entityToRemove | 
 		gameMap removeEntityAt: (entityToRemove boardpos).
 		gameMap addEntity: entityToRemove at: entityToRemove target.
