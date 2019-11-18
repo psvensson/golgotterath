@@ -3,13 +3,21 @@ keyStroke: anEvent
 	| keyValue | 
 		keyValue := anEvent keyValue. 
 		Transcript show: 'key ',keyValue asString;cr .
-    		keyValue = 30    "up arrow" 
+    		((keyValue = 30) or: (keyValue = 56))    "up arrow" 
        		ifTrue: [self moveEntity: (self player) dir: 'up']. 
-    		keyValue = 31    "down arrow" 
+			keyValue = 55    "up arrow" 
+       		ifTrue: [self moveEntity: (self player) dir: 'upleft']. 
+			keyValue = 57    "up arrow" 
+       		ifTrue: [self moveEntity: (self player) dir: 'upright']. 
+			keyValue = 49    "up arrow" 
+       		ifTrue: [self moveEntity: (self player) dir: 'downleft']. 
+			keyValue = 51    "up arrow" 
+       		ifTrue: [self moveEntity: (self player) dir: 'downright']. 
+    		((keyValue = 31) or: (keyValue = 50))   "down arrow" 
         	ifTrue: [self moveEntity: (self player) dir: 'down']. 
-    		keyValue = 29    "right arrow" 
+    		((keyValue = 29) or: (keyValue = 54))    "right arrow" 
         	ifTrue: [self moveEntity: (self player) dir: 'right']. 
-    		keyValue = 28    "left arrow" 
+    		((keyValue = 28) or: (keyValue = 52))    "left arrow" 
         	ifTrue: [self moveEntity: (self player) dir: 'left']. 
 			keyValue = 122 ifTrue: [ self playAnimation: 'hit' for: self player. ].
 			keyValue = 120 ifTrue: [ self playAnimation: 'shoot' for: self player. ].
