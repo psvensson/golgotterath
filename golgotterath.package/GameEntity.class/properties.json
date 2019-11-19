@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "GlamorousAuthor 11/19/2019 14:31",
+	"super" : "Object",
+	"category" : "golgotterath",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"animatedSprite",
+		"abilities",
+		"hp",
+		"ac",
+		"speed",
+		"boardpos"
+	],
+	"name" : "GameEntity",
+	"type" : "normal"
+}

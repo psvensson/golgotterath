@@ -1,7 +1,6 @@
 accessing
 createDefaultMap
 	| floor wall door_x door_y stairs_down portal_blue|
-	map := Dictionary new.
 	floor := (Sprite new) image: (tiles tile: 'floor_grey'); name: 'floor_grey'.
 	wall := (Sprite new) image: (tiles tile: 'wall_brown'); name: 'wall_brown'.
 	door_x := (Sprite new) image: (tiles tile: 'door_closed_x'); name: 'door_closed_x'.

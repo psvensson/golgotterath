@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "GameEntity",
+	"category" : "golgotterath",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GoblinEntity",
+	"type" : "normal"
+}
