@@ -6,16 +6,13 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"sheet",
 		"image",
 		"spriteImages",
 		"direction",
 		"spritesPerRow",
 		"spriteWidth",
-		"boardx",
 		"name",
 		"boardpos",
-		"pos",
 		"target"
 	],
 	"name" : "Sprite",
