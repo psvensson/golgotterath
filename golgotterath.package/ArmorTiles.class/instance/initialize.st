@@ -7,3 +7,4 @@ initialize
 	tiles := Dictionary new.
 	tiles at: 'orange_robe' put: (spriteImages at: 1).
 	tiles at: 'blue_robe' put: (spriteImages at: 11).
+	tiles at: 'yellow_robe' put: (spriteImages at: 21).
