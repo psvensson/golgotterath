@@ -7,6 +7,7 @@ initialize
 	self	initializeViewport.
 	runningAnimations := Set new.
 	gameMap createDefaultEntities.
+	gameMap createDefaultItems .
 	player := gameMap entitiesAt: 0@0.
 	worldCoords := 0@0.
 	worldTargetCoords := 0@0.

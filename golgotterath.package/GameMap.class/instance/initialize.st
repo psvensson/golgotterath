@@ -1,5 +1,7 @@
 initialization
 initialize 
-	entities := Array2D new.
-	map := Array2D new.
 	tiles := Tiles new.
+	
+	entities := Dictionary new.
+	map := Dictionary new.	
+	items := Dictionary new.

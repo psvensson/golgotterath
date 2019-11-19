@@ -22,6 +22,7 @@ How to read in and convert sprite sheets;
 
 ------
 "Make and encode the original image file bytes"
+|img writeStream encoded byteArray newImg method|
 img := PNGReadWriter formFromStream: 'imagefile.png' asFileReference binaryReadStream.
 writeStream := WriteStream on: ByteArray new.
 PNGReadWriter putForm: img onStream: writeStream.

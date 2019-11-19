@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "GameItem",
+	"category" : "golgotterath",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "BlueRobe",
+	"type" : "normal"
+}

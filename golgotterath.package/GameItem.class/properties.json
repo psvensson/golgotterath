@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "golgotterath",
+	"classinstvars" : [
+		"armortiles"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"sprite",
+		"kind",
+		"attributes",
+		"armortiles",
+		"itemname",
+		"boardpos"
+	],
+	"name" : "GameItem",
+	"type" : "normal"
+}
