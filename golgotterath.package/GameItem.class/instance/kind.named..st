@@ -1,10 +1,11 @@
 accessing
-initialize
-	super initialize.
-	itemname := 'blue_robe'.
+kind: k named: name 
+	| tiles |
+	k = 'armour' ifTrue: [  tiles := self armortiles ].
+	itemname := name.	
 	sprite := (Sprite new) 
-		image: (self armortiles tile: itemname); 
+		image: (tiles tile: name); 
 		tileadjustx: (self armortiles tileadjustx); 
 		tileadjusty: (self armortiles tileadjusty); 
-		name: itemname;
+		name: name;
 		tileSize: (armortiles tileSize).
