@@ -1,10 +1,10 @@
 adding
 moveEntity: entity dir: dir
 	| target |	
-	entity directionString: dir.
-	target := entity getTargetForDirectionString: dir.
+	entity animatedSprite directionString: dir.
+	target := entity animatedSprite getTargetForDirectionString: dir.
 	(self openFloorAt: target) ifTrue: [ 
-		entity setTargetForDirectionString: dir.		
+		entity animatedSprite setTargetForDirectionString: dir.		
 		"Transcript show: 'moveEntity ',entity pos asString,' -> ',entity target asString;cr."
 		entity = player ifTrue: [ 
 			worldCoords := target.

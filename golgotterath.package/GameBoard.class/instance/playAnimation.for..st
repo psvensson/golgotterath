@@ -1,4 +1,4 @@
 accessing
 playAnimation: animName for: entity
 	self addRunningAnimation: entity.
-	entity play: animName .
+	entity animatedSprite play: animName .

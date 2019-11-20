@@ -13,6 +13,6 @@ drawViewportOn: aCanvas
 				self paintItemAtPos: worldpos canvas: aCanvas.
 				gameMap entitiesAt: worldpos ifPresent: [ 
 					entity := gameMap entitiesAt: worldpos.
-					entity paint: self at: aCanvas.					
+					entity animatedSprite paint: self at: aCanvas.					
 				]	
 	 ] ]
