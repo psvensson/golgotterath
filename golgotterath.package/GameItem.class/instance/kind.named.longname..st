@@ -2,6 +2,7 @@ accessing
 kind: k named: tname longname: lname
 	| tiles |
 	k = 'armour' ifTrue: [  tiles := self armortiles ].
+	k = 'weapon' ifTrue: [  tiles := self weapontiles ].
 	itemname := tname.	
 	longname := lname.	
 	sprite := (Sprite new) 

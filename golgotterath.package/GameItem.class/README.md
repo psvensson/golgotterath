@@ -13,3 +13,5 @@ dcon - delta constitution
 ddex - delta dexterity
 dint - delta intelligence
 dwis - delta wisdom
+atk - attack bonus (for weapon)
+dam - damage (for weapon)

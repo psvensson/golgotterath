@@ -8,4 +8,6 @@ itemList
 		{ #name -> 'blue_robe'.#kind->'armour'.#longname -> 'Blue Robe'.#dac -> -2 }). 
 	list at: 'yellow_robe' put: (Dictionary newFrom:
 		{ #name -> 'yellow_robe'.#kind->'armour'.#longname -> 'Yellow Robe'.#dac -> -3 }). 		
+	list at: 'short_sword' put: (Dictionary newFrom:
+		{ #name -> 'short_sword'.#kind->'weapon'.#longname -> 'Short Sword'.#dam -> '1d6' }).
 	^ list

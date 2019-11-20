@@ -1,12 +1,3 @@
 accessing
 kind: k named: tname 
-	| tiles |
-	k = 'armour' ifTrue: [  tiles := self armortiles ].
-	itemname := tname.	
-	longname := tname.	
-	sprite := (Sprite new) 
-		image: (tiles tile: tname); 
-		tileadjustx: (self armortiles tileadjustx); 
-		tileadjusty: (self armortiles tileadjusty); 
-		name: tname;
-		tileSize: (armortiles tileSize).
+	self kind: k named: tname longname: tname

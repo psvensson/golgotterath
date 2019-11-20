@@ -3,7 +3,7 @@ initialize
 	| img |
 	super initialize.
 	img := self spriteImage.
-	self loadSpriteImage: img spriteWidth: 64 spritesPerRow: 8.
+	self loadSpriteImage: img spriteWidth: 64 spritesPerRow: 10.
 	tiles := Dictionary new.
 	tiles at: 'floor' put: (spriteImages at: 1).
 	tiles at: 'wall_brown' put: (spriteImages at: 2).
