@@ -1,4 +1,7 @@
 initialization
 initialize 
 	super initialize .
-	self contents: 'Foo'.
+	text := StringMorph new.	
+	self addMorph: text.	
+	self color: (Color darkGray ).
+	text contents: 'Foo'.

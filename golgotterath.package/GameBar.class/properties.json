@@ -1,11 +1,13 @@
 {
 	"commentStamp" : "GlamorousAuthor 11/20/2019 17:29",
-	"super" : "StringMorph",
+	"super" : "BorderedMorph",
 	"category" : "golgotterath",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"text"
+	],
 	"name" : "GameBar",
 	"type" : "normal"
 }

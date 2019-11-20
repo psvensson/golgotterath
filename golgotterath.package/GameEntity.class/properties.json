@@ -11,7 +11,9 @@
 		"hp",
 		"ac",
 		"speed",
-		"boardpos"
+		"boardpos",
+		"level",
+		"exp"
 	],
 	"name" : "GameEntity",
 	"type" : "normal"

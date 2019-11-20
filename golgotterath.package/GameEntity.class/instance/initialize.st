@@ -9,4 +9,6 @@ initialize
 	hp := 10.
 	ac := 10.
 	speed := 1.
+	level := 1.
+	exp := 0.
 	animatedSprite := Human new.
