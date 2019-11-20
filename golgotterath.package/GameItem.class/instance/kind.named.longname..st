@@ -1,9 +1,9 @@
 accessing
-kind: k named: tname 
+kind: k named: tname longname: lname
 	| tiles |
 	k = 'armour' ifTrue: [  tiles := self armortiles ].
 	itemname := tname.	
-	longname := tname.	
+	longname := lname.	
 	sprite := (Sprite new) 
 		image: (tiles tile: tname); 
 		tileadjustx: (self armortiles tileadjustx); 

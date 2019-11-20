@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "GlamorousAuthor 11/19/2019 21:06",
+	"commentStamp" : "GlamorousAuthor 11/20/2019 09:56",
 	"super" : "Object",
 	"category" : "golgotterath",
 	"classinstvars" : [
@@ -13,7 +13,9 @@
 		"attributes",
 		"armortiles",
 		"itemname",
-		"boardpos"
+		"boardpos",
+		"longname",
+		"name"
 	],
 	"name" : "GameItem",
 	"type" : "normal"
