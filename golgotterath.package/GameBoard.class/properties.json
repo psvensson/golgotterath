@@ -6,7 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"map",
 		"viewPort",
 		"player",
 		"runningAnimations",
@@ -15,7 +14,8 @@
 		"worldCoords",
 		"worldTargetCoords",
 		"boardDrawOffset",
-		"moveCallback"
+		"moveCallback",
+		"topbar"
 	],
 	"name" : "GameBoard",
 	"type" : "normal"

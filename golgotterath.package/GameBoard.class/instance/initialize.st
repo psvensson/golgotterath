@@ -13,3 +13,5 @@ initialize
 	worldTargetCoords := 0@0.
 	worldAnimationFrame := 0.
 	boardDrawOffset := 0@0.
+	topbar := GameBar new.
+	self addMorph: topbar.
