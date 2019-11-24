@@ -1,0 +1,21 @@
+{
+	"commentStamp" : "GlamorousAuthor 11/24/2019 18:56",
+	"super" : "Object",
+	"category" : "golgotterath",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"type",
+		"targetBoardPos",
+		"targetEntity",
+		"targetItem",
+		"priority",
+		"targetItemType",
+		"targetTileType",
+		"targetEntityType",
+		"verb"
+	],
+	"name" : "Agenda",
+	"type" : "normal"
+}
