@@ -1,4 +1,7 @@
 accessing
 step: gameboard
 	| finishedAgendas |
-	finishedAgendas := agendas select: [ :agenda | agenda stepAndCheck: gameboard	].
+	finishedAgendas := OrderedCollection new.
+	agendas do: [ :agenda :index | 
+		(agenda stepAndCheck: gameboard) ifTrue: [ finishedAgendas add: index ]	].
+	finishedAgendas do: [ :finished | agendas remove: finished ]	

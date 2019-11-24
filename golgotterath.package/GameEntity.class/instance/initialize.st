@@ -12,3 +12,4 @@ initialize
 	level := 1.
 	exp := 0.
 	animatedSprite := Human new.
+	agendas := SortedCollection sortBlock: [ :a :b | a priority < b priority  ]
