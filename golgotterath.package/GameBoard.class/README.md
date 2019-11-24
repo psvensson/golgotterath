@@ -4,7 +4,7 @@ animations or effects.
 
 Metacello new
     repository: 'github://psvensson/golgotterath:master';
-    baseline: 'BaselineOfGolgotterath';
+    baseline: 'Golgotterath';
     load
 
 ------
