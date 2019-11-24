@@ -2,6 +2,11 @@ GameBoard is the main Morph that to an extent 'is' the game. It creates or loads
 and entities and holds the main stepping loop, and in turn calls stepping on all other 
 animations or effects.
 
+Metacello new
+    repository: 'github://psvensson/golgotterath:master';
+    baseline: 'BaselineOfGolgotterath';
+    load
+
 ------
 
 How to open a default GameBoard, in a playground do;

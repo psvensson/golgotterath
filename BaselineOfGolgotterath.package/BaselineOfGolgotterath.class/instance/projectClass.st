@@ -1,3 +1,3 @@
 baselines
 projectClass
-	^ BaselineOfGolgotterath 
+	^ MetacelloCypressBaselineProject
