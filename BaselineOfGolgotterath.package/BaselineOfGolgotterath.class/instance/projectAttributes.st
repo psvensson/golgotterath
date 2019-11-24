@@ -1,3 +1,3 @@
 baselines
 projectAttributes
-	^ #(#pharo) 
+	^ #(#common #pharo) 
