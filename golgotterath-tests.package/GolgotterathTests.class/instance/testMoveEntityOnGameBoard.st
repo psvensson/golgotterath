@@ -1,6 +1,6 @@
 tests
 testMoveEntityOnGameBoard
-	| gameBoard gameMap player1 slot |
+	| gameBoard gameMap player1 |
  	gameBoard := GameBoard new. 
 	gameMap := gameBoard gameMap.
  	player1 := MaleLight new.

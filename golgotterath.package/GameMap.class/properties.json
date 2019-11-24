@@ -9,7 +9,9 @@
 		"entities",
 		"map",
 		"tiles",
-		"items"
+		"items",
+		"dijkstragraph",
+		"mapRadius"
 	],
 	"name" : "GameMap",
 	"type" : "normal"

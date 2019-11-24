@@ -8,7 +8,7 @@ moveEntity: entity dir: dir
 		"Transcript show: 'moveEntity ',entity pos asString,' -> ',entity target asString;cr."
 		entity = player ifTrue: [ 
 			worldCoords := target.
-			"Transcript show: 'moveEntity setting worldcoords to ',worldCoords asString;cr."
+			Transcript show: 'moveEntity setting worldcoords to ',worldCoords asString;cr.
 		]
 	].	
 	self playAnimation: 'walk' for: player.
