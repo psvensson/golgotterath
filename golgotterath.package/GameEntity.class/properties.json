@@ -13,7 +13,8 @@
 		"speed",
 		"boardpos",
 		"level",
-		"exp"
+		"exp",
+		"agendas"
 	],
 	"name" : "GameEntity",
 	"type" : "normal"
