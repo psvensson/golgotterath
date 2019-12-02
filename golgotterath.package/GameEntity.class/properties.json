@@ -16,7 +16,8 @@
 		"exp",
 		"strategies",
 		"gameboard",
-		"gamemap"
+		"gamemap",
+		"lightradius"
 	],
 	"name" : "GameEntity",
 	"type" : "normal"
