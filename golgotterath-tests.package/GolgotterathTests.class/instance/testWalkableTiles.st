@@ -1,6 +1,4 @@
 tests
-"protocol: #tests"
-
 testWalkableTiles
 	| map wall floor bedrock | 
 	map := GameMap new.

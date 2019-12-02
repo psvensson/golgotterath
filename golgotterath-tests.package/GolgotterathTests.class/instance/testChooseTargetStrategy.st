@@ -1,6 +1,4 @@
 tests
-"protocol: #tests"
-
 testChooseTargetStrategy
 "Test that the move strategy can move towards a target"
 	| entity gameboard gamemap strategy result | 

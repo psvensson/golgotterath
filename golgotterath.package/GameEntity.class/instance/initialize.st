@@ -13,7 +13,6 @@ initialize
 	level := 1.
 	exp := 0.
 	lightradius := 3.
-	stepCalls := 0.
 	animatedSprite := Human new.
 	strategies := SortedCollection sortBlock: [ :a :b | a priority < b priority  ].
 	

@@ -4,5 +4,4 @@ addEntity: entity at: boardpos
 	entity boardpos: boardpos.
 	entity gamemap: self.
 	entities at: boardpos put: entity .
-	entitiesArray := entities asArray .
 	"self addMorph: entity."

@@ -1,6 +1,4 @@
 tests
-"protocol: #tests"
-
 testVisibleMap
 "Test that the move strategy can move towards a target"
 	| entity gameboard gamemap result | 
@@ -11,4 +9,5 @@ testVisibleMap
 	entity := GameEntity new: 'human'.
 	gamemap addEntity: entity at: 0@0.
 	result := entity visibleMap .
+	result inspect.
 	self assert: result -> #tiles isNotNil .

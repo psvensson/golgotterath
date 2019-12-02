@@ -12,8 +12,7 @@
 		"items",
 		"dijkstragraph",
 		"mapRadius",
-		"gameboard",
-		"entitiesArray"
+		"gameboard"
 	],
 	"name" : "GameMap",
 	"type" : "normal"

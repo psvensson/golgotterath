@@ -17,9 +17,7 @@
 		"strategies",
 		"gameboard",
 		"gamemap",
-		"lightradius",
-		"player",
-		"stepCalls"
+		"lightradius"
 	],
 	"name" : "GameEntity",
 	"type" : "normal"
