@@ -1,3 +1,3 @@
 accessing
 player: isPlayer
-	player := isPlayer 
+	player := isPlayer  

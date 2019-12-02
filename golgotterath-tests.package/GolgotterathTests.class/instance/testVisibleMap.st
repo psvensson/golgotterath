@@ -9,5 +9,4 @@ testVisibleMap
 	entity := GameEntity new: 'human'.
 	gamemap addEntity: entity at: 0@0.
 	result := entity visibleMap .
-	result inspect.
 	self assert: result -> #tiles isNotNil .
