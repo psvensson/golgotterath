@@ -2,7 +2,7 @@ accessing
 visibleMap
 	| tiles entities items maps top bottom left right |
 	tiles := Set  new.
-	entities := Set  new.
+	entities := SortedCollection sortBlock: [:a :b | a boardpos > b boardpos].
 	items := Set  new.
 	top := boardpos y - lightradius .
 	bottom := boardpos y + lightradius .
@@ -15,6 +15,5 @@ visibleMap
 			[ :x |	
 				gamemap entitiesAt: x@y ifPresent: [ :entity |	entities add:entity	].
 				gamemap itemAt: x@y ifPresent: [ :item |	items add:item 	].
-				tiles add: (gamemap mapAt: x@y).
-	 ] ].
+				tiles add: (gamemap mapAt: x@y).  ] ].
 	 ^ maps
