@@ -14,9 +14,9 @@ createDijkstraGraph
 				index := index +1.
 				]].	
 	start  to: stop do: 
-		[ :y | start to: stop do: 
-			[ :x | |tile|
-				tile := self mapAt: x@y.
+		[ :yy | start to: stop do: 
+			[ :xx | |tile|
+				tile := self mapAt: xx@yy.
 				(self isWalkable: tile) ifTrue: [ 
 					"Transcript show: 'adding tile ',x asString,',',y asString;cr."
 					edges addAll: (self connectToSurroundingNodes: tile) ]  ] ].

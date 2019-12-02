@@ -1,4 +1,6 @@
 accessing
+"protocol: #accessing"
+
 visibleMap
 	| tiles entities items maps top bottom left right |
 	tiles := Set  new.

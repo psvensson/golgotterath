@@ -1,4 +1,4 @@
-accessing
+event handler
 keyStroke: anEvent
 	| keyValue | 
 		keyValue := anEvent keyValue. 

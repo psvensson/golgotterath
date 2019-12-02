@@ -1,4 +1,6 @@
 accessing
+"protocol: #accessing"
+
 chooseTargetBoardPos
 "Select entity to move towards or choose a random one"
 	| view entities pos |

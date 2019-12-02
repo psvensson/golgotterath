@@ -6,5 +6,5 @@ testDijkstraGraph
 	map createDefaultMap.
 	map createDijkstraGraph.
 	path := map findPathFrom: 0@0 to: 1@7.
-	Transcript show: 'dijkstra test; path size is ',path size asString;cr.
+	"Transcript show: 'path size is ',path size asString;cr."
 	self assert: (path size > 0)  .

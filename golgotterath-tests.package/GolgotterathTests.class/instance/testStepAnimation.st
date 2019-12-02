@@ -2,9 +2,8 @@ tests
 testStepAnimation
 	| sprite board anim | 
 	board := GameBoard new.
-	sprite := Human new.
+	sprite := GameEntity new: 'human'.
 	board addRunningAnimation: sprite.
-	sprite play: 'walk'.
 	board step.
-	anim := sprite getOldAnimation .
+	anim := sprite animatedSprite getOldAnimation .
 	self assert: anim frame equals: 2 .

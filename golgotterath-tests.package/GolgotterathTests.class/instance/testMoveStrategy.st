@@ -10,8 +10,8 @@ testMoveStrategy
 	gamemap addEntity: entity at: 0@0.
 	strategy := DefaultMoveStrategy new.
 	entity addStrategy: strategy .
-	targetpos := (-2)@(-1).
+	targetpos := (-2)@(-2).
 	strategy targetBoardPos: targetpos .
 	path := strategy getPathToTarget .
 	result := path last.
-	self assert: result equals: targetpos asString  .
+	self assert: result equals: targetpos .
