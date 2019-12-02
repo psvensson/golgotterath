@@ -5,3 +5,4 @@ initialize
 	entities := Dictionary new.
 	map := Dictionary new.	
 	items := Dictionary new.
+	self	createDijkstraGraph .

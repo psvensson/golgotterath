@@ -1,3 +1,3 @@
 accessing
 isBedrock: tile
-	^ (tile name = 'floor') not
+	^ (tile name = 'wall_grey') 

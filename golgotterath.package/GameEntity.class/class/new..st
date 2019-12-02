@@ -13,5 +13,6 @@ new: entityname
 	abilities at: 'dex' put: (template at: 'dex').
 	abilities at: 'int' put: (template at: 'int').
 	abilities at: 'wis' put: (template at: 'wis').		
-	entity animatedSprite play: 'walk'.				
+	entity animatedSprite play: 'walk'.		
+	entity createDefaultStrategies.				
 	^ entity

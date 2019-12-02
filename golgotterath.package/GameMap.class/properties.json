@@ -11,7 +11,8 @@
 		"tiles",
 		"items",
 		"dijkstragraph",
-		"mapRadius"
+		"mapRadius",
+		"gameboard"
 	],
 	"name" : "GameMap",
 	"type" : "normal"

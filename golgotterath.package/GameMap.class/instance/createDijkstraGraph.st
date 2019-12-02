@@ -1,7 +1,6 @@
 initialization
 createDijkstraGraph
-	| start stop nodes edges index side |
-	side := self mapRadius * 2.
+	| start stop nodes edges index |
 	dijkstragraph := MalDijkstra new.
 	nodes := OrderedCollection new .
 	edges := OrderedCollection new.
@@ -19,7 +18,7 @@ createDijkstraGraph
 			[ :x | |tile|
 				tile := self mapAt: x@y.
 				(self isWalkable: tile) ifTrue: [ 
-					"Transcript show: 'adding tile ',x asString,',',y asString;cr."
+					Transcript show: 'adding tile ',x asString,',',y asString;cr.
 					edges addAll: (self connectToSurroundingNodes: tile) ]  ] ].
 	dijkstragraph nodes: nodes asArray .
 	dijkstragraph edges: (edges asArray) from: #first to: #second.	

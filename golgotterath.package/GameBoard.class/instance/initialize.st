@@ -2,12 +2,11 @@ initialization
 initialize
 	super initialize .
 	gameMap := GameMap new.
-	gameMap createDefaultMap. 	
+	gameMap createDefaultMap; 
+		createDefaultEntities; createDefaultItems; gameboard: self . 	
 	self bounds: (0@0 corner: 1050@600). 
 	self	initializeViewport.
-	runningAnimations := Set new.
-	gameMap createDefaultEntities.
-	gameMap createDefaultItems .
+	runningAnimations := Set new.	
 	player := gameMap entitiesAt: 0@0.
 	worldCoords := 0@0.
 	worldTargetCoords := 0@0.

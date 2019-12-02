@@ -14,7 +14,9 @@
 		"boardpos",
 		"level",
 		"exp",
-		"agendas"
+		"strategies",
+		"gameboard",
+		"gamemap"
 	],
 	"name" : "GameEntity",
 	"type" : "normal"

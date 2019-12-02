@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "Strategy",
+	"category" : "golgotterath",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DefaultMoveStrategy",
+	"type" : "normal"
+}

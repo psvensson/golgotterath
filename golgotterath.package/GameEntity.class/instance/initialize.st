@@ -1,5 +1,6 @@
-accessing
+initialization
 initialize 
+	| strategy |
 	abilities := Dictionary new.
 	abilities at: 'str' put: 10.
 	abilities at: 'con' put: 10.
@@ -12,4 +13,5 @@ initialize
 	level := 1.
 	exp := 0.
 	animatedSprite := Human new.
-	agendas := SortedCollection sortBlock: [ :a :b | a priority < b priority  ]
+	strategies := SortedCollection sortBlock: [ :a :b | a priority < b priority  ].
+	
