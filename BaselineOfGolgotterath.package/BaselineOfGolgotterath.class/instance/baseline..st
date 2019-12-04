@@ -4,7 +4,7 @@ baseline: spec
 	spec
 		for: #common
 		do: [
-			spec
+			spec 
 				package: 'Golgotterath-Core';
 				package: 'Golgotterath-Core-Tests' with: [ spec requires: #('golgotterath') ].
 			spec
