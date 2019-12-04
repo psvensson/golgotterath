@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "GlamorousAuthor 11/12/2019 19:17",
+	"super" : "Sprite",
+	"category" : "Golgotterath-Core-Sprite",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"animations",
+		"oldAnimation"
+	],
+	"name" : "AnimatedSprite",
+	"type" : "normal"
+}

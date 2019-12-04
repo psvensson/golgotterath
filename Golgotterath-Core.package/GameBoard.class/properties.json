@@ -1,0 +1,22 @@
+{
+	"commentStamp" : "GlamorousAuthor 11/24/2019 18:28",
+	"super" : "Morph",
+	"category" : "Golgotterath-Core-View",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"viewPort",
+		"player",
+		"runningAnimations",
+		"gameMap",
+		"worldAnimationFrame",
+		"worldCoords",
+		"worldTargetCoords",
+		"boardDrawOffset",
+		"moveCallback",
+		"topbar"
+	],
+	"name" : "GameBoard",
+	"type" : "normal"
+}

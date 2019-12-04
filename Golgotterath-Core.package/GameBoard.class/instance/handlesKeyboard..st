@@ -1,0 +1,3 @@
+accessing
+handlesKeyboard: anEvent
+	^ true

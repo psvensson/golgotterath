@@ -1,0 +1,1 @@
+This is the Skeleton monster subclass of AnimatedSprite

@@ -1,0 +1,3 @@
+initialization
+tileadjustx
+	^ 32. 

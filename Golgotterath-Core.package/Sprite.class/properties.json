@@ -1,0 +1,25 @@
+{
+	"commentStamp" : "GlamorousAuthor 10/23/2019 11:22",
+	"super" : "Morph",
+	"category" : "Golgotterath-Core-Sprite",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"image",
+		"spriteImages",
+		"direction",
+		"spritesPerRow",
+		"spriteWidth",
+		"name",
+		"boardpos",
+		"target",
+		"tileResie",
+		"tileResize",
+		"tileSize",
+		"tileadjustx",
+		"tileadjusty"
+	],
+	"name" : "Sprite",
+	"type" : "normal"
+}

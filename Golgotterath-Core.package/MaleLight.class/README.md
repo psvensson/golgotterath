@@ -1,0 +1,1 @@
+This is a player/enemy light subclass of AnimatedSprite

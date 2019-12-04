@@ -1,0 +1,1 @@
+This is the Human/player subclass of AnimatedSprite

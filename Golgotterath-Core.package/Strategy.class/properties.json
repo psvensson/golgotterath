@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "GlamorousAuthor 11/25/2019 10:45",
+	"super" : "Object",
+	"category" : "Golgotterath-Core-Strategies",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"type",
+		"targetBoardPos",
+		"targetEntity",
+		"targetItem",
+		"priority",
+		"verb",
+		"entity"
+	],
+	"name" : "Strategy",
+	"type" : "normal"
+}

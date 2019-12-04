@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "Strategy",
+	"category" : "Golgotterath-Core-Strategies",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DefaultItemStrategy",
+	"type" : "normal"
+}

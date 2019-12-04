@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "GlamorousAuthor 11/13/2019 11:24",
+	"super" : "Object",
+	"category" : "Golgotterath-Core-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"entities",
+		"map",
+		"tiles",
+		"items",
+		"mapRadius",
+		"gameboard",
+		"entitiesArray"
+	],
+	"name" : "GameMap",
+	"type" : "normal"
+}

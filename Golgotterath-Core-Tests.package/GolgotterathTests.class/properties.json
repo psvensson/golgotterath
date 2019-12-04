@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "GlamorousAuthor 11/12/2019 19:24",
+	"super" : "TestCase",
+	"category" : "Golgotterath-Core-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GolgotterathTests",
+	"type" : "normal"
+}

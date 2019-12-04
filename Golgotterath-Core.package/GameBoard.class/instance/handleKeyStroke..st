@@ -1,0 +1,3 @@
+accessing
+handleKeyStroke: anEvent
+	^ true
