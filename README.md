@@ -11,6 +11,4 @@ Metacello new
 
 ## Running 
 
-|gameboard|
-gameboard := GameBoard new.
-gameboard openInWindow 
+GameBoard open 
