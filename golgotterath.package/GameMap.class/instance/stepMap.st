@@ -1,4 +1,5 @@
 accessing
 stepMap
 "Step each entity and ongoing event"
-	entitiesArray do: [ :entity | entity step ] 
+	Transcript show: 'stepMap';cr.
+	entitiesArray do: [ :entity | entity player ifFalse: [entity step] ] 

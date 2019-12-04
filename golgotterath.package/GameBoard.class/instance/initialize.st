@@ -8,6 +8,7 @@ initialize
 	self	initializeViewport.
 	runningAnimations := Set new.	
 	player := gameMap entitiesAt: 0@0.
+	player player: true.
 	worldCoords := 0@0.
 	worldTargetCoords := 0@0.
 	worldAnimationFrame := 0.

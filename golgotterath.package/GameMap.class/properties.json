@@ -10,7 +10,6 @@
 		"map",
 		"tiles",
 		"items",
-		"dijkstragraph",
 		"mapRadius",
 		"gameboard",
 		"entitiesArray"

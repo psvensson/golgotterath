@@ -12,6 +12,7 @@ initialize
 	speed := 1.
 	level := 1.
 	exp := 0.
+	player := false.
 	lightradius := 3.
 	stepCalls := 0.
 	animatedSprite := Human new.

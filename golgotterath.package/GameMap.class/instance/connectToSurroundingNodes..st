@@ -9,9 +9,11 @@ connectToSurroundingNodes: tile
 	y1 to: y2 do: [ :y |
 		x1 to: x2 do: [ :x | | edge |
 				desttile := self mapAt: x@y. 
-				(self isWalkable: desttile) ifTrue: [ 	
-					edge := Array with:	(self posToSymbol: (tile boardpos) )
-											with: (self posToSymbol: (desttile boardpos) ) .		
-					Transcript show: 'adding edge ',edge asString;cr.
+				((self isWalkable: desttile) and: ((
+					(tile boardpos x) ~= x) and: (tile boardpos y) ~= y))
+					ifTrue: [ 	
+						edge := Array with:	(self posToSymbol: (tile boardpos) )
+												with: (self posToSymbol: (desttile boardpos) ) .		
+					"Transcript show: 'adding edge ',edge asString;cr."
 					edges add: edge ]]].
 	^ edges	 asArray 					

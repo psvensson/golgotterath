@@ -7,6 +7,7 @@ moveEntity: entity dir: dir
 		entity animatedSprite setTargetForDirectionString: dir.		
 		"Transcript show: 'moveEntity ',entity pos asString,' -> ',entity target asString;cr."
 		entity = player ifTrue: [ 
+			gameMap stepMap.
 			worldCoords := target.
 			Transcript show: 'moveEntity setting worldcoords to ',worldCoords asString;cr.
 		]
