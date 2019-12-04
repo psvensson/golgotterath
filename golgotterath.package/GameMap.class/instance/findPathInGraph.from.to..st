@@ -6,7 +6,7 @@ findPathInGraph: graph from: pos1 to: pos2
 	n2 := self posToSymbol: pos2.
 	
 	res := graph  runFrom: n1 to: n2;backtrack.
-	Transcript show: 'findPathInGraph from ',pos1 asString,' to ',pos2 asString,' result: ',res asString;cr.
+	"Transcript show: 'findPathInGraph from ',pos1 asString,' to ',pos2 asString,' result: ',res asString;cr."
 	
 	
 	^ res

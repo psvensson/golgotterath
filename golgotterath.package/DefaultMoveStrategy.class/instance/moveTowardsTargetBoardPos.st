@@ -7,7 +7,7 @@ moveTowardsTargetBoardPos
 		ifTrue: [ ^ self ].
 	pos := path last.
 	pos isNotNil
-		ifTrue: [ 			
-			dir := entity getDirectionFromPosition: pos.
-			Transcript show: 'move towardstargetpos moving ',entity name,' ',dir;cr.
-			gameboard moveEntity: entity dir: dir ]
+		ifFalse: [ ^ self ].
+	dir := entity getDirectionFromPosition: pos.
+	"Transcript show: 'move towardstargetpos moving ',entity name,' ',dir;cr."
+	gameboard moveEntity: entity dir: dir
