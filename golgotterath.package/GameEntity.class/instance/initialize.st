@@ -14,7 +14,7 @@ initialize
 	exp := 0.
 	player := false.
 	lightradius := 3.
-	stepCalls := 0.
+	stepCalls := 1.
 	animatedSprite := Human new.
 	strategies := SortedCollection sortBlock: [ :a :b | a priority < b priority  ].
 	

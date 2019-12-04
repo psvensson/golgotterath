@@ -11,4 +11,4 @@ step
 				ifTrue: [ 
 					stepCalls := 0.	
 					^ self ] ].
-	stepCalls := 0.			
+	stepCalls := 1.			
