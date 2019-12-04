@@ -1,3 +1,0 @@
-initialization
-tileadjusty
-	^ 48. 

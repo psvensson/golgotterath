@@ -1,1 +1,0 @@
-This is the Elemental monster subclass of AnimatedSprite

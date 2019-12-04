@@ -1,3 +1,0 @@
-accessing
-mapRadius
-	^ 8

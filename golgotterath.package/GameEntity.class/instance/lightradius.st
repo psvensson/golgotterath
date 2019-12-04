@@ -1,3 +1,0 @@
-accessing
-lightradius
-	^ lightradius 

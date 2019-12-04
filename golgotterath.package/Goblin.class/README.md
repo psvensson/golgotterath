@@ -1,1 +1,0 @@
-This is the Golbin monster subclass of AnimatedSprite

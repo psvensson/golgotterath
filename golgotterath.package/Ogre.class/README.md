@@ -1,1 +1,0 @@
-This is the Ogre monster subclass of AnimatedSprite

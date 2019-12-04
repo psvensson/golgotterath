@@ -1,3 +1,0 @@
-accessing
-targetEntity
-	^ targetEntity

@@ -1,3 +1,0 @@
-accessing
-handleKeyStroke: anEvent
-	^ true

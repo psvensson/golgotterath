@@ -1,3 +1,0 @@
-initialization
-tileResize
-	^ 16

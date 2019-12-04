@@ -1,3 +1,0 @@
-scripting
-direction	
-	^ direction

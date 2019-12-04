@@ -1,1 +1,0 @@
-This class holds the basic dungeon tiles/sprites, which are not animated

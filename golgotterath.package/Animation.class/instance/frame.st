@@ -1,3 +1,0 @@
-accessing enum
-frame
-	^ frame 

@@ -1,1 +1,0 @@
-I am the top text bar displaying game and player status 

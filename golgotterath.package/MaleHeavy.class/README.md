@@ -1,1 +1,0 @@
-This is a palyer/enemy heavy subclass of AnimatedSprite
