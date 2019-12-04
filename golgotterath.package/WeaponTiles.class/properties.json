@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "Sprite",
-	"category" : "golgotterath",
+	"category" : "golgotterath-Tile",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

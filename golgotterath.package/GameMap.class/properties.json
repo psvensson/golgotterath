@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "GlamorousAuthor 11/13/2019 11:24",
 	"super" : "Object",
-	"category" : "golgotterath",
+	"category" : "golgotterath-Base",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
