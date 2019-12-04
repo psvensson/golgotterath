@@ -6,7 +6,7 @@ baseline: spec
 		do: [
 			spec 
 				package: 'Golgotterath-Core';
-				package: 'Golgotterath-Core-Tests' with: [ spec requires: #('golgotterath') ].
+				package: 'Golgotterath-Core-Tests' with: [ spec requires: #('Golgotterath-Core') ].
 			spec
     			baseline: 'MooseAlgos'
     			with: [ spec repository: 'github://moosetechnology/MooseAlgos:master/src' ].	 
