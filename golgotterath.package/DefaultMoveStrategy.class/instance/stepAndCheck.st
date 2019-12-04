@@ -6,8 +6,8 @@ If no entities found, and not going anywhere -select random visible position to 
 If already going somwhere, continue to go there"
 	| finished |
 	finished := false.
-	Transcript show: 'stepAndCheck';cr.
-	targetBoardPos  
-		ifNil: [ targetBoardPos := self chooseTargetBoardPos ]
-		ifNotNil: [ self moveTowardsTargetBoardPos ].
+	"Transcript show: 'stepAndCheck';cr."
+	 
+	targetBoardPos := self chooseTargetBoardPos.
+	self moveTowardsTargetBoardPos .
 	^ finished 

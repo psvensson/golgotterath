@@ -1,4 +1,4 @@
-accessing
+stepping
 stepMap
 "Step each entity and ongoing event"
 	Transcript show: 'stepMap';cr.

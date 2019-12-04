@@ -1,7 +1,7 @@
 initialization
 createDijkstraGraphAt: origo radius: radius
 	| nodes edges index graph |
-	Transcript show:'createDijkstraGraph';cr.
+	"Transcript show:'createDijkstraGraph';cr."
 	graph := MalDijkstra new.
 	nodes := OrderedCollection new .
 	edges := OrderedCollection new.
@@ -17,7 +17,7 @@ createDijkstraGraphAt: origo radius: radius
 			[ :x | |tile|
 				tile := self mapAt: x@y.
 				(self isWalkable: tile) ifTrue: [ 
-					Transcript show: 'adding edge ',x asString,',',y asString;cr.
+					"Transcript show: 'adding edge ',x asString,',',y asString;cr."
 					edges addAll: (self connectToSurroundingNodes: tile) ]  ] ].
 	graph nodes: nodes asArray .
 	graph edges: (edges asArray) from: #first to: #second.	
