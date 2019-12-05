@@ -1,4 +1,4 @@
-accesing
+accessing
 getSpriteImagesColumn: c
 	| column |
 	column := OrderedCollection new.

@@ -1,4 +1,4 @@
-accesing
+accessing
 calculatePositionFromGameboard: gameboard
 	| adjustCentre gw boardOffset wc dx dy |
 	gw := gameboard width / 2.

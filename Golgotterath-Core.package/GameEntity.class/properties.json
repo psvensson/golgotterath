@@ -11,14 +11,14 @@
 		"hp",
 		"ac",
 		"speed",
-		"boardpos",
 		"level",
 		"exp",
 		"strategies",
 		"gamemap",
 		"lightradius",
 		"stepCalls",
-		"player"
+		"player",
+		"boardPosition"
 	],
 	"name" : "GameEntity",
 	"type" : "normal"

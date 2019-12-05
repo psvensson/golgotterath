@@ -7,7 +7,6 @@ getWorldAnimationStep
 	step := ((self tileSize) / 4) * (worldAnimationFrame).
 	dx := (worldTargetCoords x) - (worldCoords x) .
 	dy := (worldTargetCoords y) - (worldCoords y) .
-	"Transcript show: 'worldTargetCoords:',worldTargetCoords  asString,' worldCoords:',worldCoords  asString,' dx:',dx asString ,' dy: ',dy asString,' step:',step asString ;cr."
 	dx > 0 ifTrue: [ x := 1 ].
 	dx < 0 ifTrue: [ x := -1 ].
 	dy > 0 ifTrue: [ y := 1 ].

@@ -1,3 +1,3 @@
 accessing
 boardPosition
-	^ boardpos 
+	^ boardPosition 

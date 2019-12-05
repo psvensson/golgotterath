@@ -9,5 +9,6 @@ chooseRandomTarget: view
 	others ifNotEmpty: [ 
 		index := others size atRandom .
 		target := others at: index.
-		Transcript show: entity name,' choose target: ',target name,' pos ',target boardPosition asString;cr.	 ].
+		Logger log: entity name;log:' choose target: ';log:target name;log:' pos ';
+		log: target boardPosition; cr.	 ].
 	^ target 

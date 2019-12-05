@@ -7,7 +7,6 @@ createSpecifiedAnimation: animName anims: anims
 	anims do: [ :frame | 
 		| dir |
 		dir := 1.
-		"Transcript show: 'createSpecificAnimation frame ',frame asString;cr."
 		(self getSpriteImagesColumn: frame)
 			do: [ :img | 
 				animation addFrame: index direction: dir image: img.

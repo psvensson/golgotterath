@@ -1,4 +1,4 @@
-accessing
+initialization - private
 initializeViewport
 	viewPort := Dictionary new.
  	viewPort at: #top put: -3.

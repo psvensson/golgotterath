@@ -1,4 +1,4 @@
-accesing
+testing
 isMovingTowards: anotherSprite
 	| isMoving |
 	isMoving := false.
@@ -6,7 +6,5 @@ isMovingTowards: anotherSprite
 			| foo |
 			foo := (anotherSprite boardPosition y) + 1.
 			isMoving :=( self target y = foo) .
-		Transcript show: 'isMovingTowards for AnimatedSprite target=',
-		target asString,',',' sprite board=',(anotherSprite boardPosition asString),',',(anotherSprite boardPosition y asString),' isMoving=',isMoving asString;cr.
 		].
 	^ isMoving

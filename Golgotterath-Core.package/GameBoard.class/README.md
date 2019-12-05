@@ -11,9 +11,8 @@ Metacello new
 
 How to open a default GameBoard, in a playground do;
 
-| board |
-board := GameBoard new.
-board openInWorld.
+GameBoard open
+
 
 ------
 

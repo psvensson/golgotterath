@@ -9,5 +9,4 @@ moveTowardsTargetBoardPos
 	pos isNotNil
 		ifFalse: [ ^ self ].
 	dir := entity getDirectionFromPosition: pos.
-	"Transcript show: 'move towardstargetpos moving ',entity name,' ',dir;cr."
 	gameboard moveEntity: entity dir: dir

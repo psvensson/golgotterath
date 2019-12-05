@@ -1,3 +1,3 @@
-accesing
+accessing
 image
 	^ image

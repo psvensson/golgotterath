@@ -1,4 +1,4 @@
 accessing
 boardPosition: pos
-	boardpos := pos.
+	boardPosition := pos.
 	animatedSprite boardPosition: pos.

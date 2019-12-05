@@ -13,7 +13,6 @@ connectToSurroundingNodes: tile
 					(tile boardPosition x) ~= x) and: (tile boardPosition y) ~= y))
 					ifTrue: [ 	
 						edge := Array with:	(self posToSymbol: (tile boardPosition) )
-												with: (self posToSymbol: (desttile boardPosition) ) .		
-					"Transcript show: 'adding edge ',edge asString;cr."
+												with: (self posToSymbol: (desttile boardPosition) ) .
 					edges add: edge ]]].
 	^ edges	 asArray 					
