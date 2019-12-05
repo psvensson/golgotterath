@@ -4,12 +4,11 @@ isTheTargetOf: anotherSprite
 	isMoving := false.
 	tx := anotherSprite target x.
 	ty := anotherSprite target y.
-	(((anotherSprite isKindOf: AnimatedSprite) and: 
-		(anotherSprite  isMoving)) and: 
-		(ty isNotNil) ) ifTrue: [	
+	anotherSprite isAnimated and: [ 
+		anotherSprite isMoving and: [ ty ifNotNil: [	
 			| foo bar |
 			foo := (self boardPosition y) + 1.
 			bar := (self boardPosition x) + 1.
 			isMoving :=( ty = foo) and: (tx = bar).
-		].
+		]]].
 	^ isMoving

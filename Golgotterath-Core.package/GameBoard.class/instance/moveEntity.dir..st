@@ -8,7 +8,7 @@ moveEntity: entity dir: dir
 		entity = player ifTrue: [ 
 			gameMap stepMap.
 			worldCoords := target.
-			Logger log: 'moveEntity setting worldcoords to ',worldCoords;cr.
+			Logger log: 'moveEntity setting worldcoords to '; log:worldCoords;cr.
 		]
 	].	
 	self playAnimation: 'walk' for: entity
