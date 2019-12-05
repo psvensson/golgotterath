@@ -2,7 +2,7 @@ accessing
 mapAt: pos
 	| tile nilblock |
 	nilblock := [ 
-		tile := (Sprite new) image: (tiles tile: 'wall_grey'); name: 'wall_grey'.
+		tile := self getTile: 'wall_grey'.
 		tile boardPosition: pos.
  	].
 	tile := map at:pos ifAbsent: nilblock.	
