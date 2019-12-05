@@ -10,4 +10,3 @@ testMoveEntityOnGameBoard
 		self assert: player1 boardpos equals: 0@1
 	].
 	
-	
