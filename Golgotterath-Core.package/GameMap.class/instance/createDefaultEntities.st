@@ -1,4 +1,4 @@
-accessing
+private-initialization
 createDefaultEntities
 	| player1 player2 player3 |
 	

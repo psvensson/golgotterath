@@ -15,6 +15,8 @@ initialize
 	player := false.
 	lightradius := 3.
 	stepCalls := 1.
+	inventory := OrderedCollection new.
+	inventorySize := 10.
 	animatedSprite := Human new.
 	strategies := SortedCollection sortBlock: [ :a :b | a priority < b priority  ].
 	

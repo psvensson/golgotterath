@@ -18,7 +18,9 @@
 		"lightradius",
 		"stepCalls",
 		"player",
-		"boardPosition"
+		"boardPosition",
+		"inventory",
+		"inventorySize"
 	],
 	"name" : "GameEntity",
 	"type" : "normal"

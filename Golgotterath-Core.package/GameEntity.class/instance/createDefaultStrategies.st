@@ -1,4 +1,4 @@
-accessing
+initialization
 createDefaultStrategies
 	| strategy |
 	strategy := DefaultMoveStrategy new.

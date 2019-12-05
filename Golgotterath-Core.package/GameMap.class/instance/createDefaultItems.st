@@ -1,4 +1,4 @@
-accessing
+private-initialization
 createDefaultItems
 	| robe1 robe2 robe3 sword1 |
 	robe1 := GameItem new: 'orange_robe'.

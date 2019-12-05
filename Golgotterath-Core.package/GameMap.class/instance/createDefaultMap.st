@@ -1,4 +1,4 @@
-accessing
+private-initialization
 createDefaultMap
 	| start stop |
  	stop := self mapRadius.	
