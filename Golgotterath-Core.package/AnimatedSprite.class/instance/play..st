@@ -8,4 +8,4 @@ play: animName
 		"Transcript show: 'removing old animation'; cr."
 		self removeMorph: oldAnimation ].
 	oldAnimation := animation.
-	self addMorph: animation.
+	self addMorph: animation

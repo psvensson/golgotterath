@@ -22,4 +22,4 @@ keyStroke: anEvent
 			keyValue = 122 ifTrue: [ self playAnimation: 'hit' for: self player. ].
 			keyValue = 120 ifTrue: [ self playAnimation: 'shoot' for: self player. ].
 			keyValue = 99 ifTrue: [ self playAnimation: 'hurt' for: self player. ].
-			keyValue = 118 ifTrue: [ self playAnimation: 'die' for: self player. ].
+			keyValue = 118 ifTrue: [ self playAnimation: 'die' for: self player. ]

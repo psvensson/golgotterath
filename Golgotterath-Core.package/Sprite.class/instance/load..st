@@ -1,3 +1,3 @@
 actions
 load: fileName
-	self load: fileName spriteWidth: 256.
+	self load: fileName spriteWidth: 256

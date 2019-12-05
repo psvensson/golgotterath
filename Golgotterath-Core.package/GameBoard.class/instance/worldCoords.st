@@ -1,3 +1,3 @@
 accessing
 worldCoords
-	^ worldCoords.
+	^ worldCoords

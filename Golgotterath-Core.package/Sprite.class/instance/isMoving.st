@@ -1,3 +1,3 @@
 accessing
 isMoving
-	^ self target ~= self boardpos.
+	^ self target ~= self boardPosition

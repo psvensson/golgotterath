@@ -14,4 +14,4 @@ createSpecifiedAnimation: animName anims: anims
 				dir := dir + 1 ].
 		index := index +1.	
 	 ].
-	^ animation .	
+	^ animation

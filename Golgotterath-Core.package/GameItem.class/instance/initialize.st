@@ -1,5 +1,4 @@
-accessing
+initialization
 initialize  
 	kind := 'default'.
-	attributes := Dictionary new.
-	^ self
+	attributes := Dictionary new

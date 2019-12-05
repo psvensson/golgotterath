@@ -1,12 +1,12 @@
 initialization
 initialize 
-	|  |
-	abilities := Dictionary new.
-	abilities at: 'str' put: 10.
-	abilities at: 'con' put: 10.
-	abilities at: 'dex' put: 10.
-	abilities at: 'int' put: 10.
-	abilities at: 'wis' put: 10.
+	abilities := Dictionary new
+		at: 'str' put: 10;
+		at: 'con' put: 10;
+		at: 'dex' put: 10;
+		at: 'int' put: 10;
+		at: 'wis' put: 10;
+		yourself .
 	hp := 10.
 	ac := 10.
 	speed := 1.

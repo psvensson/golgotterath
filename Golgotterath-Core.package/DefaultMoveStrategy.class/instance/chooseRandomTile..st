@@ -6,5 +6,5 @@ chooseRandomTile: view
 	tiles := view at: #tiles.
 	index := tiles size atRandom .
 	tile := tiles at: index.
-	Transcript show: entity name,' chose random tile: ',tile boardpos asString;cr.
+	Transcript show: entity name,' chose random tile: ',tile boardPosition asString;cr.
 	^ tile

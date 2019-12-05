@@ -4,7 +4,6 @@ load: fileName spriteWidth: w
 
 	| sprites index offset |
 	offset := 0.
-	spriteWidth := w.
 	image := fileName asFileReference
 		binaryReadStreamDo: [ :stream | PNGReadWriter formFromStream: stream ].
 	Transcript

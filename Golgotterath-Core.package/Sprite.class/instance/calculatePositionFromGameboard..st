@@ -5,8 +5,8 @@ calculatePositionFromGameboard: gameboard
  	adjustCentre := self toISO: gw@0.
  	
 	wc := gameboard worldCoords .
-	dx := (wc x - boardpos x) * 64. 
-	dy := (wc y - boardpos y) * 64.
+	dx := (wc x - boardPosition x) * 64. 
+	dy := (wc y - boardPosition y) * 64.
 	
 	boardOffset := gameboard boardDrawOffset - (self toISO:(dx@dy)).
 	^ boardOffset + adjustCentre 

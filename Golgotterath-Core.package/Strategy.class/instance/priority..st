@@ -1,3 +1,3 @@
 accessing
-priority: p
-	priority := p
+priority: aNumber
+	priority := aNumber

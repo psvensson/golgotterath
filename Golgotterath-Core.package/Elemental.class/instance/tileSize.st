@@ -1,4 +1,4 @@
 access
 tileSize
-	^ 64.
+	^ 64
 	

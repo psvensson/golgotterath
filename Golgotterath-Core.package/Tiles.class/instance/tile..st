@@ -1,3 +1,3 @@
 initialization
-tile: name
-	^ tiles at: name. 
+tile: tilename
+	^ tiles at: tilename

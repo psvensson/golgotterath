@@ -2,7 +2,7 @@ accessing
 visibleMap
 	| tiles entities items maps top bottom left right |
 	tiles := OrderedCollection new.
-	entities := SortedCollection sortBlock: [:a :b | a boardpos > b boardpos].
+	entities := SortedCollection sortBlock: [:a :b | a boardPosition > b boardPosition].
 	items := OrderedCollection new.
 	top := boardpos y - lightradius .
 	bottom := boardpos y + lightradius .

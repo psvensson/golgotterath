@@ -1,3 +1,3 @@
 initialization
 tileadjustx
-	^ 32. 
+	^ 32

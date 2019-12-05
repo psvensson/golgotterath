@@ -1,3 +1,3 @@
 accessing
 tileSize: t
-	tileSize := t.
+	tileSize := t

@@ -7,4 +7,4 @@ directionString: dir
 	dir = 'downleft' ifTrue: [ self direction: 1].
 	dir = 'downright' ifTrue: [ self direction: 7].
 	dir = 'left' ifTrue: [ self direction: 2].
-	dir = 'right' ifTrue: [ self direction: 6].	
+	dir = 'right' ifTrue: [ self direction: 6]	

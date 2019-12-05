@@ -14,4 +14,4 @@ createAnimation: animName start: start end: end
 		index := index +1.		
 	].
 		
-	^ animation .	
+	^ animation

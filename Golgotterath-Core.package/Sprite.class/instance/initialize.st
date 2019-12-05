@@ -1,9 +1,7 @@
-accesing
+initialization
 initialize
 	super initialize .
-	tileResize := 64.
 	tileSize := 128.
-	boardpos := 0@0.
-	tileadjustx := 0.
-	tileadjusty := 0.
+	boardPosition := 0@0.
+	tileAdjustment := 0@0.
 	

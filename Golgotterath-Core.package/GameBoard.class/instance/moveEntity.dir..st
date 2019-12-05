@@ -12,6 +12,6 @@ moveEntity: entity dir: dir
 			Transcript show: 'moveEntity setting worldcoords to ',worldCoords asString;cr.
 		]
 	].	
-	self playAnimation: 'walk' for: entity.
+	self playAnimation: 'walk' for: entity
 	
 	

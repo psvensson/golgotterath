@@ -1,3 +1,3 @@
 accessing
 handlesMouseOver: anEvent 
-	^ true.
+	^ true

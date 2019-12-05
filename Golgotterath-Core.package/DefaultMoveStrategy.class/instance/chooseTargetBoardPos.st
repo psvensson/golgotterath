@@ -6,9 +6,9 @@ chooseTargetBoardPos
 	view := entity visibleMap.
 	entities := view at: #entities.	
 	entities isEmpty
-		ifTrue: [	pos :=(self chooseRandomTile: view) boardpos ]
+		ifTrue: [	pos :=(self chooseRandomTile: view) boardPosition ]
 		ifFalse: [ 	target  := self chooseRandomTarget: view.	
-							target ifNotNil: [ pos := target boardpos ]
-							 ifNil: [ pos :=(self chooseRandomTile: view) boardpos  ]		
+							target ifNotNil: [ pos := target boardPosition ]
+							 ifNil: [ pos :=(self chooseRandomTile: view) boardPosition  ]		
 		].	
 	^ pos

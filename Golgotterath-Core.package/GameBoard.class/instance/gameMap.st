@@ -1,3 +1,3 @@
 accessing
 gameMap
-	^ gameMap.
+	^ gameMap

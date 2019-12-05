@@ -6,7 +6,7 @@ testMoveEntityOnGameBoard
  	player1 := GameEntity new: 'malelight'.
 	gameMap addEntity: player1 at: 0@0.	
 	gameBoard moveEntity: player1 dir: 	'up' callback: [
-		:entity | Transcript show: 'test callback entity position is ',entity boardpos asString;cr.
-		self assert: player1 boardpos equals: 0@1
+		:entity | Transcript show: 'test callback entity position is ',entity boardPosition asString;cr.
+		self assert: player1 boardPosition equals: 0@1
 	].
 	

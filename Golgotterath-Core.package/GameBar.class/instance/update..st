@@ -7,4 +7,4 @@ update: gameboard
 	text font: (LogicalFont familyName: 'Source Sans Pro' pointSize: 20).
 	text contents: 
 		' Level: ',player level asString,'  Exp: ',player exp asString,
-		'  HP: ',player hp asString,'  AC: ',player ac asString.
+		'  HP: ',player hp asString,'  AC: ',player ac asString

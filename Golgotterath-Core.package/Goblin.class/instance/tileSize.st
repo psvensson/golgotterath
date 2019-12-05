@@ -1,3 +1,3 @@
 accessing
 tileSize
-	^ 64.
+	^ 64

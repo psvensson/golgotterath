@@ -1,3 +1,3 @@
 initialization
 tileadjusty
-	^ 32. 
+	^ 32

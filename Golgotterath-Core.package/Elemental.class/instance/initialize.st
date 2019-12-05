@@ -11,5 +11,5 @@ initialize
 	self addAnimation: (self createSpecifiedAnimation: 'hurt' anims: #(7 1)).
 	self addAnimation: (self createAnimation: 'die' start: 8 end: 8).
 	self name: 'Elemental'.
-	^ self.
+	^ self
 	
