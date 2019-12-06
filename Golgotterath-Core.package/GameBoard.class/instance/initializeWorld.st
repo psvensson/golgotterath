@@ -1,4 +1,4 @@
-private - initialization
+initialization - private
 initializeWorld
 	worldCoords := 0 @ 0.
 	worldTargetCoords := 0 @ 0.

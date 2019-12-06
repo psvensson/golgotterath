@@ -1,3 +1,3 @@
-accessing
+event handler
 handlesMouseOver: anEvent 
 	^ true

@@ -6,4 +6,5 @@ pickup
 	item ifNotNil: [ 
 		inventory size = inventorySize ifFalse: [ 
 			gamemap removeItemAt: boardPosition.
-			inventory add: item ] ]
+			inventory add: item.
+			gamemap gameboard changed ] ]

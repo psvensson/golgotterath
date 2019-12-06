@@ -6,4 +6,5 @@ dropInventoryItem: item
 		ifTrue: [ gamemap
 				itemAt: boardPosition
 				ifAbsent: [ inventory remove: item.
-					gamemap addItem: item at: boardPosition ] ]
+					gamemap addItem: item at: boardPosition.
+					gamemap gameboard changed ] ]
