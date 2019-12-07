@@ -1,4 +1,4 @@
-initialization
+initialization - private
 initializeGameMap
 	gameMap := GameMap new.
 	gameMap

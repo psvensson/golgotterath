@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "ComposablePresenter",
+	"category" : "Golgotterath-Core-View",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"list"
+	],
+	"name" : "InventoryList",
+	"type" : "normal"
+}

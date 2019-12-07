@@ -15,7 +15,8 @@
 		"worldTargetCoords",
 		"boardDrawOffset",
 		"moveCallback",
-		"topbar"
+		"topbar",
+		"inventorylist"
 	],
 	"name" : "GameBoard",
 	"type" : "normal"

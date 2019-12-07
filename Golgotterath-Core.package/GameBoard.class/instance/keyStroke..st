@@ -2,7 +2,7 @@ event handler
 keyStroke: anEvent
 	| keyValue | 
 		keyValue := anEvent keyValue. 
-		Transcript show: 'key ',keyValue asString;cr .
+		Logger log: 'key '; log:keyValue;cr .
     		((keyValue = 30) or: (keyValue = 56))    "up arrow" 
        		ifTrue: [self moveEntity: (self player) dir: 'up']. 
 			keyValue = 55    "up arrow" 
@@ -23,4 +23,5 @@ keyStroke: anEvent
 			keyValue = 120 ifTrue: [ self playAnimation: 'shoot' for: self player. ].
 			keyValue = 99 ifTrue: [ self playAnimation: 'hurt' for: self player. ].
 			keyValue = 118 ifTrue: [ self playAnimation: 'die' for: self player. ].
-			keyValue = 103 ifTrue: [ self player pickup . ]
+			keyValue = 103 ifTrue: [ self player pickup . ].
+			keyValue = 105 ifTrue: [ self showInventoryFor: player . ]

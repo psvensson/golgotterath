@@ -6,6 +6,7 @@ initialize
 		initializeViewport;
 		initializePlayer;
 		initializeWorld;
+		initializeInventoryList;
 		initializeTopbar.
 		
 	self bounds: (0 @ 0 corner: 1050 @ 600).			
