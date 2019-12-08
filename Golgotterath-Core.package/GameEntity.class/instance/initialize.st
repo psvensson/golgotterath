@@ -12,6 +12,8 @@ initialize
 	speed := 1.
 	level := 1.
 	exp := 0.
+	weapon := nil.
+	armour := nil.
 	player := false.
 	lightradius := 3.
 	stepCalls := 1.

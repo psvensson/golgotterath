@@ -20,7 +20,9 @@
 		"player",
 		"boardPosition",
 		"inventory",
-		"inventorySize"
+		"inventorySize",
+		"weapon",
+		"armour"
 	],
 	"name" : "GameEntity",
 	"type" : "normal"
