@@ -1,5 +1,5 @@
 showing
-showInventoryFor: entity
+showInventoryFor: entity onSelect: aBlock
 | list |
 	Logger log: 'Showing inventory for player';cr.
 	"inventorylist := InventoryList new openWithSpec."
@@ -10,7 +10,9 @@ showInventoryFor: entity
 	icons: [ :item | item sprite image];
 	title: 'Inventory';
 	whenSelectedItemChanged: [ :changedItem | 
+		inventorylist close.
 		Logger log: 'showInvetoryFor item selected: '; log: changedItem ;cr.
+		aBlock value:changedItem .
 		].
 	inventorylist := list openWithSpec
 	
