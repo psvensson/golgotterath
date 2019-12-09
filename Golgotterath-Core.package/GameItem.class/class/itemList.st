@@ -7,7 +7,25 @@ itemList
 	list at: 'blue_robe' put: (Dictionary newFrom:
 		{ #name -> 'blue_robe'.#kind->'armour'.#longname -> 'Blue Robe'.#dac -> -2 }). 
 	list at: 'yellow_robe' put: (Dictionary newFrom:
-		{ #name -> 'yellow_robe'.#kind->'armour'.#longname -> 'Yellow Robe'.#dac -> -3 }). 		
+		{ #name -> 'yellow_robe'.#kind->'armour'.#longname -> 'Yellow Robe'.#dac -> -3 }).
+	list at: 'leather_armour' put: (Dictionary newFrom:
+		{ #name -> 'leather_armour'.#kind->'armour'.#longname -> 'Leather Armour'.#dac -> -3 }).	
+	list at: 'studded_leather_armour' put: (Dictionary newFrom:
+		{ #name -> 'studded_leather_armour'.#kind->'armour'.#longname -> 'Studded Leather Armour'.#dac -> -4 }).		 		
 	list at: 'short_sword' put: (Dictionary newFrom:
-		{ #name -> 'short_sword'.#kind->'weapon'.#longname -> 'Short Sword'.#dam -> '1d6' }).
+		{ #name -> 'short_sword'.#kind->'weapon'.#longname -> 'Short Sword'.#dam -> '1d6'. #subtype->'edged' }).
+	list at: 'dagger' put: (Dictionary newFrom:
+		{ #name -> 'dagger'.#kind->'weapon'.#longname -> 'Dagger'.#dam -> '1d4'. #subtype->'edged' }).	
+	list at: 'rapier' put: (Dictionary newFrom:
+		{ #name -> 'rapier'.#kind->'weapon'.#longname -> 'Rapier'.#dam -> '1d6'. #subtype->'edged' }).		
+	list at: 'long_sword' put: (Dictionary newFrom:
+		{ #name -> 'long_sword'.#kind->'weapon'.#longname -> 'Long Sword'.#dam -> '1d8'. #subtype->'edged' }).		
+	list at: 'short_sword' put: (Dictionary newFrom:
+		{ #name -> 'bastard_sword'.#kind->'weapon'.#longname -> 'bastard Sword'.#dam -> '2d4'. #subtype->'edged' }).	
+	list at: 'mace' put: (Dictionary newFrom:
+		{ #name -> 'mace'.#kind->'weapon'.#longname -> 'Mace'.#dam -> '1d4'. #subtype->'blunt'}).		
+	list at: 'axe' put: (Dictionary newFrom:
+		{ #name -> 'axe'.#kind->'weapon'.#longname -> 'Axe'.#dam -> '1d5'. #subtype->'edged' }).	
+	list at: 'flail' put: (Dictionary newFrom:
+		{ #name -> 'flail'.#kind->'weapon'.#longname -> 'Flail'.#dam -> '2d4'. #subtype->'blunt'}).							
 	^ list

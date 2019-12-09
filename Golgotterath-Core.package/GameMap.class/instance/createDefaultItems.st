@@ -1,12 +1,11 @@
 private-initialization
 createDefaultItems
-	| robe1 robe2 robe3 sword1 |
-	robe1 := GameItem new: 'orange_robe'.
-	self addItem: robe1 at: (0@3).
-	robe2 := GameItem new: 'blue_robe'.
-	self addItem: robe2 at: (1@3).
-	robe3 := GameItem new: 'yellow_robe'.		
-	self addItem: robe3 at: (2@3).
-	sword1 := GameItem new: 'short_sword'.		
-	self addItem: sword1 at: (1@0).
+	self addItem: (GameItem new: 'orange_robe') at: (0@3).
+	self addItem: (GameItem new: 'blue_robe') at: (1@3).
+	self addItem: (GameItem new: 'yellow_robe') at: (2@3).
+	self addItem: (GameItem new: 'short_sword') at: (1@0).
+	self addItem: (GameItem new: 'long_sword') at: (-3)@3.
+	self addItem: (GameItem new: 'mace') at: (-3)@(-4).
+	self addItem: (GameItem new: 'leather_armour') at: (-2)@5.
+	self addItem: (GameItem new: 'studded_leather_armour') at: 0@(-3).
 	^ self.

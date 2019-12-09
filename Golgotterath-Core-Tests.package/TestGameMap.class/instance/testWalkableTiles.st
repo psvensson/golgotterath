@@ -6,6 +6,6 @@ testWalkableTiles
 	floor := map getTile: 'floor_grey'.
 	bedrock := map getTile: 'wall_grey'.
 	"Transcript show: 'path size is ',path size asString;cr."
-	self assert: ((map isWalkable: wall) = false) .
-	self assert: ((map isWalkable: bedrock) = false) .
-	self assert: ((map isWalkable: floor) = true ).
+	self assert: ((map isWalkable: wall) equals: false) .
+	self assert: ((map isWalkable: bedrock) equals: false) .
+	self assert: ((map isWalkable: floor) equals: true ).

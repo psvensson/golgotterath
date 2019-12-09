@@ -4,10 +4,10 @@ visibleMap
 	tiles := OrderedCollection new.
 	entities := SortedCollection sortBlock: [:a :b | a boardPosition > b boardPosition].
 	items := OrderedCollection new.
-	top := boardPosition y - lightradius .
-	bottom := boardPosition y + lightradius .
-	left := boardPosition x - lightradius .
-	right := boardPosition x + lightradius .
+	top := (self boardPosition) y - lightradius .
+	bottom := (self boardPosition y) + lightradius .
+	left := (self boardPosition x) - lightradius .
+	right := (self boardPosition x) + lightradius .
 	maps := Dictionary new.
 	maps at: #items put: items; at: #tiles put: tiles; at: #entities put: entities .
 	top to: bottom do: 

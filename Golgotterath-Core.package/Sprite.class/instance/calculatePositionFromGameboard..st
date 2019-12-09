@@ -1,6 +1,6 @@
 accessing
 calculatePositionFromGameboard: gameboard
-	| adjustCentre gw boardOffset wc dx dy |
+	| adjustCentre gw boardOffset wc dx dy rv |
 	gw := gameboard width / 2.
  	adjustCentre := self toISO: gw@0.
  	
@@ -9,4 +9,6 @@ calculatePositionFromGameboard: gameboard
 	dy := (wc y - boardPosition y) * 64.
 	
 	boardOffset := gameboard boardDrawOffset - (self toISO:(dx@dy)).
-	^ boardOffset + adjustCentre 
+	rv := boardOffset + adjustCentre.
+	rv := ((rv x) asInteger)@((rv y) asInteger).
+	^ rv 

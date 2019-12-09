@@ -7,5 +7,7 @@ If already going somwhere, continue to go there"
 	| finished |
 	finished := false.	 
 	targetBoardPos := self chooseTargetBoardPos.
-	self moveTowardsTargetBoardPos .
+	targetBoardPos ifNotNil: [ 
+		self moveTowardsTargetBoardPos . 
+		finished := true ].	
 	^ finished 

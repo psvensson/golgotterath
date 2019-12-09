@@ -1,3 +1,3 @@
 accessing
 boardPosition
-	^ boardPosition 
+	^ animatedSprite boardPosition 

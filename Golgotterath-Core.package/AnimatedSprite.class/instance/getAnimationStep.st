@@ -1,10 +1,11 @@
 scripting
 getAnimationStep
-	| step dx dy x y |
+	| step dx dy x y res |
 	x := 0.
 	y := 0.
 	step := self tileSize / 4 * self getOldAnimation frame.
-	dx := self target x - self boardPosition x.
+	self target ifNotNil: [ 
+		 dx := self target x - self boardPosition x.
 	dy := self target y - self boardPosition y.
 	dx > 0
 		ifTrue: [ x := 1 ].
@@ -13,5 +14,7 @@ getAnimationStep
 	dy > 0
 		ifTrue: [ y := 1 ].
 	dy < 0
-		ifTrue: [ y := -1 ].
-	^ self toISO: (step * x) @ (step * y)
+		ifTrue: [ y := -1 ]].	
+	res := self toISO: (step * x) @ (step * y).	
+	res := ((res x) asInteger)@((res y) asInteger).
+	^ res

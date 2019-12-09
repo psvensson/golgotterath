@@ -5,9 +5,11 @@ step
 		(entity animatedSprite getOldAnimation) stepAnimation .	
 	].
 	self stepWorld.
-	animationsToRemove do: [ :entityToRemove | 
-		gameMap removeEntityAt: (entityToRemove boardPosition).
-		gameMap addEntity: entityToRemove at: entityToRemove animatedSprite target.
+	animationsToRemove do: [ :entityToRemove | | target |
+		target := entityToRemove animatedSprite target.
+		target ifNotNil: [ 
+			gameMap removeEntityAt: (entityToRemove boardPosition).
+			gameMap addEntity: entityToRemove at: target.].		
 		runningAnimations remove: entityToRemove  ] .
 		boardDrawOffset := 0@0.
 	runningAnimations ifEmpty: [ 

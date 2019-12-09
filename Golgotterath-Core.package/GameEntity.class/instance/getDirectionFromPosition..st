@@ -2,8 +2,8 @@ accessing
 getDirectionFromPosition: pos
 	| dir dx dy |
 	"Calculate which drection to move from entity boardpos and position"
-	dx := (pos x) - (boardPosition x) .
-	dy := (pos y) - (boardPosition y) .
+	dx := (pos x) - (self boardPosition x) .
+	dy := (pos y) - (self boardPosition y) .
 	dir := 'foo'.
 	((dx = 0) and: (dy < 0)) ifTrue: [ dir := 'up' ].
 	((dx > 0 and: dy < 0)) ifTrue: [ dir := 'upright' ].

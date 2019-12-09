@@ -1,6 +1,8 @@
 calculating
 getPathToTarget
-	| gamemap graph |
+	| gamemap graph path |
 	gamemap := entity gamemap.
 	graph := gamemap createDijkstraGraphAt: entity boardPosition radius: entity lightradius.
-	^ gamemap findPathInGraph: graph from: entity boardPosition to: targetBoardPos.
+	path := gamemap findPathInGraph: graph from: entity boardPosition to: targetBoardPos.
+	"path ifEmpty: [ graph inspect ]."
+	^ path
