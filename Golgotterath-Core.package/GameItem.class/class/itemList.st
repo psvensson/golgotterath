@@ -21,7 +21,7 @@ itemList
 	list at: 'long_sword' put: (Dictionary newFrom:
 		{ #name -> 'long_sword'.#kind->'weapon'.#longname -> 'Long Sword'.#dam -> '1d8'. #subtype->'edged' }).		
 	list at: 'short_sword' put: (Dictionary newFrom:
-		{ #name -> 'bastard_sword'.#kind->'weapon'.#longname -> 'bastard Sword'.#dam -> '2d4'. #subtype->'edged' }).	
+		{ #name -> 'bastard_sword'.#kind->'weapon'.#longname -> 'Bastard Sword'.#dam -> '2d4'. #subtype->'edged' }).	
 	list at: 'mace' put: (Dictionary newFrom:
 		{ #name -> 'mace'.#kind->'weapon'.#longname -> 'Mace'.#dam -> '1d4'. #subtype->'blunt'}).		
 	list at: 'axe' put: (Dictionary newFrom:
