@@ -1,13 +1,12 @@
 tests
 testRouting
 	| map entity1 entity2 graph path | 
-	map := GameMap new.
-	map createDefaultMap .
+	map := SetupTestGameMap getGameMap .
 	entity1 := GameEntity new: 'malelight'.
 	map addEntity: entity1 at: 0@0.
 	entity2 := GameEntity new: 'skeleton'.
-	map addEntity: entity2 at: 3@1.
-	graph := map createDijkstraGraphAt: entity1 boardPosition radius: entity1 lightradius.
+	map addEntity: entity2 at: 0@(-2).
+	graph := map createDijkstraGraphAt: entity1 boardPosition radius: 2.
 	path := map findPathInGraph: graph 
 		from: (entity1 boardPosition) 
 		to: (entity2 boardPosition) .
