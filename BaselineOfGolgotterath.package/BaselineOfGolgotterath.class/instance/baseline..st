@@ -11,6 +11,6 @@ baseline: spec
     			baseline: 'MooseAlgos'
     			with: [ spec repository: 'github://moosetechnology/MooseAlgos:master/src' ].
 			spec
-    			baseline: 'PharoSound'
-    			with: [ spec repository: 'github://psvensson/PharoSound:master/' ].	 
+    			baseline: 'Sound'
+    			with: [ spec repository: 'github://psvensson/PharoSound:master' ].	 
 		].
