@@ -1,11 +1,7 @@
 private-initialization
-createDefaultEntities
-	| player1 player2 player3 |
-	
-	player1 := GameEntity new: 'malelight'.
-	self addEntity: player1 at: 0@0.
-	player2 := GameEntity new: 'skeleton'.
-	self addEntity: player2 at: 3@4.
-	player3 := GameEntity new: 'magician'.
-	self addEntity: player3 at: 3@0.
+createDefaultEntities	
+	self addEntity: (GameEntity new: 'malelight') at: 0@0.
+	self addEntity: (GameEntity new: 'skeleton') at: 3@4.
+	self addEntity: (GameEntity new: 'magician') at: 3@0.
+	self addEntity: (GameEntity new: 'zombie') at: (-4)@(-3).	
 	^ self
