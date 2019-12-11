@@ -1,10 +1,9 @@
 accessing
-attack: pos
-	gamemap entitiesAt: pos ifPresent: [ :entity |
-		(self isAdjacentTo: pos) ifTrue: [ 
-			 self resolveAttack: entity 
-			ifHit: [
-				] 
-			ifMiss: [
-				]
-			]]
+attack: entity
+	self resolveAttack: entity 
+		ifHit: [
+			Logger log:'A hit!';cr.
+			self dealDamageTo: entity] 
+		ifMiss: [
+			Logger log:'A miss!';cr.]
+	
