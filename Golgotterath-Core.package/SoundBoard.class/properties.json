@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "GlamorousAuthor 12/11/2019 08:39",
+	"super" : "Object",
+	"category" : "Golgotterath-Core-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"sounds"
+	],
+	"name" : "SoundBoard",
+	"type" : "normal"
+}

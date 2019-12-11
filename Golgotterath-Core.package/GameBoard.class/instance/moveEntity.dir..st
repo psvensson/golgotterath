@@ -15,6 +15,8 @@ moveEntity: entity dir: dir
 		Logger log: 'moveEntity ';log:entity name;log:' Could not move ';
 		log: dir;log:' target is: ';log:entity animatedSprite target;cr.
 	].	
-	self playAnimation: 'walk' for: entity
+	soundBoard play: 'walk5'.
+	self playAnimation: 'walk' for: entity.
+	
 	
 	

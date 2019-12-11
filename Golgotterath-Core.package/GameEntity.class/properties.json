@@ -21,7 +21,8 @@
 		"inventory",
 		"inventorySize",
 		"weapon",
-		"armour"
+		"armour",
+		"effects"
 	],
 	"name" : "GameEntity",
 	"type" : "normal"

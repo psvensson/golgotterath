@@ -7,6 +7,7 @@ initialize
 		initializePlayer;
 		initializeWorld;
 		initializeInventoryList;
+		initializeSoundboard;
 		initializeTopbar.
 		
 	self bounds: (0 @ 0 corner: 1050 @ 600).			

@@ -16,7 +16,8 @@
 		"boardDrawOffset",
 		"moveCallback",
 		"topbar",
-		"inventorylist"
+		"inventorylist",
+		"soundBoard"
 	],
 	"name" : "GameBoard",
 	"type" : "normal"
