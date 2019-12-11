@@ -1,4 +1,4 @@
-accessing
+action
 hurt
 	gamemap gameboard playAnimation: 'hurt' for: self.
 	player

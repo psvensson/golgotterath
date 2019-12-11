@@ -1,9 +1,12 @@
-accessing
+action
 die
-	Logger log:self;log:' has died! (slightly unimplemented)';cr.
+	| goscreen |
+	Logger log:self;log:' has died! ***************** ';cr.
 	gamemap gameboard playAnimation: 'die' for: self.
 	player
 		ifTrue: [ 
 			gamemap gameboard soundBoard play: 'hurt2'.
-			gamemap gameboard addMorph: GameOverScreen new. ]
+			goscreen := GameOverScreen new.
+			goscreen position: gamemap gameboard position.
+			gamemap gameboard addMorph: goscreen. ]
 		ifFalse: [ gamemap gameboard soundBoard play: 'monster2' ]

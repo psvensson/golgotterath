@@ -1,4 +1,4 @@
-accessing
+event handler
 step
 	| animationsToRemove |
 	animationsToRemove := 	runningAnimations select: [ :entity |
