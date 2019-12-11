@@ -9,4 +9,8 @@ loadSounds
 	sounds at: 'walk6' put: (self getAIFFSound: self getEncodedWalk6).
 	sounds at: 'swing' put: (self getAIFFSound: self getEncodedSwing).
 	sounds at: 'sword' put: (self getAIFFSound: self getEncodedSword).
+	sounds at: 'hurt1' put: (self getAIFFSound: self getEncodedHurt1).
+	sounds at: 'hurt2' put: (self getAIFFSound: self getEncodedHurt2).
+	sounds at: 'monster1' put: (self getAIFFSound: self getEncodedMonster1).
+	sounds at: 'monster2' put: (self getAIFFSound: self getEncodedMonster2).
 	

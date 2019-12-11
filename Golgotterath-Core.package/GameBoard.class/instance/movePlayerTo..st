@@ -1,4 +1,4 @@
-accessing
+action
 movePlayerTo: target
 	gameMap stepMap.
 			worldCoords := target.
