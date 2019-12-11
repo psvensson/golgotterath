@@ -1,8 +1,5 @@
 accessing
 entitiesAt: pos ifAbsent: aBlock ifPresent: anotherBlock
-	|entity |
-	entity := entities at:pos ifAbsent: [
-		"Logger log: 'gamemap entitiesAt: entity was absent!';cr."
-		aBlock].
+	entities at:pos ifAbsent: [ aBlock ].
 	"Logger log: 'gamemap entitiesAt: entity was: ';log:entity;cr."
-	entity ifNotNil: [ anotherBlock value:entity ].
+	entities at:pos ifPresent: [ :v | anotherBlock value: v ].
