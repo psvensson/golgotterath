@@ -7,13 +7,7 @@ step
 	self stepWorld.
 	animationsToRemove
 		do: [ :entityToRemove | 
-			| target |
-			target := entityToRemove animatedSprite target.
-			target
-				ifNotNil: [ gameMap removeEntityAt: entityToRemove boardPosition.
-					entityToRemove hp > 0
-						ifTrue: [ 
-							gameMap addEntity: entityToRemove at: target ] ].
+			self handlePostMoveFor: entityToRemove .
 			runningAnimations remove: entityToRemove ].
 	boardDrawOffset := 0 @ 0.
 	runningAnimations

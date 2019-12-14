@@ -10,7 +10,7 @@ initialize
 	armour := nil.
 	player := false.
 	lightradius := 3.
-	stepCalls := 1.
+	stepCalls := 0.
 	effects := OrderedCollection new.
 	inventory := OrderedCollection new.
 	inventorySize := 10.

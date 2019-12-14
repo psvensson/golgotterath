@@ -12,7 +12,8 @@
 		"items",
 		"mapRadius",
 		"gameboard",
-		"entitiesArray"
+		"entitiesArray",
+		"moveTargets"
 	],
 	"name" : "GameMap",
 	"type" : "normal"

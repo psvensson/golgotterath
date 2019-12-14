@@ -1,5 +1,5 @@
 action
-movePlayerTo: target
+movePlayerTo: target	
 	gameMap stepMap.
 	worldCoords := target.
 	Logger
