@@ -2,6 +2,7 @@ action
 drop: item
 	gamemap itemAt: (self boardPosition) ifAbsent: [ 
 		Logger log: self name;log: ' dropped ';log: item;cr.
+		gamemap gameboard soundBoard play: 'misc1'.
 		inventory remove: item.
 		gamemap addItem: item at: (self boardPosition). ] .
 	gamemap itemAt: (self boardPosition) ifPresent: [ 

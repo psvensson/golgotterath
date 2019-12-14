@@ -1,13 +1,13 @@
 inventory
-showInventoryFor: entity onSelect: aBlock
+showInventoryFor: entity selectWith: selectBlock onSelect: aBlock
 | list |
 	Logger log: 'Showing inventory for player';cr.
 	"inventorylist := InventoryList new openWithSpec."
 	soundBoard play: 'misc3'.
 	list := IconListPresenter new.
 	list
-	items: (entity inventory collect: [ :item| item  ]);
-	icons: [ :item | item sprite image];
+		items: (entity inventory select: selectBlock);
+		icons: [ :item | item sprite image];
 	title: 'Inventory';
 	whenSelectedItemChanged: [ :changedItem | 
 		inventorylist close.

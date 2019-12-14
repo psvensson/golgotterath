@@ -13,4 +13,13 @@ loadSounds
 	sounds at: 'hurt2' put: (self getAIFFSound: self getEncodedHurt2).
 	sounds at: 'monster1' put: (self getAIFFSound: self getEncodedMonster1).
 	sounds at: 'monster2' put: (self getAIFFSound: self getEncodedMonster2).
+	sounds at: 'equip' put: (self getAIFFSound: self getEncodedEquip).
+	sounds at: 'gem1' put: (self getAIFFSound: self getEncodedGem1).
+	sounds at: 'gem2' put: (self getAIFFSound: self getEncodedGem2).
+	sounds at: 'gold1' put: (self getAIFFSound: self getEncodedGold1).
+	sounds at: 'misc1' put: (self getAIFFSound: self getEncodedMisc1).
+	sounds at: 'misc2' put: (self getAIFFSound: self getEncodedMisc2).
+	sounds at: 'misc3' put: (self getAIFFSound: self getEncodedMisc3).
+	sounds at: 'potion1' put: (self getAIFFSound: self getEncodedPotion1).
+	sounds at: 'wield' put: (self getAIFFSound: self getEncodedWield).
 	

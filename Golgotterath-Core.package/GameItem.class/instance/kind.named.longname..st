@@ -4,6 +4,7 @@ kind: k named: tname longname: lname
 	k = 'armour' ifTrue: [  tiles := self armortiles ].
 	k = 'weapon' ifTrue: [  tiles := self weapontiles ].
 	name := tname.	
+	kind := k.
 	longname := lname.	
 	sprite := (Sprite new) 
 		image: (tiles tile: tname); 
