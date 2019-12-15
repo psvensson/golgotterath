@@ -14,5 +14,6 @@ drawViewportOn: aCanvas
 				gameMap entitiesAt: worldpos ifPresent: [ 
 					entity := gameMap entitiesAt: worldpos.
 					entity animatedSprite paint: self at: aCanvas.					
-				]	
+				].
+			"self paintDarkness: worldpos	canvas: aCanvas "
 	 ] ]

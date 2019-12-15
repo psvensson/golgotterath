@@ -3,8 +3,7 @@
 	"super" : "Object",
 	"category" : "Golgotterath-Core-Base",
 	"classinstvars" : [
-		"armortiles",
-		"longname"
+		"armortiles"
 	],
 	"pools" : [ ],
 	"classvars" : [ ],

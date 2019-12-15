@@ -1,8 +1,8 @@
 action
 equipItemFor: entity
 	self showInventoryFor: entity 
-		selectWith: [ :item| item kind = 'armour' ]
-		onSelect:[ :item |
+		selectWith: [ :item | item kind = 'armour' ]
+		onSelect: [ :item |
 			Logger log: 'equipItem got selected item';cr.
 			soundBoard play: 'equip'.
 			entity armour ifNotNil: [ entity inventory add: item ].
