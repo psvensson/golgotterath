@@ -9,7 +9,7 @@ step
 		do: [ :entityToRemove | 
 			self handlePostMoveFor: entityToRemove .
 			runningAnimations remove: entityToRemove ].
-	boardDrawOffset := 0 @ 0.
+	
 	runningAnimations
 		ifEmpty: [ worldAnimationFrame := 0.
 			self stopStepping ].

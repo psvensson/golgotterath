@@ -25,8 +25,8 @@ keyStroke: anEvent
 			keyValue = 120 ifTrue: [ self playAnimation: 'shoot' for: self player. ].
 			keyValue = 99 ifTrue: [ self playAnimation: 'hurt' for: self player. ].
 			keyValue = 118 ifTrue: [ self playAnimation: 'die' for: self player. ].
-			keyValue = 103 ifTrue: [ self player pickup . ].
-			keyValue = 100 ifTrue: [ self dropItemFor: player ].
-			keyValue = 119 ifTrue: [ self wieldItemFor: player ].
-			keyValue = 101 ifTrue: [ self equipItemFor: player ].
+			keyValue = 103 ifTrue: [ player pickup . ].
+			keyValue = 100 ifTrue: [ player dropItem ].
+			keyValue = 119 ifTrue: [ player wieldItem ].
+			keyValue = 101 ifTrue: [ player equipItem ].
 			keyValue = 105 ifTrue: [ self showInventoryFor: player onSelect: [] ]

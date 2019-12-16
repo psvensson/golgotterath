@@ -1,17 +1,13 @@
 testing
 openFloorAt: target for: entity
-	| tile cname checkentity rv |
-	rv := true.	
-	checkentity := nil.
-	gameMap entitiesAt: target ifPresent: [:e | checkentity := e].	
-	rv := checkentity isNil.
-	"Logger log:'checkentity is ';log:checkentity;cr."
-	gameMap moveTargets at: target ifPresent: [ :floorentity |
-		Logger log:'entity on target tile is ';log:floorentity;log:' entity is ';
-		log:entity;cr.
-		 rv := (entity = floorentity) ].
+	| tile cname |
+	gameMap entitiesAt: target ifPresent: [:e | 
+		e = entity ifFalse: [ 
+			 Logger log:'openFloorAt: ';log:target;log:' occupied by entity ';log:e;cr.
+			^ false]].	
 	tile := gameMap mapAt: target.
 	cname := tile name.
-	rv := (cname findString: 'floor') > 0 .
-	"Logger log:'cname = ';log:cname;log:' rv=';log:rv;cr."
-	^ rv
+	(cname findString: 'floor') > 0 ifTrue: [ 
+		Logger log:'openFloorAt: ';log:target;log:' is floor';cr.
+		 ^ true] ifFalse: [ ^ false ]
+	

@@ -17,7 +17,8 @@
 		"moveCallback",
 		"topbar",
 		"inventorylist",
-		"soundBoard"
+		"soundBoard",
+		"worldLastPosition"
 	],
 	"name" : "GameBoard",
 	"type" : "normal"

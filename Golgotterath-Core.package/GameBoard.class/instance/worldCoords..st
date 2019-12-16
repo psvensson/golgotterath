@@ -1,6 +1,5 @@
 action
-movePlayerTo: target	
-	gameMap stepMap.
+worldCoords: target		
 	worldCoords := target.
 	Logger
 		log: 'moveEntity setting worldcoords to ';

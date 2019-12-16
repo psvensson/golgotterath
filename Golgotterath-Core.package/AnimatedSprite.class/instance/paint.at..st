@@ -7,6 +7,6 @@ paint: gameboard at: aCanvas
 			img
 				position:
 					(self calculatePositionFromGameboard: gameboard)
-						+ self getAnimationStep.
+						+ self calculateAnimationOffset.
 			"Logger log:'Sprite ';log:name;log:' painted at ';log:img position;cr.	"		""
 			img drawOn: aCanvas ]

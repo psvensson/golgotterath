@@ -1,13 +1,13 @@
 action
-wieldItemFor: entity
-	self showInventoryFor: entity 
+wieldItem
+	gamemap gameboard showInventoryFor: self 
 			selectWith: [ :item| 
 				Logger log:item name;log:' - ';log: item kind;cr.
 				(item kind = 'weapon') ]
 			onSelect:[ :item |
 				Logger log: 'wieldItem got selected item';cr.
-				entity weapon ifNotNil: [ entity inventory add: item ].
-				entity inventory remove: item.
-				entity weapon: item.
-				self changed ] 
+				weapon ifNotNil: [ inventory add: item ].
+				inventory remove: item.
+				self weapon: item.
+				gamemap gameboard changed ] 
 			title: 'Wield Weapon'

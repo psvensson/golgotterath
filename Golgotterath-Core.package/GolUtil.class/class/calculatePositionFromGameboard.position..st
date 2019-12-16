@@ -2,7 +2,7 @@ testing
 calculatePositionFromGameboard: gameboard position: boardPosition
 	| adjustCentre gw boardOffset wc dx dy rv |
 	gw := gameboard width / 2.
- 	adjustCentre := self toISO: gw@0.
+ 	adjustCentre := GolUtil toISO: gw@0.
  	
 	wc := gameboard worldCoords .
 	dx := (wc x - boardPosition x) * 64. 

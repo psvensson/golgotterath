@@ -5,10 +5,10 @@ getWorldAnimationStep
 	y := 0.
 	worldAnimationFrame := worldAnimationFrame + 1.
 	step := ((self tileSize) / 4) * (worldAnimationFrame).
-	dx := (worldTargetCoords x) - (worldCoords x) .
-	dy := (worldTargetCoords y) - (worldCoords y) .
+	dx := (worldCoords x) - (worldLastPosition x).
+	dy := (worldCoords y) - (worldLastPosition y).
 	dx > 0 ifTrue: [ x := 1 ].
 	dx < 0 ifTrue: [ x := -1 ].
 	dy > 0 ifTrue: [ y := 1 ].
 	dy < 0 ifTrue: [ y := -1 ].
-	^ self toISO: (step * x)@(step* y)
+	^ GolUtil toISO: (step * x)@(step* y)
