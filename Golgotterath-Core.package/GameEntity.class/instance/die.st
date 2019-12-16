@@ -2,9 +2,10 @@ action
 die
 	| goscreen |
 	Logger log:self;log:' has died! ***************** ';cr.
-	gamemap gameboard playAnimation: 'die' for: self.
+	 
+	gamemap ifNotNil: [gamemap removeEntityAt: self boardPosition. gamemap gameboard playAnimation: 'die' for: self. ].
 	player
-		ifTrue: [ 
+		ifTrue: [ 			
 			gamemap gameboard soundBoard play: 'hurt2'.
 			goscreen := GameOverScreen new.
 			goscreen position: gamemap gameboard position.
