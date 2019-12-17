@@ -14,3 +14,12 @@ Metacello new
 ```
 GameBoard open 
 ```
+
+## In-game commands
+
+    i - show Inventory
+    g - get an item off the ground
+    w - wield a weapon
+    e - equip an armour
+    
+    You can hit monsters by moving onto them.
