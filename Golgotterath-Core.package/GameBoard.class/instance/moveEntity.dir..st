@@ -5,8 +5,7 @@ moveEntity: entity dir: dir
 	target := entity animatedSprite getTargetForDirectionString: dir.
 	(self openFloorAt: target for: entity)
 		ifTrue: [ entity animatedSprite setTargetForDirectionString: dir.
-			Logger	log: 'moveEntity ';log: entity name;log: ' ';log: dir;	cr.
-			"gameMap moveTargets at: target put: entity.	"
+			"Logger	log: 'moveEntity ';log: entity name;log: ' ';log: dir;	cr."
 			entity moveTo: target.				
 			self playAnimation: 'walk' for: entity.
 			entity = player

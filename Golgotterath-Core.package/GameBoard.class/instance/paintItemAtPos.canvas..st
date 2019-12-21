@@ -1,4 +1,4 @@
-paint
+drawing
 paintItemAtPos: worldpos canvas: aCanvas
 		gameMap itemAt: worldpos ifPresent: [ :item |
 			item boardPosition: worldpos.

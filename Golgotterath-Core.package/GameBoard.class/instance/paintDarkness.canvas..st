@@ -1,4 +1,4 @@
-paint
+drawing
 paintDarkness: worldpos canvas: aCanvas
 	| diff diffx diffy alpha image position colour |
 		diffx := (worldpos x - player boardPosition x) abs.

@@ -1,4 +1,4 @@
-accessing
+drawing
 drawViewportOn: aCanvas
 	| top bottom right left |
 	top := viewPort at: #top.

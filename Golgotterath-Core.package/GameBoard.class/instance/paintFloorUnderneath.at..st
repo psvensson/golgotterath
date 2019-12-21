@@ -1,4 +1,4 @@
-initialization - private
+drawing
 paintFloorUnderneath: position at: aCanvas
 	| tile |
 	tile := gameMap getTile: 'floor_grey'.

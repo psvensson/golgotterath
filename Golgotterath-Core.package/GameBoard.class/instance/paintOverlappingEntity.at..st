@@ -1,4 +1,4 @@
-paint
+drawing
 paintOverlappingEntity: pos at: aCanvas
 	runningAnimations  do: [ :entity || target |
 		target := entity animatedSprite target.

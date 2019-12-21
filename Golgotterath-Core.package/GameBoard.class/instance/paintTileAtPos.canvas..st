@@ -1,4 +1,4 @@
-paint
+drawing
 paintTileAtPos: worldpos canvas: aCanvas
 	| tile |
 		tile := gameMap mapAt: worldpos.
