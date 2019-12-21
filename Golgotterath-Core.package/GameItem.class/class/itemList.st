@@ -34,7 +34,19 @@ itemList
 		#subtype->'edged'.#tohit->(-1) }).	
 	list at: 'flail' put: (Dictionary newFrom:
 		{ #name -> 'flail'.#kind->'weapon'.#longname -> 'Flail'.#dam -> '2d4'. 
-		#subtype->'blunt'.#tohit->(-2)}).							
+		#subtype->'blunt'.#tohit->(-2)}).	
+"--------------------------- Treasure"				
+	list at: 'small_wooden_chest' put: (Dictionary newFrom:
+		{ #name -> 'small_wooden_chest'.#kind->'misc'.
+			#longname -> 'Small Wooden Chest'.#subtype->'chest'.#size->1}).	
+	list at: 'copper_pieces' put: (Dictionary newFrom:
+		{ #name -> 'copper_pieces'.#kind->'misc'.
+			#longname -> 'Copper Pieces'.#subtype->'money'.#size->1.#amount->1}).	
+	list at: 'blue_crystal' put: (Dictionary newFrom:
+		{ #name -> 'blue_crystal'.#kind->'misc'.
+			#longname -> 'Blue Crystal'.#subtype->'magic'.#size->1.}).			
+"------------------------------------"														
 	^ list
-"--------------------------- Treasure"
+
+	
 		

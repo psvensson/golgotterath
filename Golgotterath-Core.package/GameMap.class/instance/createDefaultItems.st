@@ -1,8 +1,11 @@
-private-initialization
+initialization
 createDefaultItems
 	self addItem: (GameItem new: 'orange_robe') at: (0@3).
 	self addItem: (GameItem new: 'blue_robe') at: (1@3).
 	self addItem: (GameItem new: 'yellow_robe') at: (2@3).
+	self addItem: (GameItem new: 'small_wooden_chest') at: (-1@(-4)).
+	self addItem: (GameItem new: 'copper_pieces') at: (-6@5).
+	self addItem: (GameItem new: 'blue_crystal') at: (6@6).
 	self addItem: (GameItem new: 'short_sword') at: (1@0).
 	self addItem: (GameItem new: 'long_sword') at: (-3)@3.
 	self addItem: (GameItem new: 'mace') at: (-3)@(-4).

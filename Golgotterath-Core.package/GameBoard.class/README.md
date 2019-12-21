@@ -42,6 +42,7 @@ method := (String streamContents: [:s |
         nextPutAll: 'getEncoded';
         nextPut: Character cr;
         nextPut: Character tab;
+ 			 nextPut: $^;
         nextPut: $';
         nextPutAll: encoded;
         nextPut: $']).
@@ -49,5 +50,3 @@ method := (String streamContents: [:s |
 Human compile: method
 
 ------
-
-Note!  The getEncoded method created does not have the return charatcer, so you need to edit the method and formally return the value using ^

@@ -1,4 +1,4 @@
-private-initialization
+initialization
 createDefaultEntities	
 	self addEntity: (GameEntity new: 'malelight') at: 0@0.
 	self addEntity: (GameEntity new: 'skeleton') at: 3@4.

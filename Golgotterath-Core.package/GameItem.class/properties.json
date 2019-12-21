@@ -16,7 +16,8 @@
 		"boardpos",
 		"longname",
 		"name",
-		"weapontiles"
+		"weapontiles",
+		"misctiles"
 	],
 	"name" : "GameItem",
 	"type" : "normal"
