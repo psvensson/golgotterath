@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Golgotterath-Core-Base",
+	"classinstvars" : [
+		"roomTypes"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"quadTree"
+	],
+	"name" : "CaveDigger",
+	"type" : "normal"
+}

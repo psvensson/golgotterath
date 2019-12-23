@@ -2,7 +2,6 @@ inventory
 showInventoryFor: entity selectWith: selectBlock onSelect: aBlock title: title
 | list items |
 	Logger log: 'Showing inventory for player';cr.
-	"inventorylist := InventoryList new openWithSpec."
 	soundBoard play: 'misc3'. 
 	list := IconListPresenter new.
 	items := (entity inventory) select: selectBlock.	
