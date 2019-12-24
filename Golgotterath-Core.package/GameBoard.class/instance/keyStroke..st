@@ -1,6 +1,6 @@
 event handler
 keyStroke: anEvent
-	| keyValue | 
+	| keyValue selectedItem | 
 		keyValue := anEvent keyValue. 
 		player hp < 1 ifTrue: [ ^self  ].
 		Logger log: 'key '; log:keyValue;cr .
@@ -29,4 +29,5 @@ keyStroke: anEvent
 			keyValue = 100 ifTrue: [ player dropItem ].
 			keyValue = 119 ifTrue: [ player wieldItem ].
 			keyValue = 101 ifTrue: [ player equipItem ].
-			keyValue = 105 ifTrue: [ self showInventoryFor: player onSelect: [] ]
+			keyValue = 105 ifTrue: [ self showInventoryFor: player onSelect: [:item |
+					selectedItem := item] ]
