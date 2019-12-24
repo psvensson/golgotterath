@@ -10,9 +10,9 @@ baseline: spec
 			spec
     			baseline: 'MooseAlgos'
     			with: [ spec repository: 'github://moosetechnology/MooseAlgos:master/src' ].
-			spec
+			"spec
     			baseline: 'QuadTree'
-    			with: [ spec repository: 'github://psvensson/QuadTree:master' ].
+    			with: [ spec repository: 'github://psvensson/QuadTree:master' ]."
 			spec
     			baseline: 'PharoSound'
     			with: [ spec repository: 'github://psvensson/PharoSound:master' ].	 
