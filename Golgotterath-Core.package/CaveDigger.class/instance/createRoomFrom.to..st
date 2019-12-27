@@ -1,9 +1,10 @@
 creating
 createRoomFrom: start to: end
 	GolUtil from: start to: end do: [ :pos |
-		 quadTree 
+		 "quadTree 
 			insert: (self pointRectFor: pos) 
-			data: (self class roomTypes at: #floor) ]
+			data: (self class roomTypes at: #floor)"
+			dungeon at: pos put: (self class roomTypes at: #floor) ]
 	
 	
 	

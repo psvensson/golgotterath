@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "GlamorousAuthor 12/27/2019 17:49",
 	"super" : "Object",
 	"category" : "Golgotterath-Core-Base",
 	"classinstvars" : [
@@ -8,7 +8,13 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"quadTree"
+		"quadTree",
+		"walker",
+		"left",
+		"right",
+		"top",
+		"bottom",
+		"dungeon"
 	],
 	"name" : "CaveDigger",
 	"type" : "normal"

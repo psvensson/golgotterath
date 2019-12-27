@@ -1,0 +1,3 @@
+generating
+maxSide
+	^ 7
