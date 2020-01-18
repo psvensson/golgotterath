@@ -1,7 +1,7 @@
 initialization
 initialize 
 	tiles := Tiles new.
-	mapRadius := 8.
+	mapRadius := 10.
 	entities := Dictionary new.
 	map := Dictionary new.	
 	items := Dictionary new.

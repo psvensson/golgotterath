@@ -2,7 +2,7 @@ initialization - private
 initializeGameMap
 	gameMap := GameMap new.
 	gameMap
-		createDefaultMap;
+		createBetterDungeonMap;
 		createDefaultEntities;
 		createDefaultItems;
 		gameboard: self

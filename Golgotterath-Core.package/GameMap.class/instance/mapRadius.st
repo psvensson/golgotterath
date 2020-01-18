@@ -1,3 +1,3 @@
 accessing
 mapRadius
-	^ 8
+	^ mapRadius

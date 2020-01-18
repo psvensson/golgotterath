@@ -14,6 +14,9 @@ baseline: spec
     			baseline: 'QuadTree'
     			with: [ spec repository: 'github://psvensson/QuadTree:master' ].
 			spec
+    			baseline: 'BetterDungeons'
+    			with: [ spec repository: 'github://psvensson/BetterDungeons-st:master' ].
+			spec
     			baseline: 'PharoSound'
     			with: [ spec repository: 'github://psvensson/PharoSound:master' ].	 
 		].
