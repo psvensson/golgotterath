@@ -15,7 +15,7 @@ load: fileName spriteWidth: w
 		[ :x | 
 			0 to: image height - w by: w do: [ :y | | i aMorph |
 				i := (image copy: ((x + offset) @ (y + offset) corner: (x + w - offset) @ (y + w - offset))).
-				aMorph := ImageMorph new image: i.
+				aMorph := AlphaImageMorph new image: i.
 				"aMorph borderColor: (Color green); borderWidth: 1."
 				sprites at:index put: aMorph. index := index +1. ] ].
 	spriteImages := sprites

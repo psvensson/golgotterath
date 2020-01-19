@@ -12,7 +12,7 @@ loadSpriteImage: img spriteWidth: _width spritesPerRow: _spr
 		[ :x | 
 			0 to: img height - _width by: _width do: [ :y | | i aMorph |
 				i := (img copy: ((x + offset) @ (y + offset) corner: (x + _width - offset) @ (y + _width - offset))).
-				aMorph := ImageMorph new image: i.
+				aMorph := AlphaImageMorph new image: i.
 				"aMorph borderColor: (Color green); borderWidth: 1."
 				sprites at:index put: aMorph. index := index +1. ] ].
 	spriteImages := sprites

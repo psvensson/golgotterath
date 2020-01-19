@@ -12,7 +12,7 @@ chooseRandomTarget: view
 						withinRadius: entity lightradius 
 						of: entity boardPosition) ifTrue: [ 
 							target := possibleTarget .
-							Logger log: entity name;log:entity boardPosition;
+							"Logger log: entity name;log:entity boardPosition;
 										log:' choose target: ';	log:possibleTarget name;
-										log:' pos ';log: possibleTarget boardPosition; cr.	 ]].
+										log:' pos ';log: possibleTarget boardPosition; cr."	 ]].
 	^ target 

@@ -11,5 +11,5 @@ chooseTargetBoardPos
 							target ifNotNil: [ pos := target boardPosition ]
 							 ifNil: [ "pos :=(self chooseRandomTile: view)"  ]		
 		].	
-	Logger log:'chooseTargetBoardPos choose ';log: pos;cr.	
+	"Logger log:'chooseTargetBoardPos choose ';log: pos;cr.	"
 	^ pos

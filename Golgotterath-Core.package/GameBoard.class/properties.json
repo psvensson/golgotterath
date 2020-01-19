@@ -12,7 +12,6 @@
 		"gameMap",
 		"worldAnimationFrame",
 		"worldCoords",
-		"worldTargetCoords",
 		"boardDrawOffset",
 		"moveCallback",
 		"topbar",
