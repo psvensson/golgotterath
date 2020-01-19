@@ -10,5 +10,5 @@ testCombat
 	entity2 := GameEntity new: 'skeleton'.
 	gamemap addEntity: entity2 at: 1@0.
 	orighp := entity2 hp.
-	entity1 attack: (entity2 boardPosition) .
+	entity1 attack: entity2  .
 	self assert: entity2 hp < orighp .

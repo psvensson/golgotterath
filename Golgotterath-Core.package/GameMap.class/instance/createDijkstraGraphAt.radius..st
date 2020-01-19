@@ -1,21 +1,22 @@
-initialization
+path
 createDijkstraGraphAt: origo radius: radius
-	| nodes edges graph |	
-	graph := MalDijkstra new.	
-	edges := OrderedCollection new.
-	nodes := OrderedCollection new .
-	(origo y - radius)  to: (origo y + radius) do: 
-		[ :y | (origo x - radius) to: (origo x + radius) do: 
-			[ :x | 
-				"Logger log:'.. adding tile ';log:x@y;cr."
-				nodes add: (self posToSymbol: x@y).	]].	
-	graph nodes: nodes asArray .			
-	(origo y - radius)  to: (origo y + radius) do: 
-		[ :y | (origo x - radius) to: (origo x + radius) do:  
-			[ :x | |tile|
-				tile := self mapAt: x@y.
-				(self isWalkable: tile) ifTrue: [ 
-					"Logger log:'---connecting tile ';log:x@y;cr."
-					edges addAll: (self connectToSurroundingNodes: tile) ]]].
-	graph edges: (edges asArray) from: #first to: #second.	
+	| rows graph |
+	graph := EasyStar new.	
+	graph offset: (origo x - radius)@(origo y - radius).
+	graph acceptableTiles: { 0 }.
+	graph diagonalsEnabled: true.
+	Logger log:'creating graph from ';log:origo x - radius;log:',';log:origo y - radius;log:' to ';log:
+	 origo x + radius;log:',';log:origo y + radius;cr.
+	rows := OrderedCollection new.
+	origo y - radius to: origo y + radius do: [ :y | 
+		| row |
+		row := OrderedCollection new.
+		rows add: row.
+		origo x - radius to: origo x + radius do: [ :x | 
+			| tile |
+			tile := self mapAt: x @ y.
+			(self isWalkable: tile)
+				ifTrue: [ row add: 0 ]
+				ifFalse: [ row add: 1 ] ] ].
+	graph setGrid: rows.	
 	^ graph
