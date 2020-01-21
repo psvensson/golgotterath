@@ -22,5 +22,6 @@ GameBoard open
     g - get an item off the ground
     w - wield a weapon
     e - equip an armour
+    q - quaff a potion
     
     You can hit monsters by moving onto them.
