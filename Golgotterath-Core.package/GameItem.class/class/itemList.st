@@ -48,7 +48,10 @@ itemList
 "--------------------------- Potions"
 	list at: 'small_healing_potion' put: (Dictionary newFrom:
 		{ #name -> 'small_healing_potion'.#kind->'potion'.
-			#longname -> 'Small Healing Potion'.#subtype->'healing'.#size->1}).				
+			#longname -> 'Small Healing Potion'.#subtype->'healing'.#size->1}).	
+	list at: 'large_healing_potion' put: (Dictionary newFrom:
+		{ #name -> 'large_healing_potion'.#kind->'potion'.
+			#longname -> 'Large Healing Potion'.#subtype->'healing'.#size->3}).							
 "------------------------------------"														
 	^ list
 

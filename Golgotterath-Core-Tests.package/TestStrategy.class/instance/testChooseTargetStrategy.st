@@ -11,4 +11,4 @@ testChooseTargetStrategy
 	strategy := DefaultMoveStrategy new.
 	entity addStrategy: strategy.
 	result := strategy chooseTargetBoardPos.
-	self assert: result isNotNil
+	self assert: result isNil

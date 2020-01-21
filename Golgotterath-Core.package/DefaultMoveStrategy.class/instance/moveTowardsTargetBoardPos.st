@@ -3,8 +3,9 @@ moveTowardsTargetBoardPos
 	| dir pos gameboard |
 	gameboard := entity gamemap gameboard.
 	self getPathToTarget: [ :path | 
-		path isEmpty ifTrue: [ ^ self ].
+		path isEmpty ifTrue: [ ^ self ].		
 		pos := path last.
-		pos isNotNil ifFalse: [ ^ self ].
+		pos ifNil: [ ^ self ].
 		dir := entity getDirectionFromPosition: pos.
+		Logger log:'mvoeTowardTargetBoardPost calling move to: ';log:dir;cr.
 		gameboard moveEntity: entity dir: dir ]

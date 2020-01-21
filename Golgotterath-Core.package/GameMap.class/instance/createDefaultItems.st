@@ -11,4 +11,6 @@ createDefaultItems
 	self addItem: (GameItem new: 'mace') at: self getFreeTile.
 	self addItem: (GameItem new: 'leather_armour') at: self getFreeTile.
 	self addItem: (GameItem new: 'studded_leather_armour') at: self getFreeTile.
+	self addItem: (GameItem new: 'small_healing_potion') at: self getFreeTile.
+	self addItem: (GameItem new: 'large_healing_potion') at: self getFreeTile.
 	^ self.
