@@ -4,6 +4,7 @@ kind: k named: tname
 	k = 'armour' ifTrue: [  tiles := self armortiles ].
 	k = 'weapon' ifTrue: [  tiles := self weapontiles ].
 	k = 'misc' ifTrue: [  tiles := self misctiles ].
+	k = 'potion' ifTrue: [  tiles := self potiontiles ].
 	name := tname.	
 	kind := k.
 	sprite := (Sprite new) 

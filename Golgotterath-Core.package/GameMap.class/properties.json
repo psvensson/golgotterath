@@ -12,7 +12,8 @@
 		"items",
 		"mapRadius",
 		"gameboard",
-		"entitiesArray"
+		"entitiesArray",
+		"random"
 	],
 	"name" : "GameMap",
 	"type" : "normal"

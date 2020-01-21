@@ -12,4 +12,4 @@ testEffectCreation
 	aCanvas := Canvas new.
 	entity1 animateEffectsOn: aCanvas.
 	
-	self assert: true equals: false .
+	self assert: effect1 step equals: 2 .

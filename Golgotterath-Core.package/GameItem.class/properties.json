@@ -17,7 +17,8 @@
 		"longname",
 		"name",
 		"weapontiles",
-		"misctiles"
+		"misctiles",
+		"potiontiles"
 	],
 	"name" : "GameItem",
 	"type" : "normal"

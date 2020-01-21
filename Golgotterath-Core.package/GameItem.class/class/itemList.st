@@ -45,6 +45,10 @@ itemList
 	list at: 'blue_crystal' put: (Dictionary newFrom:
 		{ #name -> 'blue_crystal'.#kind->'misc'.
 			#longname -> 'Blue Crystal'.#subtype->'magic'.#size->1.}).			
+"--------------------------- Potions"
+	list at: 'small_healing_potion' put: (Dictionary newFrom:
+		{ #name -> 'small_healing_potion'.#kind->'potion'.
+			#longname -> 'Small Healing Potion'.#subtype->'healing'.#size->1}).				
 "------------------------------------"														
 	^ list
 
