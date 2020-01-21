@@ -1,0 +1,3 @@
+initialization
+finalStep
+	^ 1

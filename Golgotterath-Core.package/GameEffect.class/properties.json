@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Morph",
+	"category" : "Golgotterath-Core-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"step",
+		"startPosition",
+		"alpha",
+		"aphaDecreaseperStep",
+		"movementPerStep"
+	],
+	"name" : "GameEffect",
+	"type" : "normal"
+}

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "GameEffect",
+	"category" : "Golgotterath-Core-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"text",
+		"oldMorph"
+	],
+	"name" : "TextEffect",
+	"type" : "normal"
+}
