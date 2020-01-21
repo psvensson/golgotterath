@@ -1,9 +1,9 @@
 accessing
-addPickupEffectFor: entity and: item
+addEffectForEntity: entity text: text
 	| effect |
 	effect := TextEffect new.
 	effect
-		text: 'Picked up ',(item longname);
+		text: text;
 		color: Color green.
 	self
 		addEffect: effect
