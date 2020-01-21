@@ -20,7 +20,7 @@ moveEntity: entity dir: dir
 				effect
 					text: 'bop';
 					color: Color green.
-				entity addEffect: effect.
+				self addEffect: effect startPosition: (entity animatedSprite calculatePositionFromGameboard: self).
 				worldLastPosition := player boardPosition ] ]
 		ifFalse: [ 
 			gameMap

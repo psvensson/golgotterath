@@ -17,7 +17,8 @@
 		"topbar",
 		"inventorylist",
 		"soundBoard",
-		"worldLastPosition"
+		"worldLastPosition",
+		"effects"
 	],
 	"name" : "GameBoard",
 	"type" : "normal"
