@@ -1,6 +1,6 @@
 action
 moveEntity: entity dir: dir
-	| target effect |
+	| target |
 	entity animatedSprite directionString: dir.
 	target := entity animatedSprite getTargetForDirectionString: dir.
 	(self openFloorAt: target for: entity)
@@ -16,11 +16,7 @@ moveEntity: entity dir: dir
 			self playAnimation: 'walk' for: entity.
 			entity = player ifTrue: [ 
 				gameMap stepMap.
-				effect := TextEffect new.
-				effect
-					text: 'bop';
-					color: Color green.
-				self addEffect: effect startPosition: (entity animatedSprite calculatePositionFromGameboard: self).
+				self addMoveEffectFor: entity.
 				worldLastPosition := player boardPosition ] ]
 		ifFalse: [ 
 			gameMap

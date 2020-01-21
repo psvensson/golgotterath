@@ -7,7 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"text",
-		"oldMorph"
+		"oldMorph",
+		"fontSize"
 	],
 	"name" : "TextEffect",
 	"type" : "normal"

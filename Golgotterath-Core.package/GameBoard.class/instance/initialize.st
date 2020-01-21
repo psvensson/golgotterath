@@ -14,4 +14,5 @@ initialize
 	runningAnimations := Set new.	
 	effects := OrderedCollection new.
 	boardDrawOffset := 0 @ 0.
+	self showWelcomeEffect 
 	

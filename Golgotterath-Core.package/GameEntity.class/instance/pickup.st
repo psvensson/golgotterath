@@ -7,4 +7,5 @@ pickup
 		inventory size = inventorySize ifFalse: [ 
 			gamemap removeItemAt: self boardPosition.
 			inventory add: item.
+			gamemap gameboard addPickupEffectFor: self and: item.
 			gamemap gameboard changed ] ]
