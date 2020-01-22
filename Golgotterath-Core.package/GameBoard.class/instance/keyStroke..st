@@ -4,7 +4,7 @@ keyStroke: anEvent
 		keyValue := anEvent keyValue. 
 		player hp < 1 ifTrue: [ ^self  ].
 		Logger log: 'key '; log:keyValue;cr .
-			keyValue = 32 ifTrue: [ gameMap stepMap ].
+			keyValue = 32 ifTrue: [  ].
     		((keyValue = 30) or: (keyValue = 56))    "up arrow" 
        		ifTrue: [self moveEntity: (self player) dir: 'up']. 
 			keyValue = 55    "up arrow" 
@@ -31,4 +31,5 @@ keyStroke: anEvent
 			keyValue = 113 ifTrue: [ player quaffItem ].
 			keyValue = 101 ifTrue: [ player equipItem ].
 			keyValue = 105 ifTrue: [ self showInventoryFor: player onSelect: [:item |
-					selectedItem := item] ]
+					selectedItem := item] ].
+			gameMap stepMap.

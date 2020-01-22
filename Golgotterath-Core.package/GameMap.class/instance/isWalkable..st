@@ -1,4 +1,4 @@
-accessing
+testing
 isWalkable: tile
 	| rv bedrock floor |
 	bedrock := (self isBedrock: tile).
