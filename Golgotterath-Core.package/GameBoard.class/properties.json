@@ -18,7 +18,8 @@
 		"inventorylist",
 		"soundBoard",
 		"worldLastPosition",
-		"effects"
+		"effects",
+		"loadingMorph"
 	],
 	"name" : "GameBoard",
 	"type" : "normal"

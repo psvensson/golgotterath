@@ -6,9 +6,9 @@ load: fileName spriteWidth: w
 	offset := 0.
 	image := fileName asFileReference
 		binaryReadStreamDo: [ :stream | PNGReadWriter formFromStream: stream ].
-	Transcript
+	"Transcript
 		show: 'Loading sprite file with width ';
-		show: w asString.
+		show: w asString."
 	sprites := Dictionary new.
 	index := 1.
 	0 to: image width - w by: w do:

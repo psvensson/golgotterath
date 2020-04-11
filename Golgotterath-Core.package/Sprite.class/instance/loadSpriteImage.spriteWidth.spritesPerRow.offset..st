@@ -1,9 +1,9 @@
 actions
 loadSpriteImage: img spriteWidth: _width spritesPerRow: _spr offset: offset
 	| index sprites  |
-	Transcript
+	"Transcript
 		show: 'Loading sprite file with width ';
-		show: _width asString; cr.
+		show: _width asString; cr."
 		spritesPerRow := _spr.
 	sprites := Dictionary new.
 	index := 1.

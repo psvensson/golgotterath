@@ -1,5 +1,9 @@
 initialization
 initialize
+	| then now |
+	Logger log: 'Golgotterath initialization starting'.
+	self showLoadingMessage.
+	then := DateAndTime now.
 	super initialize.
 	self 
 		initializeGameMap;			
@@ -14,5 +18,8 @@ initialize
 	runningAnimations := Set new.	
 	effects := OrderedCollection new.
 	boardDrawOffset := 0 @ 0.
-	self showWelcomeEffect 
+	self showWelcomeEffect .
+	now := DateAndTime now.
+	self hideLoadingMessage.
+	Logger log: 'Golgotterath initialization took ';log:(now-then);log:' seconds '
 	

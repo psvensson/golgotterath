@@ -1,4 +1,4 @@
-accessing
+action
 addEffectForEntity: entity text: text
 	| effect |
 	effect := TextEffect new.
