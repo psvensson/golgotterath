@@ -1,8 +1,10 @@
 initialization - private
 initializeGameMap
+	| futures |
 	gameMap := GameMap new.
-	gameMap
-		createBetterDungeonMap;
-		createDefaultEntities;
-		createDefaultItems;
-		gameboard: self
+	futures := OrderedCollection new.
+	futures add: gameMap createBetterDungeonMap.
+	futures add: gameMap createDefaultEntities.
+	futures add: gameMap createDefaultItems.
+	gameMap gameboard: self.
+	^ GolUtil futuresAll: futures 

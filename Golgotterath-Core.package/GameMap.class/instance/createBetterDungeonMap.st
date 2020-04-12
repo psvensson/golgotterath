@@ -1,7 +1,7 @@
 initialization
 createBetterDungeonMap
 	| dungeon cells |
-	dungeon := BetterDungeons new.
+	^ [ dungeon := BetterDungeons new.
 	dungeon gridWidth: mapRadius * 2.
 	dungeon gridLength: mapRadius * 2.
 	dungeon createDungeon.
@@ -21,5 +21,4 @@ createBetterDungeonMap
 				atx: cell x - mapRadius
 				y: cell y - mapRadius ].
 	self addTile: (self getTile: 'stairs_down') atx: -4 y: 4.
-	self addTile: (self getTile: 'statue_dragon') atx: 2 y: 4.
-	^ self
+	self addTile: (self getTile: 'statue_dragon') atx: 2 y: 4 ] future

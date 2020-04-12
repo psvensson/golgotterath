@@ -8,5 +8,5 @@ new: itemname
 		kind: kind 	named: (template at: #name);
 		longname: (template at: #longname);
 		attributes: template.
-	Logger log:'new Item ';log:longname;log: ' kind ';log:kind;cr.
+	"Logger log:'new Item ';log: item longname;log: ' kind ';log:kind;cr."
 	^ item

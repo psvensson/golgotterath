@@ -1,5 +1,6 @@
 initialization
 createDefaultItems
+	^ [ 
 	self addItem: (GameItem new: 'orange_robe') at: self getFreeTile.
 	self addItem: (GameItem new: 'blue_robe') at:self getFreeTile.
 	self addItem: (GameItem new: 'yellow_robe') at: self getFreeTile.
@@ -13,4 +14,4 @@ createDefaultItems
 	self addItem: (GameItem new: 'studded_leather_armour') at: self getFreeTile.
 	self addItem: (GameItem new: 'small_healing_potion') at: self getFreeTile.
 	self addItem: (GameItem new: 'large_healing_potion') at: self getFreeTile.
-	^ self.
+	] future
