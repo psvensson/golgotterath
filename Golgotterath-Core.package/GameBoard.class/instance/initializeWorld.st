@@ -1,5 +1,5 @@
 initialization - private
 initializeWorld
-	worldCoords := 0 @ 0.
+	worldCoords := self position.
 	worldLastPosition := 0 @ 0.
 	worldAnimationFrame := 0

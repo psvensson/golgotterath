@@ -19,7 +19,8 @@
 		"soundBoard",
 		"worldLastPosition",
 		"effects",
-		"loadingMorph"
+		"loadingMorph",
+		"steppingTime"
 	],
 	"name" : "GameBoard",
 	"type" : "normal"

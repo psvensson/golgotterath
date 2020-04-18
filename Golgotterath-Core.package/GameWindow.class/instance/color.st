@@ -1,0 +1,3 @@
+initialization
+color 
+	^ Color black

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "StandardWindow",
+	"category" : "Golgotterath-Core-View",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"gameboard",
+		"gamebar"
+	],
+	"name" : "GameWindow",
+	"type" : "normal"
+}
