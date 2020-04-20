@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Golgotterath-Core-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"pos",
+		"h",
+		"w",
+		"doors",
+		"depth"
+	],
+	"name" : "GolDungeonGeneratorRoom",
+	"type" : "normal"
+}

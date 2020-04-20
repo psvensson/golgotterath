@@ -1,5 +1,5 @@
 SystemOrganization addCategory: #'Golgotterath-Core-Tests'!
-SystemOrganization addCategory: #'Golgotterath-Core-Tests-CaveDigger'!
+SystemOrganization addCategory: #'Golgotterath-Core-Tests-Base'!
 SystemOrganization addCategory: #'Golgotterath-Core-Tests-Entity'!
 SystemOrganization addCategory: #'Golgotterath-Core-Tests-GameBoard'!
 SystemOrganization addCategory: #'Golgotterath-Core-Tests-GameMap'!
