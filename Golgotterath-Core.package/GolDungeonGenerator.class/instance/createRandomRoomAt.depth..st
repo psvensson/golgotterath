@@ -13,4 +13,4 @@ createRandomRoomAt: door depth: depth
 		direction: direction.
 	(self isAreaFree: area)
 		ifFalse: [ ^ self ].
-	self createRoomAt: area depth: depth
+	^ self createRoomAt: area depth: depth

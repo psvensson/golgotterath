@@ -6,5 +6,7 @@ createRoomAt: area depth: depth
 		h: (area at: #h)
 		w: (area at: #w).
 	room depth: depth.
-	rooms add: room.
-	self excavate: area
+	self excavate: area.
+	self createRandomDoorsForRoom: room.
+	rooms add: room.	
+	^ room

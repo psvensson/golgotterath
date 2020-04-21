@@ -10,7 +10,9 @@
 		"rooms",
 		"currentDepth",
 		"MAX_SIZE",
-		"MIN_SIZE"
+		"MIN_SIZE",
+		"MIN_DOORS",
+		"MAX_DOORS"
 	],
 	"name" : "GolDungeonGenerator",
 	"type" : "normal"
