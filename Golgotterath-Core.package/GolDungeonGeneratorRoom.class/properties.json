@@ -10,7 +10,9 @@
 		"h",
 		"w",
 		"doors",
-		"depth"
+		"depth",
+		"MIN_DOORS",
+		"MAX_DOORS"
 	],
 	"name" : "GolDungeonGeneratorRoom",
 	"type" : "normal"

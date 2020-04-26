@@ -1,22 +1,22 @@
 initialization
-createRandomDoorForRoom: room
+createRandomDoor
 	| wall x y dir door |
-	wall := 4 atRandom.	
+	wall := 4 atRandom.
 	wall = 1
-		ifTrue: [ y := room pos y.
-			x := room pos x + room w atRandom.
+		ifTrue: [ y := pos y.
+			x :=  pos x + (w-1) atRandom .
 			dir := 'up' ].
 	wall = 2
-		ifTrue: [ x := room pos x + room w.
-			y := room h atRandom.
+		ifTrue: [ x := pos x + w.
+			y :=  pos y + (h-1) atRandom .
 			dir := 'right' ].
 	wall = 3
-		ifTrue: [ x := room pos x + room w atRandom.
-			y := room pos y + room h.
+		ifTrue: [ x :=  pos x + (w-1) atRandom .
+			y := pos y + h.
 			dir := 'down' ].
 	wall = 4
-		ifTrue: [ x := room pos x.
-			y := room h atRandom.
+		ifTrue: [ x := pos x.
+			y :=  pos y + (h-1) atRandom .
 			dir := 'left' ].
 	door := Dictionary new.
 	door

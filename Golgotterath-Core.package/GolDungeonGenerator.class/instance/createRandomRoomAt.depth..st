@@ -1,16 +1,16 @@
 accessing
 createRandomRoomAt: door depth: depth
-	|  h w partial direction pos area |
-	partial := MAX_SIZE - MIN_SIZE.
-	h := partial atRandom + MIN_SIZE.
-	w := partial atRandom + MIN_SIZE.
+	| direction area type |
 	direction := door at: #direction.
-	pos := door at: #pos.
-	area := self
-		createAreaForPos: pos
-		h: h
-		w: w
-		direction: direction.
+	type := 4 atRandom.
+	area := type = 1
+		ifTrue: [ self generateAreaAt: door ]
+		ifFalse: [ self generateCorridorAt: door ].
+	self createAreaForDoor: door Area: area direction: direction.
 	(self isAreaFree: area)
-		ifFalse: [ ^ self ].
+		ifFalse: [ Transcript
+				show: 'Could not fit :(';
+				cr.
+			"TODO: remove doors which does not lead anywhere"
+			^ self ].
 	^ self createRoomAt: area depth: depth
