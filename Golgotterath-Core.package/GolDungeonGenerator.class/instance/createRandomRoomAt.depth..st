@@ -17,6 +17,7 @@ createRandomRoomAt: door depth: depth
 						cr
 					"TODO: remove doors which does not lead anywhere" ].
 			tries := tries - 1 ].
+	door at: #checked put: true.	
 	nomatch
-		ifTrue: [ ^ self ].
+		ifTrue: [ ^ nil ].
 	^ self createRoomAt: area depth: depth direction: direction

@@ -1,8 +1,8 @@
 initialization
 initialize 
 	| door room |
-	MAX_SIZE := 8.
-	MIN_SIZE := 3.
+	MAX_SIZE := 9.
+	MIN_SIZE := 4.
 	
 	map := Dictionary new.
 	rooms := OrderedCollection new.
