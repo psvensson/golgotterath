@@ -1,3 +1,3 @@
 accessing
 h
-	^ h
+	^ area at: #h

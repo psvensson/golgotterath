@@ -1,3 +1,3 @@
 accessing
 pos
-	^ pos
+	^ area at: #pos

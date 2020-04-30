@@ -1,7 +1,6 @@
 testing
 futuresAll: futures
-	"Works like Promise.All() in JavaScript"
-
+	"Works a bit like Promise.All() in JavaScript"
 	| count results fblock |
 	count := futures size.
 	results := OrderedCollection new.
@@ -16,8 +15,5 @@ futuresAll: futures
 						ifTrue: [ fblock deploySuccess: results ] ].
 			each
 				onFailureDo: [ :fail | 
-					Logger
-						log: '******** futuresAll failure: ' , fail asString;
-						cr.
 						fail debug ] ].
 	^ fblock

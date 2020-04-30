@@ -14,4 +14,5 @@ generateCorridorAt: door
 		at: #pos put: pos;
 		at: #w put: w;
 		at: #h put: h.
+	Transcript show:'++ ++ Corridor from ',pos asString,' h ',h asString,', w ',w asString;cr.	
 	^ area

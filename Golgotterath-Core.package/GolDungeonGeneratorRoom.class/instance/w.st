@@ -1,3 +1,3 @@
 accessing
 w
-	^ w
+	^ area at: #w

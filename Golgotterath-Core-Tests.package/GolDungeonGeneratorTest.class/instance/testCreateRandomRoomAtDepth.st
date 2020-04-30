@@ -4,7 +4,7 @@ testCreateRandomRoomAtDepth
 	| door area room |
 	area := Dictionary new.
 	area at: #pos put: 10@10; at: #h put: 10; at: #w put: 10.
-	room := generator createRoomAt: area depth: 1.
+	room := generator createRoomAt: area depth: 1 direction: #right.
 	door := Dictionary new.
 	door at: #pos put: 20@15; at: #direction put: #right.
 	room doors add: door.

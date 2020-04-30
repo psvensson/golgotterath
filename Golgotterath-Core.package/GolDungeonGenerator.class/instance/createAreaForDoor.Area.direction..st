@@ -5,16 +5,27 @@ createAreaForDoor: door Area: area direction: direction
 	h := area at: #h.
 	w := area at: #w.
 	dpos := door at: #pos.
+	y := dpos y.
+	x := dpos x.
+	
 	direction = 'up'
-		ifTrue: [ x:= self class getRandomRange: dpos x offset: w. y:= dpos y - h ].
+		ifTrue: [ x := self class getRandomRange: dpos x offset: w.
+			 ].
 	direction = 'down'
-		ifTrue: [ x:= self class getRandomRange: dpos x offset: w. y:= dpos y ].
+		ifTrue: [ x := self class getRandomRange: dpos x offset: w.
+			 ].
 	direction = 'right'
-		ifTrue: [ x:= dpos x  . y:= self class getRandomRange: dpos y offset: h ].
+		ifTrue: [ x := dpos x.
+			y := self class getRandomRange: dpos y offset: h ].
 	direction = 'left'
-		ifTrue: [ x:= dpos x - w . y:= self class getRandomRange: dpos y offset: h ].
-	Transcript show:'creating area direction ',direction,' from ',(x@y) asString,' to ',h asString,',',w asString;cr.	
+		ifTrue: [ 
+			y := self class getRandomRange: dpos y offset: h ].
+	Transcript
+		show:
+			'creating area direction ' , direction , ' from ' , (x @ y) asString
+				, ' to ' , h asString , ',' , w asString;
+		cr.
 	area
-		at: #pos put: x@y;
+		at: #pos put: x @ y;
 		at: #w put: w;
 		at: #h put: h
