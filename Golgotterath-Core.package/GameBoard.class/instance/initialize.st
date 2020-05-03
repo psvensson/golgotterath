@@ -7,6 +7,7 @@ initialize
 	"self showLoadingMessage."
 	then := DateAndTime now.
 	steppingTime := 1000.
+	openingDoor := false.
 	runningAnimations := Set new.
 	effects := OrderedCollection new.
 	boardDrawOffset := 0 @ 0.

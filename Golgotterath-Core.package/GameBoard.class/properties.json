@@ -20,7 +20,8 @@
 		"worldLastPosition",
 		"effects",
 		"loadingMorph",
-		"steppingTime"
+		"steppingTime",
+		"openingDoor"
 	],
 	"name" : "GameBoard",
 	"type" : "normal"

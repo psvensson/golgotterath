@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Sprite",
+	"category" : "Golgotterath-Core-Sprite",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"state",
+		"stateImages"
+	],
+	"name" : "StateSprite",
+	"type" : "normal"
+}

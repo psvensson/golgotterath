@@ -2,9 +2,9 @@ initialization
 initialize
 	super initialize.
 	self
-		addCloseBox;
 		color: Color black;
 		title: ''.
+	closeBox := nil.	
 	gamebar := GameBar new.
 	gamebar
 		text: 'Loading...';
@@ -18,11 +18,11 @@ initialize
 	self addMorph: gameboard.
 	"self changed."
 	"gamebar changed."
-	[ self extent: 1150 @ 700 ] future
-		onSuccessDo: [ :foo | 
-			gameboard
-				extent: 1150 @ 700;
-				changed.
-			self
-				extent: 1150 @ 700; color: Color black;
-				changed ]
+	self extent: 1150 @ 700.
+	gameboard
+		extent: 1150 @ 700;
+		changed.
+	self
+		extent: 1150 @ 700;
+		color: Color black;
+		changed

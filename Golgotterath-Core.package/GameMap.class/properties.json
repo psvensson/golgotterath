@@ -13,7 +13,8 @@
 		"mapRadius",
 		"gameboard",
 		"entitiesArray",
-		"random"
+		"random",
+		"newtiles"
 	],
 	"name" : "GameMap",
 	"type" : "normal"

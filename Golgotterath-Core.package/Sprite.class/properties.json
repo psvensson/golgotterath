@@ -14,7 +14,8 @@
 		"target",
 		"tileSize",
 		"tileAdjustment",
-		"boardPosition"
+		"boardPosition",
+		"open"
 	],
 	"name" : "Sprite",
 	"type" : "normal"

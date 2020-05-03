@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "StateSprite",
+	"category" : "Golgotterath-Core-Sprite",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DoorSprite",
+	"type" : "normal"
+}
