@@ -7,8 +7,9 @@ openFloorAt: target for: entity
 			^ false]].	
 	tile := gameMap mapAt: target.
 	cname := tile name.
-	(cname findString: 'door') > 0ifTrue: [ ^ tile isOpen ].
+	Logger log:'openFloorAt: ';log:target;log:' name = ',cname;cr.
+	(cname findString: 'door') > 0ifTrue: [ Logger log:'openFloorAt: ';log:target;log:' is door open = ',(tile isOpen asString);cr. ^ tile isOpen ].
 	(cname findString: 'floor') > 0 ifTrue: [ 
-		"Logger log:'openFloorAt: ';log:target;log:' is floor';cr."
+		Logger log:'openFloorAt: ';log:target;log:' is floor';cr.
 		 ^ true] ifFalse: [ ^ false ]
 	
