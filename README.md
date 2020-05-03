@@ -23,5 +23,6 @@ GameBoard open
     w - wield a weapon
     e - equip an armour
     q - quaff a potion
+    o <direction> - open door at direction
     
     You can hit monsters by moving onto them.
