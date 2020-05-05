@@ -2,6 +2,10 @@ initialization
 initialize 
 	| img |
 	super initialize.
+	hoffset := 32.
+	voffset := 32.
+	tileSizeV := 64.
+	tileSizeH := 64.
 	img := self spriteImage.
 	self loadSpriteImage: img spriteWidth: 32 spritesPerRow: 17 offset: 32.
 	tiles := Dictionary new.
