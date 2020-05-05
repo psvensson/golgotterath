@@ -16,7 +16,7 @@ drawViewportOn: aCanvas
 				left - 1 to: right + 1 do: [ :x | 
 					| worldpos entity |
 					worldpos := self getWorldCoordsFromOffset: x @ y.
-					self paintDarkness: worldpos canvas: aCanvas.
+					"self paintDarkness: worldpos canvas: aCanvas."
 					gameMap
 						entitiesAt: worldpos
 						ifPresent: [ entity := gameMap entitiesAt: worldpos.

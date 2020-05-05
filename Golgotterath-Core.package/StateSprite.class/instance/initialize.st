@@ -1,5 +1,6 @@
 accessing
-initialize 
+initialize
 	super initialize.
 	stateImages := Dictionary new.
-	state := 0
+	state := 1.
+	rotated := false

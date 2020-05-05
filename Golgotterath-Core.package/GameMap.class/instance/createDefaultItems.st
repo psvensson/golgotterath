@@ -1,6 +1,9 @@
 initialization
 createDefaultItems
 	^ [ 
+		topbar
+		text: 'Creating items...';
+		left: 100.
 	self addItem: (GameItem new: 'orange_robe') at: self getFreeTile.
 	self addItem: (GameItem new: 'blue_robe') at:self getFreeTile.
 	self addItem: (GameItem new: 'yellow_robe') at: self getFreeTile.

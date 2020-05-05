@@ -1,8 +1,10 @@
 accessing
 paint: gameboard at: aCanvas alpha: alpha
+	| p |
 	self image alpha: alpha.
+	p := (self calculatePositionFromGameboard: gameboard)
+		+ tileAdjustment.
 	self image
-		position:
-			(self calculatePositionFromGameboard: gameboard) + tileAdjustment;
-		resize: self tileSize @ self tileSize;
-		drawOn: aCanvas
+		position: p;
+		"resize: tileSizeH @ tileSizeV;"
+			drawOn: aCanvas

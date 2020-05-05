@@ -12,10 +12,14 @@
 		"spritesPerRow",
 		"name",
 		"target",
-		"tileSize",
 		"tileAdjustment",
+		"tileAdjustmentY",
 		"boardPosition",
-		"open"
+		"open",
+		"hoffset",
+		"voffset",
+		"tileSizeV",
+		"tileSizeH"
 	],
 	"name" : "Sprite",
 	"type" : "normal"

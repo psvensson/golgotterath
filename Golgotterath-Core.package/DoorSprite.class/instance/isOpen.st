@@ -1,3 +1,3 @@
 accessing
 isOpen 
-	^ state = 1
+	^ (state = 2) or: (state = 3)

@@ -12,9 +12,9 @@ createRandomRoomAt: door depth: depth
 			self createAreaForDoor: door Area: area direction: direction.
 			(self isAreaFree: area direction: direction )
 				ifTrue: [ nomatch := false ]
-				ifFalse: [ Transcript
+				ifFalse: [ "Transcript
 						show: 'Could not fit :(';
-						cr
+						cr"
 					"TODO: remove doors which does not lead anywhere" ].
 			tries := tries - 1 ].
 	door at: #checked put: true.	

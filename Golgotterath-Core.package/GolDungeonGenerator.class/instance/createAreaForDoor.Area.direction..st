@@ -20,11 +20,11 @@ createAreaForDoor: door Area: area direction: direction
 	direction = 'left'
 		ifTrue: [ 
 			y := self class getRandomRange: dpos y offset: h ].
-	Transcript
+	"Transcript
 		show:
 			'creating area direction ' , direction , ' from ' , (x @ y) asString
 				, ' to ' , h asString , ',' , w asString;
-		cr.
+		cr."
 	area
 		at: #pos put: x @ y;
 		at: #w put: w;

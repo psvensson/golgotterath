@@ -16,6 +16,7 @@ initialize
 		top: 30;
 		left: 0.
 	self addMorph: gameboard.
+	gameboard startGame.
 	"self changed."
 	"gamebar changed."
 	self extent: 1150 @ 700.
