@@ -12,7 +12,9 @@
 		"MAX_SIZE",
 		"MIN_SIZE",
 		"MIN_DOORS",
-		"MAX_DOORS"
+		"MAX_DOORS",
+		"MAX_CORRIDOR_SIZE",
+		"MIN_CORRIDOR_SIZE"
 	],
 	"name" : "GolDungeonGenerator",
 	"type" : "normal"

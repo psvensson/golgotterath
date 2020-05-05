@@ -1,5 +1,5 @@
 initialization
-createRandomDoorsDirection: dir
+createRandomDoorsOn: dungeon Direction: dir
 	| interval numdoors |
 	interval := MAX_DOORS - MIN_DOORS.
 	numdoors := interval atRandom + MIN_DOORS.
@@ -9,5 +9,5 @@ createRandomDoorsDirection: dir
 		cr.
 	numdoors
 		timesRepeat: [ | door |
-			door := self createRandomDoorDirection: dir.
-			doors add: door ]
+			door := self createRandomDoorOn: dungeon Direction: dir.
+			door ifNotNil: [ doors add: door ] ]
