@@ -5,7 +5,7 @@ dealDamageTo: entity
 	self weapon ifNotNil: [ damage := weapon getRandomDamage ].
 	entity hp: entity hp - damage.
 	effect := TextEffect new.
-	effect color: Color red.
+	effect color: Color red; fontSize:15.
 	effect text: '-',damage asString.
 	gamemap gameboard addEffect: effect startPosition: (animatedSprite calculatePositionFromGameboard: gamemap gameboard).
 	entity hp < 1

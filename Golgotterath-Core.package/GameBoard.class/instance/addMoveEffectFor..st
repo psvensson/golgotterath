@@ -3,7 +3,7 @@ addMoveEffectFor: entity
 	| effect |
 	effect := TextEffect new.
 	effect
-		text: '..';
+		text: 'Foo';
 		color: Color green.
 	self
 		addEffect: effect

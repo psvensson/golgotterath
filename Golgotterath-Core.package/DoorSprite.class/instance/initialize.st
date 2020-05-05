@@ -9,7 +9,7 @@ initialize
 	tileSizeH := 150.
 	hoffset := 91.
 	voffset := 102.
-	tileAdjustment := 0@(-25).
+	tileAdjustment := 0@(-15).
 	self loadSpriteImage: img spriteWidth: 91 spriteHeight: 102 spritesPerRow: 12.	
 	"closed"
 	stateImages at: 1 put: (spriteImages at: 3).
