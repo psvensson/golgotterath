@@ -6,7 +6,13 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"text"
+		"text",
+		"level",
+		"exp",
+		"hp",
+		"ac",
+		"weapon",
+		"armour"
 	],
 	"name" : "GameBar",
 	"type" : "normal"

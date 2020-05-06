@@ -1,7 +1,10 @@
 initialization
-initialize 
-	super initialize .
-	text := StringMorph new.	
-	self addMorph: text.	
-	self color: (Color darkGray ).
-	text contents: 'Foo'
+initialize
+	super initialize.
+	self
+		layoutPolicy: TableLayout new;
+		listDirection: #topToBottom;
+		cellPositioning: #topLeft;
+		cellInset: 0.
+	self addMorph: self createTextField.
+	self addMorph: self createStatusField

@@ -1,20 +1,15 @@
 initialization
 update: gameboard
-	| player weapon armour |
+	| player |
 	player := gameboard player.
 	player
 		ifNotNil: [ player weapon
-				ifNil: [ weapon := 'None' ]
-				ifNotNil: [ weapon := player weapon asString ].
+				ifNil: [ weapon contents: 'None' ]
+				ifNotNil: [ weapon contents: player weapon asString ].
 			player armour
-				ifNil: [ armour := 'None' ]
-				ifNotNil: [ armour := player armour asString ].
-			text backgroundColor: Color darkGray.
-			text color: Color white.
-			text
-				font: (LogicalFont familyName: 'Source Sans Pro' pointSize: 20).
-			text
-				contents:
-					' Level: ' , player level asString , '  Exp: ' , player exp asString
-						, '  HP: ' , player hp asString , '  AC: ' , player ac asString
-						, '    Weapon: ' , weapon , '    Armour: ' , armour ]
+				ifNil: [ armour contents: 'None' ]
+				ifNotNil: [ armour contents: player armour asString ].
+			level contents: player level asString.
+			exp contents: player exp asString.
+			hp contents: player hp asString.
+			ac contents: player ac asString ]
