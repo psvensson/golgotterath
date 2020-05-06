@@ -1,6 +1,6 @@
 action
 addMoveEffectFor: entity
-	| effect |
+	"| effect |
 	effect := TextEffect new.
 	effect
 		text: 'Foo';
@@ -8,4 +8,4 @@ addMoveEffectFor: entity
 	self
 		addEffect: effect
 		startPosition:
-		(entity animatedSprite calculatePositionFromGameboard: self)
+		(entity animatedSprite calculatePositionFromGameboard: self)"
