@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "GlamorousAuthor 11/20/2019 17:29",
-	"super" : "BorderedMorph",
+	"super" : "Morph",
 	"category" : "Golgotterath-Core-View",
 	"classinstvars" : [ ],
 	"pools" : [ ],

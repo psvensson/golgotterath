@@ -16,4 +16,10 @@ initialize
 	tiles at: 'bastard_sword' put: (spriteImages at: 32).
 	tiles at: 'mace' put: (spriteImages at: 3).
 	tiles at: 'axe' put: (spriteImages at: 54).
-	tiles at: 'flail' put: (spriteImages at: 23)
+	tiles at: 'flail' put: (spriteImages at: 23).
+	tiles at: 'crossbow' put: (spriteImages at: 7).
+	tiles at: 'short_bow' put: (spriteImages at: 35).
+	tiles at: 'long_bow' put: (spriteImages at: 45).
+	tiles at: 'arrow' put: (spriteImages at: 95).
+	tiles at: 'bolt' put: (spriteImages at: 16).
+	tiles at: 'war_hammer' put: (spriteImages at: 92).

@@ -1,6 +1,5 @@
 initialization
 createDungeonGeneratorMap
-	| dungeon |
 	^ [ dungeon := GolDungeonGenerator new.
 	dungeon digAt: 0 @ 0 depth: 8.
 	(dungeon mapFilteredBy: 1)

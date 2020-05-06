@@ -14,7 +14,9 @@
 		"gameboard",
 		"entitiesArray",
 		"random",
-		"newtiles"
+		"newtiles",
+		"topbar",
+		"dungeon"
 	],
 	"name" : "GameMap",
 	"type" : "normal"

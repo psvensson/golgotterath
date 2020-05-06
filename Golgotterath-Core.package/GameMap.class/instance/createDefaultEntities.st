@@ -3,12 +3,11 @@ createDefaultEntities
 	^ [ topbar
 		text: 'Creating entites...';
 		left: 100.
-	self addEntity: (GameEntity new: 'malelight') at: 0 @ 0.
-	self addEntity: (GameEntity new: 'skeleton') at: self getFreeTile.
-	self addEntity: (GameEntity new: 'magician') at: self getFreeTile.
-	self addEntity: (GameEntity new: 'zombie') at: self getFreeTile.
-	self addEntity: (GameEntity new: 'werewolf') at: self getFreeTile.
-	self addEntity: (GameEntity new: 'goblin') at: self getFreeTile.
+	self addEntity: (GameEntity new: 'malelight') at: 0 @ 0.	
+	dungeon rooms do: [  :room |
+		room entities do: [ :entity | | name | name := (entity at: #name).
+			Logger log:'Creating entity ',name;cr.
+			self addEntity: (GameEntity new: name) at: (self getUnoccupiedTileForRoom: room) ] ].
 	Logger
 		log: 'default entities created';
 		cr ] future
