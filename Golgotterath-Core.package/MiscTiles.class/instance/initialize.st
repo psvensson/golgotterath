@@ -25,7 +25,7 @@ initialize
 	tiles at: 'wooden_sticks' put: (spriteImages at: 7).
 	tiles at: 'skull' put: (spriteImages at: 24).
 	tiles at: 'bones' put: (spriteImages at: 31).
-	tiles at: 'skeletal_remains' put: (spriteImages at: 38).
-	tiles at: 'cadaver' put: (spriteImages at: 45).
-	tiles at: 'corpse' put: (spriteImages at: 52).
+	tiles at: 'skeletal_remains' put: (spriteImages at: 48).
+	tiles at: 'cadaver' put: (spriteImages at: 65).
+	tiles at: 'corpse' put: (spriteImages at: 82).
 	

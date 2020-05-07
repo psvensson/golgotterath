@@ -8,6 +8,7 @@ generateAreaAt: door
 	area := Dictionary new.
 	area
 		at: #pos put: pos;
+		at: #type put: #room;
 		at: #w put: w;
 		at: #h put: h.
 	"Transcript show:'++ ++ generateArea from ',pos asString,' h ',h asString,', w ',w asString;cr."

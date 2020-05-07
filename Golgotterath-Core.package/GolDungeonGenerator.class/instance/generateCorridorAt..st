@@ -12,6 +12,7 @@ generateCorridorAt: door
 	area := Dictionary new.
 	area
 		at: #pos put: pos;
+		at: #type put: #corridor;
 		at: #w put: w;
 		at: #h put: h.
 	"Transcript show:'++ ++ Corridor from ',pos asString,' h ',h asString,', w ',w asString;cr.	"

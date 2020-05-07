@@ -23,6 +23,7 @@ createRandomDoorOn: dungeon Direction: direction
 	door := Dictionary new.
 	door
 		at: #pos put: x @ y;
+		at: #checked put: false;
 		at: #direction put: dir.
 	"Transcript show:'random door wall: ',wall asString,' pos: ',(x@y) asString;cr.	"
 	^ door

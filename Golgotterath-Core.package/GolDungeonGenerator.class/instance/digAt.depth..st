@@ -1,17 +1,19 @@
 initialization
 digAt: pos depth: depth
-	| doors door |
-	
+	| alldoors doors door foo |
 	doors := OrderedCollection new.
+	alldoors := OrderedCollection new.
 	door := Dictionary new.
 	door
 		at: #pos put: pos;
-		at: #direction put: #down. 
+		at: #checked put: false;
+		at: #direction put: #down.
 	doors add: door.
-	[ currentDepth = depth ]
-		whileFalse: [ doors
-				do: [ :d | 
-					| room |
-					room := self createRandomRoomAt: d depth: currentDepth.
-					room ifNotNil: [doors addAll: room doors] ].
-			currentDepth := currentDepth + 1 ]
+	[ currentDepth = depth and: doors size > 0 ]
+		whileFalse: [ | d room |
+			d := doors removeFirst.
+			room := self createRandomRoomAt: d depth: currentDepth.			
+			room ifNotNil: [ doors addAll: room doors. alldoors addAll: room doors ].
+			currentDepth := currentDepth + 1 ].
+	foo := self getUncheckedDoors: alldoors. 
+	Transcript show:'doors left unchecked: ',foo size asString,' of ',alldoors size asString,' doors';cr.

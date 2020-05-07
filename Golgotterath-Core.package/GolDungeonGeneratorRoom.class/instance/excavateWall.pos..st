@@ -1,3 +1,6 @@
 accessing
 excavateWall: generator pos: p
-	(generator mapAt:p) = 2 ifFalse: [ generator mapAt: p put: 3. ]
+	| tile |
+	tile := generator mapAt: p.
+	(tile = 2 or: tile = 1)
+		ifFalse: [ generator mapAt: p put: 3 ]
