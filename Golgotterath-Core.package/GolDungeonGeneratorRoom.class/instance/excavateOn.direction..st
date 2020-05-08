@@ -9,7 +9,9 @@ excavateOn: generator direction: dir
 		iterateArea: area
 		direction: dir
 		edge: 1
-		do: [ :ix :iy | generator mapAt: ix @ iy put: 1 ].
+		do: [ :ix :iy | 
+			floor add: ix@iy.
+			generator mapAt: ix @ iy put: 1 ].
 	self createRandomDoorsOn: generator Direction: dir.
 	doors do: [ :door | generator mapAt: (door at: #pos) put: type ].
 	self generateEntities .

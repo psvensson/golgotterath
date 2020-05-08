@@ -20,7 +20,8 @@ moveEntity: entity dir: dir
 			entity = player
 				ifTrue: [ gameMap stepMap.
 					self addMoveEffectFor: entity.
-					worldLastPosition := player boardPosition ] ]
+					worldLastPosition := player boardPosition.
+					gameMap tryToGrowDungeonFrom: player boardPosition  ] ]
 		ifFalse: [ gameMap
 				entitiesAt: target
 				ifAbsent: [ Logger
