@@ -3,7 +3,7 @@ createDefaultEntities
 	^ [ topbar
 		text: 'Creating entites...';
 		left: 100.
-	self addEntity: (GameEntity new: 'malelight') at: 0 @ 0.	
+	self createPlayer.
 	dungeon rooms do: [  :room |
 		room entities do: [ :entity | | name | name := (entity at: #name).
 			Logger log:'Creating entity ',name;cr.

@@ -9,7 +9,7 @@ digAt: pos depth: depth
 		at: #checked put: false;
 		at: #direction put: #down.
 	doors add: door.
-	[ currentDepth = depth and: doors size > 0 ]
+	[ currentDepth = depth and: doors isNotEmpty  ]
 		whileFalse: [ | d room |
 			d := doors removeFirst.
 			room := self createRandomRoomAt: d depth: currentDepth.			

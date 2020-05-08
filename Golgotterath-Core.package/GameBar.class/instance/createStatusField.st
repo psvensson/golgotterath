@@ -7,7 +7,7 @@ createStatusField
 		listDirection: #rightToLeft;
 		"wrapCentering: #topLeft;"
 			cellPositioning: #bottomLeft;
-		layoutInset: 0.
+		layoutInset: 5.
 	armourmorph := self getLabel: 'Armour: ' text: 'None'.
 	statusRow addMorph: armourmorph.
 	armour := armourmorph submorphs at: 2.

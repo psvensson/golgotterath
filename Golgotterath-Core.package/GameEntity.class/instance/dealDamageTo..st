@@ -7,7 +7,7 @@ dealDamageTo: entity
 	effect := TextEffect new.
 	effect color: Color red; fontSize:15.
 	effect text: '-',damage asString.
-	p :=  (animatedSprite calculatePositionFromGameboard: gamemap gameboard) + (60@0).
+	p :=  (entity animatedSprite calculatePositionFromGameboard: gamemap gameboard) + (50@0).
 	gamemap gameboard addEffect: effect startPosition: p.
 	entity hp < 1
 		ifTrue: [ self exp: self exp + (entity abilities at: 'exp').
