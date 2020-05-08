@@ -16,7 +16,10 @@
 		"area",
 		"entities",
 		"items",
-		"level"
+		"level",
+		"walls",
+		"floor",
+		"features"
 	],
 	"name" : "GolDungeonGeneratorRoom",
 	"type" : "normal"

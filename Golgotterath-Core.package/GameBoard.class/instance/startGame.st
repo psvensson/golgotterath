@@ -19,6 +19,7 @@ startGame
 			self
 				color: Color black;
 				changed.
+			self invalidRect: (Rectangle center: self position extent: self extent).	
 			Logger
 				log: 'Golgotterath initialization took ';
 				log: now - then;

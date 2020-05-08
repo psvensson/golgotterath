@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "PeterSvensson 5/8/2020 10:24",
 	"super" : "Object",
 	"category" : "Golgotterath-Core-Base",
 	"classinstvars" : [ ],
@@ -14,7 +14,8 @@
 		"MIN_DOORS",
 		"MAX_DOORS",
 		"MAX_CORRIDOR_SIZE",
-		"MIN_CORRIDOR_SIZE"
+		"MIN_CORRIDOR_SIZE",
+		"quadTree"
 	],
 	"name" : "GolDungeonGenerator",
 	"type" : "normal"

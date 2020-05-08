@@ -1,6 +1,6 @@
 initialization
 initialize 
-	| door room |
+	"| door room |"
 	MAX_SIZE := 9.
 	MIN_SIZE := 4.
 	
@@ -16,4 +16,10 @@ initialize
 	rooms add: room."
 	
 	currentDepth := 1.
+	quadTree := QuadTree
+		size: 1024
+		maxLeafs: 8
+		maxDepth: 16
+		x: 0
+		y: 0.
 	
