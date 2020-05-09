@@ -9,6 +9,6 @@ generateTreasure
 		do: [ :thing | 
 			| c |
 			c := thing at: #commonality ifAbsent: [ c := 1 ].
-			Transcript show:'generateTreasure adding ',(thing at: #name),' ',c asString,' times';cr.
+			"Transcript show:'generateTreasure adding ',(thing at: #name),' ',c asString,' times';cr."
 			c timesRepeat: [ expandedthings add: thing ] ].
 	^ expandedthings at: expandedthings size atRandom

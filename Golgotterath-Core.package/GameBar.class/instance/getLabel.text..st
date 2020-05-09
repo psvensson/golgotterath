@@ -2,7 +2,7 @@ initialization
 getLabel: label text: aText
 	| m l t |
 	m := Morph new.
-	m layoutPolicy: RowLayout new.
+	m layoutPolicy: RowLayout new; color: Color black.
 	
 	l := StringMorph new.
 	l backgroundColor: Color darkGray.

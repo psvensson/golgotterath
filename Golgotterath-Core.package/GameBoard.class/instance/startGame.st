@@ -1,11 +1,12 @@
 initialization - private
 startGame
 	| then now |
-	then := DateAndTime now.
+	^ [ then := DateAndTime now.
 	topbar
 		text: 'Starting game...';
 		left: 100.
-	self initializeWorld.
+	[self showWelcomeEffect] future .	
+	[self initializeWorld] future.
 	self initializeGameMap
 		onSuccessDo: [ :result | 
 			self
@@ -13,14 +14,18 @@ startGame
 				initializePlayer;
 				initializeInventoryList;
 				initializeSoundboard.
-			self showWelcomeEffect.
+			topbar
+				text: '';
+				left: 100.
+			
 			now := DateAndTime now.
 			"self hideLoadingMessage."
 			self
 				color: Color black;
 				changed.
-			self invalidRect: (Rectangle center: self position extent: self extent).	
+			self
+				invalidRect: (Rectangle center: self position extent: self extent).
 			Logger
 				log: 'Golgotterath initialization took ';
 				log: now - then;
-				log: ' seconds ' ]
+				log: ' seconds ' ] ] future

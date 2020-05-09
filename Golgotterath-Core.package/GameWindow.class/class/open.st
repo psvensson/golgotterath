@@ -2,5 +2,5 @@ accessing
 open
     <script>
     ^(self new)
-          openInWindow;
+          open;
           yourself
