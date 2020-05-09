@@ -23,8 +23,7 @@ startGame
 			self
 				color: Color black;
 				changed.
-			self
-				invalidRect: (Rectangle center: self position extent: self extent).
+			self playAnimation: 'walk' for: player.
 			Logger
 				log: 'Golgotterath initialization took ';
 				log: now - then;
