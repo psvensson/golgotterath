@@ -1,7 +1,8 @@
 initialization
 createPlayer
-	| player dagger |
+	|  dagger room |
 	player := GameEntity new: 'malelight'.
-	self addEntity: player at: 0 @ 0.
+	room := dungeon rooms first.
+	self addEntity: player at: (self getUnoccupiedTileForRoom: room).
 	dagger := GameItem new: 'dagger'.
 	player weapon: dagger

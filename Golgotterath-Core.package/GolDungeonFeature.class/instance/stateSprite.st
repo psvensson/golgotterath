@@ -1,0 +1,3 @@
+accessing
+stateSprite
+	self subclassResponsibility 

@@ -18,7 +18,8 @@
 		"items",
 		"level",
 		"walls",
-		"floor"
+		"floor",
+		"features"
 	],
 	"name" : "GolDungeonGeneratorRoom",
 	"type" : "normal"

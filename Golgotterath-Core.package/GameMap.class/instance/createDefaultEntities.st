@@ -1,6 +1,6 @@
 initialization
 createDefaultEntities
-	^ [ topbar
+	"^ [" topbar
 		text: 'Creating entites...';
 		left: 100.
 	self createPlayer.
@@ -8,4 +8,4 @@ createDefaultEntities
 		self createEntitiesFromRoom: room ].
 	Logger
 		log: 'default entities created';
-		cr ] future
+		cr "] future"

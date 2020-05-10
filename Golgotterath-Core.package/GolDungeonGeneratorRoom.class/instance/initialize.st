@@ -7,6 +7,7 @@ initialize
 	items := OrderedCollection new.
 	walls := OrderedCollection new.
 	floor := OrderedCollection new.
+	features := OrderedCollection new.
 	depth := 0.
 	level := 1.
 	

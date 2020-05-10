@@ -535,8 +535,9 @@ itemList
 					(#kind -> 'potion').
 					(#longname -> 'Small Healing Potion').
 					(#subtype -> 'healing').
+					(#commonality -> 2).
 					(#size -> 1).
-					(#level -> 2)}).
+					(#level -> 1)}).
 	list
 		at: 'large_healing_potion'
 		put:
