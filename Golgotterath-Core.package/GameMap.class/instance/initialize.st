@@ -1,8 +1,8 @@
 initialization
-initialize 	
+initialize
 	mapRadius := 10.
 	entities := Dictionary new.
-	map := Dictionary new.	
+	map := Dictionary new.
 	items := Dictionary new.
 	entitiesArray := OrderedCollection new.
 	random := Random new.
@@ -13,3 +13,7 @@ initialize
 		maxDepth: 16
 		x: 0
 		y: 0.
+	self createTiles.
+	Transcript
+		show: 'Gamemap initialized';
+		cr

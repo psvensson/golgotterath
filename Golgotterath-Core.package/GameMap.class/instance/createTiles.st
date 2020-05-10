@@ -1,7 +1,8 @@
 accessing
 createTiles
-	topbar
+	"topbar
 		text: 'Creating tiles...';
-		left: 100.
+		left: 100."
+	Transcript show:'creating tiles';cr.	
 	tiles := Tiles new.
 	newtiles := NewTiles new.
