@@ -6,3 +6,4 @@ createDefaultItems
 	dungeon rooms
 		do: [ :room | 
 			self createItemsFromRoom: room ] "] future"
+
