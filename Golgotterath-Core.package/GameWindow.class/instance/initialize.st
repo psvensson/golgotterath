@@ -1,11 +1,11 @@
 initialization
 initialize
 	super initialize.
+	self extent: 1150 @ 700.
 	self
 		color: Color black;
-		extent: 1150 @ 700;
+		deleteCloseBox;		
 		title: ''.
-	self deleteCloseBox.
 	gamebar := GameBar new.
 	gamebar
 		text: 'Loading...';
@@ -18,6 +18,7 @@ initialize
 		top: 30;
 		left: 0.
 	self addMorph: gameboard.
+	self extent: 1150 @ 700.
 	gameboard startGame.
 	"self changed."
 	"gamebar changed."

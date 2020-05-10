@@ -10,13 +10,15 @@
 		"map",
 		"tiles",
 		"items",
+		"features",
 		"mapRadius",
 		"gameboard",
 		"entitiesArray",
 		"random",
 		"newtiles",
 		"topbar",
-		"dungeon"
+		"dungeon",
+		"player"
 	],
 	"name" : "GameMap",
 	"type" : "normal"

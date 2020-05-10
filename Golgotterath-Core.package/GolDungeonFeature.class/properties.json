@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Golgotterath-Core-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"state",
+		"stateSprite",
+		"capacities",
+		"inputFeatures",
+		"outputFeatures"
+	],
+	"name" : "GolDungeonFeature",
+	"type" : "normal"
+}

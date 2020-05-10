@@ -9,6 +9,7 @@
 		"animatedSprite",
 		"abilities",
 		"hp",
+		"maxhp",
 		"ac",
 		"speed",
 		"level",

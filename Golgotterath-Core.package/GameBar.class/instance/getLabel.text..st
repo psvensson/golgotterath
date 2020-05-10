@@ -8,7 +8,7 @@ getLabel: label text: aText
 	l backgroundColor: Color darkGray.
 	l color: Color lightOrange .
 	l font: (LogicalFont familyName: 'Source Sans Pro' pointSize: 20).
-	l contents: label.
+	l contents: label, ' '.
 	
 	t := StringMorph new.
 	t backgroundColor: Color darkGray.

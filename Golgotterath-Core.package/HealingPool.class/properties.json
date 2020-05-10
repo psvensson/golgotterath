@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "GolDungeonFeature",
+	"category" : "Golgotterath-Core-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "HealingPool",
+	"type" : "normal"
+}

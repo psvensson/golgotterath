@@ -7,6 +7,7 @@ createDungeonGeneratorMap
 	(dungeon mapFilteredBy: 2) do: [ :door | self addDoorAt: door ].
 	(dungeon mapFilteredBy: 3) do: [ :wall | self addWallAt: wall ].
 	actualrooms := dungeon rooms select: [:r | ((r area) at: #type) = #room ].
+	dungeon rooms do: [  :room | room features do: [ :feature | self createFeaturesFromRoom: room] ].
 	downpos := self getFreeTileForRoom: (actualrooms last).
 	startpos := self getFreeTileForRoom: (actualrooms first).
 	self addTile: (self getTile: 'stairs_down') atx: downpos x y: downpos y.

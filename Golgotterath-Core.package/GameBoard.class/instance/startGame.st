@@ -5,8 +5,8 @@ startGame
 	topbar
 		text: 'Starting game...';
 		left: 100.
-	[self showWelcomeEffect] future .	
-	[self initializeWorld] future.
+	self showWelcomeEffect.	
+	self initializeWorld.
 	self initializeGameMap
 		onSuccessDo: [ :result | 
 			self
