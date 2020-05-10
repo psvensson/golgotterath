@@ -8,4 +8,4 @@ spriteImage
 	bytearray := str base64Decoded .
 	stream := bytearray  readStream.
 	^ PNGReadWriter formFromStream: stream readStream"
-	^ self class getEncodedSprite: name forString: self getEncoded
+	^ self class getEncodedSprite: self className forString: self getEncoded

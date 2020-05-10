@@ -21,4 +21,5 @@ drawViewportOn: aCanvas
 					| worldpos |
 					worldpos := self getWorldCoordsFromOffset: x @ y.
 					"self paintDarkness: worldpos canvas: aCanvas."
-					self animateEffectsOn: aCanvas ] ] ]
+					 ] ].
+			self animateEffectsOn: aCanvas ]
