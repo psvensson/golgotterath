@@ -18,7 +18,8 @@
 		"newtiles",
 		"topbar",
 		"dungeon",
-		"player"
+		"player",
+		"level"
 	],
 	"name" : "GameMap",
 	"type" : "normal"

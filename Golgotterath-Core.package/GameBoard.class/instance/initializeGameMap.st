@@ -7,6 +7,7 @@ initializeGameMap
 	gameMap := GameMap new.
 	gameMap
 		gameboard: self;
+		level: 1;
 		topbar: topbar.
 	"futures := OrderedCollection new."
 	topbar
@@ -14,5 +15,6 @@ initializeGameMap
 		left: 100.
 	"futures add: " gameMap createDungeonGeneratorMap.
 	"futures add: " gameMap createDefaultEntities.
+	player := gameMap createPlayer .
 	"futures add: " gameMap createDefaultItems.
 	"^ GolUtil futuresAll: futures"

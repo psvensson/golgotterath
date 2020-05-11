@@ -203,7 +203,7 @@ itemList
 					(#tohit -> -1).
 					(#level -> 3)}).
 	list
-		at: 'short_sword'
+		at: 'bastard_sword'
 		put:
 			(Dictionary
 				newFrom:

@@ -1,3 +1,5 @@
 initialization
 addWallAt: wall
-	self addTile: (self getTile: 'bluewall') atx: wall x y: wall y
+	|tilename|
+	tilename := self class levelWalls at: level ifAbsent: [ 'bluewall' ].
+	self addTile: (self getTile: tilename) atx: wall x y: wall y

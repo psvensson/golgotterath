@@ -12,6 +12,7 @@ dealDamageTo: entity
 	entity hp < 1
 		ifTrue: [ self exp: self exp + (entity abilities at: 'exp').
 			Logger	log: '*** Experience is now: ';log: self exp;cr.
+			self checkLevelUp	.
 			entity die ]
 		ifFalse: [ Logger log: entity;	log: ' took ';	log: damage;log: ' in damage';	cr.
 			entity hurt ]

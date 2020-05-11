@@ -12,9 +12,9 @@ drawViewportOn: aCanvas
 					worldpos := self getWorldCoordsFromOffset: x @ y.
 					self paintTileAtPos: worldpos canvas: aCanvas.
 					self paintItemAtPos: worldpos canvas: aCanvas.
-					gameMap
+					self gameMap
 						entitiesAt: worldpos
-						ifPresent: [ entity := gameMap entitiesAt: worldpos.
+						ifPresent: [ entity := self gameMap entitiesAt: worldpos.
 							entity animatedSprite paint: self at: aCanvas ] ] ].
 			top - 1 to: bottom + 1 do: [ :y | 
 				left - 1 to: right + 1 do: [ :x | 

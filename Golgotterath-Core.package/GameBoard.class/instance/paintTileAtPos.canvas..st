@@ -2,7 +2,7 @@ drawing
 paintTileAtPos: worldpos canvas: aCanvas
 	| tile ppos |
 	ppos := player boardPosition.
-	tile := gameMap mapAt: worldpos.
+	tile := self gameMap mapAt: worldpos.
 	tile boardPosition: worldpos.
 	(GolUtil isFloor: tile) ifFalse: [ 
 		self paintFloorUnderneath: worldpos at: aCanvas ].

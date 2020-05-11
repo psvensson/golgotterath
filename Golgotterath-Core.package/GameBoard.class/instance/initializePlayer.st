@@ -1,4 +1,4 @@
 initialization - private
 initializePlayer
-	player := gameMap player.
+	player := self gameMap player.
 	player player: true

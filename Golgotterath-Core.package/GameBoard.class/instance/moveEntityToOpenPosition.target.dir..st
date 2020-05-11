@@ -9,7 +9,7 @@ moveEntityToOpenPosition: entity target: target dir: dir
 		log: dir;
 		cr."
 	entity moveTo: target.
-	item := gameMap
+	item := self gameMap
 		itemAt: target
 		ifAbsent: [ topbar text: ''.
 			nil ].
@@ -17,11 +17,11 @@ moveEntityToOpenPosition: entity target: target dir: dir
 	self playAnimation: 'walk' for: entity.
 	entity = player
 		ifFalse: [ ^ self ].
-	gameMap stepMap.
+	self gameMap stepMap.
 	self addMoveEffectFor: entity.
 	worldLastPosition := player boardPosition.
-	gameMap tryToGrowDungeonFrom: player boardPosition.
-	features := gameMap featuresNearby: entity.
+	self gameMap tryToGrowDungeonFrom: player boardPosition.
+	features := self gameMap featuresNearby: entity.
 	features ifNotNil: [ 
 		Transcript show:'moveEntityToOpenPosition found ',features size asString,' nearby features';cr.
 		features do: [ :each | each isNextTo: entity ] ]

@@ -1,9 +1,9 @@
 class initialization
 getEncodedSprite: aName forString: str
 	| image |
-	Transcript
+	"Transcript
 		show: 'Sprite.getEncodedSprite called for ' , aName;
-		cr.
+		cr."
 	cachedEncodedSprites ifNil: [ cachedEncodedSprites := Dictionary new ].
 	image := cachedEncodedSprites
 		at: aName
