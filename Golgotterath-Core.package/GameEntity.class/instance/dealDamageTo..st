@@ -2,6 +2,7 @@ accessing
 dealDamageTo: entity
 	| damage effect p |
 	damage := 1.
+	self abilities at: #dam ifPresent:[ damage := self getRandomDamage ].
 	self weapon ifNotNil: [ damage := weapon getRandomDamage ].
 	entity hp: entity hp - damage.
 	effect := TextEffect new.

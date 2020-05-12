@@ -2,5 +2,5 @@ accessing
 open
     <script>
     ^(self new)
-          open; extent: 1170@800;
+          open; extent: 1150@700;
           yourself
