@@ -12,7 +12,7 @@ Metacello new
 
 ## Running 
 ```
-GameBoard open 
+GameWindow open 
 ```
 
 ## In-game commands
