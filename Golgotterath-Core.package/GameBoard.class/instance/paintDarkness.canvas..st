@@ -7,7 +7,7 @@ paintDarkness: worldpos canvas: aCanvas
 	alpha := 1.
 	alpha :=  (diff < 2) ifTrue: [0] ifFalse: [(diff * 0.15) + 0.35].
 	position:= worldpos.
-	tile := gameMap getTile: 'floor'.
+	tile := self gameMap getTile: 'floor'.
 	tile boardPosition: position.
 	tile paint: self at: aCanvas alpha: alpha.
 	

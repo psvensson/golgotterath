@@ -1,7 +1,7 @@
 accessing
 tryToGrowDungeonFrom: pos
 	| room |
-	[ room := dungeon getRoomAt: pos.
+	room := dungeon getRoomAt: pos.
 	room
 		ifNotNil: [ (dungeon growRoom: room)
 				do: [ :newroom | 
@@ -9,5 +9,5 @@ tryToGrowDungeonFrom: pos
 					room walls do: [ :wpos | self addWallAt: wpos ].
 					room doors do: [ :door | self addDoorAt: (door at: #pos) ].
 					self createItemsFromRoom: room.
-					self createEntitiesFromRoom: room ] ] ] future
+					self createEntitiesFromRoom: room ] ] 
 

@@ -1,6 +1,6 @@
 drawing
 paintItemAtPos: worldpos canvas: aCanvas
-		gameMap itemAt: worldpos ifPresent: [ :item |
+		self gameMap itemAt: worldpos ifPresent: [ :item |
 			item boardPosition: worldpos.
 			"item sprite image borderColor: (Color yellow); borderWidth: 1."
 			item sprite paint: self at: aCanvas.

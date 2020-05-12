@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "Morph",
+	"category" : "Golgotterath-Core-View",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"gamemap",
+		"playerPointer",
+		"player",
+		"m",
+		"base",
+		"scale"
+	],
+	"name" : "GameMinimap",
+	"type" : "normal"
+}

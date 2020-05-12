@@ -21,7 +21,10 @@
 		"effects",
 		"loadingMorph",
 		"steppingTime",
-		"openingDoor"
+		"openingDoor",
+		"levels",
+		"currentLevel",
+		"minimap"
 	],
 	"name" : "GameBoard",
 	"type" : "normal"

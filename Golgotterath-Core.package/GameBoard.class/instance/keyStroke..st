@@ -34,4 +34,4 @@ keyStroke: anEvent
 			keyValue = 105 ifTrue: [ self showInventoryFor: player onSelect: [:item |
 					selectedItem := item] ].
 			openingDoor := false.
-			gameMap stepMap.
+			self gameMap stepMap.

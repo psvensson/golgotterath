@@ -7,6 +7,7 @@ moveEntity: entity dir: dir
 			^ self ].
 	entity animatedSprite directionString: dir.
 	target := entity animatedSprite getTargetForDirectionString: dir.
+	
 	(self openFloorAt: target for: entity)
 		ifTrue: [ self moveEntityToOpenPosition: entity target: target dir: dir ]
 		ifFalse: [ self moveEntityToOccupiedPosition: entity target: target dir: dir ]

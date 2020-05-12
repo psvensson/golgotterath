@@ -1,7 +1,7 @@
 instance creation
 new: entityname
 	| entity template |
-	Transcript show:'GameEntity new: for ',entityname;cr.
+	"Transcript show:'GameEntity new: for ',entityname;cr."
 	template := (GameEntity listEntities) at: entityname.
 	entity := self new.
 	entity ac: (template at: 'ac');

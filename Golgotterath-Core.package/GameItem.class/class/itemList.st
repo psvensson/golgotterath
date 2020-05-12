@@ -108,7 +108,7 @@ itemList
 		put:
 			(Dictionary
 				newFrom:
-					{(#name -> 'brass_scale_armou').
+					{(#name -> 'brass_scale_armour').
 					(#kind -> 'armour').
 					(#longname -> 'Brass Scale Armou').
 					(#dac -> -5).
@@ -203,7 +203,7 @@ itemList
 					(#tohit -> -1).
 					(#level -> 3)}).
 	list
-		at: 'short_sword'
+		at: 'bastard_sword'
 		put:
 			(Dictionary
 				newFrom:

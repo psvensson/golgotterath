@@ -8,6 +8,7 @@
 	"instvars" : [
 		"map",
 		"rooms",
+		"level",
 		"currentDepth",
 		"MAX_SIZE",
 		"MIN_SIZE",

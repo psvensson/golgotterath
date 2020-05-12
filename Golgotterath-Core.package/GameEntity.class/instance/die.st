@@ -4,11 +4,13 @@ die
 	Logger log:self;log:' has died! ***************** ';cr.
 	 
 	gamemap ifNotNil: 
-		[	| pos body |
-			pos := self boardPosition.
+		[	| pos body bodypos |
+			pos := self animatedSprite boardPosition.
 			body := self createDeadEntityitem .			
 			gamemap removeEntityAt: pos. 
-			gamemap addItem: body at: pos.
+			bodypos := pos.
+			gamemap itemAt: pos ifPresent: [ pos:= (gamemap getItemFreeTileForRoom: (gamemap dungeon getRoomAt: pos)) ].
+			gamemap addItem: body at: bodypos.
 			gamemap gameboard playAnimation: 'die' for: self. ].
 	player
 		ifTrue: [ 			
