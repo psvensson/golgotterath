@@ -3,7 +3,7 @@ listEntities
 	| list |
 	list := Dictionary new.
 	list at: 'elemental' put: (Dictionary newFrom:
-		{#name->'elemental'.#speed->1.#sprite->Elemental.#level->6.#dam->'4d8'.
+		{#name->'elemental'.#speed->1.#sprite->Elemental.#level->6.#dam->'2d8'.
 		#hp->10.#ac->5.#str->20.#con->20.#dex->10.#int->5.#wis->5.#exp->1300.
 		#vulnerable->#('fire').#resist->#('edged').#special->#('slow')}).
 	list at: 'goblin' put: (Dictionary newFrom:
@@ -11,19 +11,19 @@ listEntities
 		#hp->5.#ac->6.#str->8.#con->8.#dex->10.#int->10.#wis->6.#exp->15.
 		#vulnerable->#().#resist->#().#special->#()}).	
 	list at: 'human' put: (Dictionary newFrom:
-		{#name->'human'.#speed->1.#sprite->Human.#level->1.#dam->'1d4'.
+		{#name->'human'.#speed->1.#sprite->Human.#level->1.#dam->'1d3'.
 		#hp->10.#ac->10.#str->10.#con->10.#dex->10.#int->10.#wis->10.#exp->50.
 		#vulnerable->#().#resist->#().#special->#()}).	
 	list at: 'magician' put: (Dictionary newFrom:
-		{#name->'magician'.#speed->2.#sprite->Magician.#level->3.#dam->'1d8'.
+		{#name->'magician'.#speed->2.#sprite->Magician.#level->3.#dam->'1d6'.
 		#hp->15.#ac->7.#str->8.#con->10.#dex->15.#int->15.#wis->10.#exp->100.
 		#vulnerable->#('missile').#resist->#('blunt')}).		
 	list at: 'maleheavy' put: (Dictionary newFrom:
-		{#name->'maleheavy'.#speed->1.#sprite->MaleHeavy.#level->3.#dam->'2d4'.
+		{#name->'maleheavy'.#speed->1.#sprite->MaleHeavy.#level->3.#dam->'2d3'.
 		#hp->15.#ac->7.#str->13.#con->13.#dex->10.#int->10.#wis->8.#exp->75.
 		#vulnerable->#().#resist->#().#special->#()}).		
 	list at: 'malelight' put: (Dictionary newFrom:
-		{#name->'malelight'.#speed->1.#sprite->MaleLight.#level->2.#dam->'2d3'.
+		{#name->'malelight'.#speed->1.#sprite->MaleLight.#level->2.#dam->'1d3'.
 		#hp->11.#ac->8.#str->11.#con->13.#dex->13.#int->10.#wis->10.#exp->40.
 		#vulnerable->#().#resist->#().#special->#()}).	
 	list at: 'ogre' put: (Dictionary newFrom:
