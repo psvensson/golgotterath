@@ -108,7 +108,7 @@ itemList
 		put:
 			(Dictionary
 				newFrom:
-					{(#name -> 'brass_scale_armou').
+					{(#name -> 'brass_scale_armour').
 					(#kind -> 'armour').
 					(#longname -> 'Brass Scale Armou').
 					(#dac -> -5).

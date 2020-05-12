@@ -10,7 +10,7 @@ initialize
 	self loadSpriteImage: img spriteWidth: 32 spritesPerRow: 17 offset: 32.
 	tiles := Dictionary new.
 	tiles at: 'small_wooden_chest' put: (spriteImages at: 1).
-	tiles at: 'lage_wooden_chest' put: (spriteImages at: 18).
+	tiles at: 'large_wooden_chest' put: (spriteImages at: 18).
 	tiles at: 'small_iron_chest' put: (spriteImages at: 35).
 	tiles at: 'large_iron_chest' put: (spriteImages at: 52).
 	tiles at: 'copper_pieces' put: (spriteImages at: 2).

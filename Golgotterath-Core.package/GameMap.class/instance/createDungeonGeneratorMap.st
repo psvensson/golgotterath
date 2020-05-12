@@ -12,14 +12,17 @@ createDungeonGeneratorMap
 	dungeon rooms
 		do:
 			[ :room | room features do: [ :feature | self createFeaturesFromRoom: room ] ].
-	downpos := self getFreeTileForRoom: actualrooms last.
-	startpos := self getFreeTileForRoom: actualrooms first.
+	downpos := self getFreeTileForRoom: actualrooms first.
+	startpos := (self getFreeTileForRoom: actualrooms first) .
 	level > 1
 		ifTrue:
-			[ startpos ifNotNil: [ self addFeature: StairsUp new At: startpos ] ]
+			[ startpos ifNotNil: [ self addFeature: StairsUp new At: startpos+ (0@1).
+				  ] ]
 		ifFalse: [ self
 				addTile: (self getTile: 'statue_dragon')
 				atx: startpos x
 				y: startpos y ].
 	downpos
-		ifNotNil: [ "] future" self addFeature: StairsDown new At: startpos ]
+		ifNotNil: [ "] future" self addFeature: StairsDown new At: startpos.
+		Transcript show:'++++ down stair created';cr.
+		 ]

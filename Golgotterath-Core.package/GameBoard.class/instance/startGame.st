@@ -24,9 +24,7 @@ startGame
 				color: Color black;
 				changed.
 			self playAnimation: 'walk' for: player.
-			minimap := GameMinimap new: gameMap .
-			minimap updatePlayer: player.			
-			self addMorph: minimap getMap.
+			self onLevelChanged .
 			Logger
 				log: 'Golgotterath initialization took ';
 				log: now - then;
