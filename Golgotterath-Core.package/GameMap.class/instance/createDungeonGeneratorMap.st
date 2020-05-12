@@ -3,7 +3,7 @@ createDungeonGeneratorMap
 	| downpos startpos actualrooms |
 	"^ [ "
 	dungeon := GolDungeonGenerator new.
-	dungeon level: level ; digAt: 0 @ 0 depth: 34.
+	dungeon level: level ; digAt: 0 @ 0 depth: 36.
 	(dungeon mapFilteredBy: 1) do: [ :floor | self addFloorAt: floor ].
 	(dungeon mapFilteredBy: 2) do: [ :door | self addDoorAt: door ].
 	(dungeon mapFilteredBy: 3) do: [ :wall | self addWallAt: wall ].
