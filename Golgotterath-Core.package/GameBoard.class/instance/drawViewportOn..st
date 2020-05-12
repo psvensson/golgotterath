@@ -19,7 +19,11 @@ drawViewportOn: aCanvas
 			top - 1 to: bottom + 1 do: [ :y | 
 				left - 1 to: right + 1 do: [ :x | 
 					| worldpos |
-					worldpos := self getWorldCoordsFromOffset: x @ y.
-					"self paintDarkness: worldpos canvas: aCanvas."
-					 ] ].
-			self animateEffectsOn: aCanvas ]
+					worldpos := self getWorldCoordsFromOffset: x @ y
+					"self paintDarkness: worldpos canvas: aCanvas." ] ].
+			self animateEffectsOn: aCanvas ].
+	"minimap drawOn: aCanvas.	"
+	"minimap
+		ifNotNil: [ minimap
+				position: 300 @ 300;
+				drawOn: aCanvas ]"

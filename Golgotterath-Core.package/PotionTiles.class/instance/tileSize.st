@@ -1,3 +1,3 @@
 initialization
 tileSize
-	^ 44
+	^ 34

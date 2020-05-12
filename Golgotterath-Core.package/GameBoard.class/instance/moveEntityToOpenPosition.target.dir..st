@@ -17,6 +17,7 @@ moveEntityToOpenPosition: entity target: target dir: dir
 	self playAnimation: 'walk' for: entity.
 	entity = player
 		ifFalse: [ ^ self ].
+	self updateMinimap.
 	self gameMap stepMap.
 	self addMoveEffectFor: entity.
 	worldLastPosition := player boardPosition.

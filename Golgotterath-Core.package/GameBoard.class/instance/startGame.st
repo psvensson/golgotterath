@@ -5,11 +5,8 @@ startGame
 	topbar
 		text: 'Starting game...';
 		left: 100.
-		Transcript show:'showing welcome effect';cr.
 	self showWelcomeEffect.	
-		Transcript show:'initialize world';cr.
 	self initializeWorld.
-	Transcript show:'initialize gamemap';cr.
 	self initializeGameMap.
 		"onSuccessDo: [ :result | "
 			self
@@ -27,6 +24,9 @@ startGame
 				color: Color black;
 				changed.
 			self playAnimation: 'walk' for: player.
+			minimap := GameMinimap new: gameMap .
+			minimap updatePlayer: player.			
+			self addMorph: minimap getMap.
 			Logger
 				log: 'Golgotterath initialization took ';
 				log: now - then;

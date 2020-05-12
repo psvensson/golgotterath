@@ -7,8 +7,7 @@ createDeadEntityitem
 	directions := frames at: (frames keys last).
 	image := directions at: animatedSprite direction .
 	sprite := (Sprite new) 
-		image: image; 
-		tileAdjustment: 32@32; 
+		image: image; 		
 		name: name;
 		tileSize: self animatedSprite tileSize.
 	item := GameItem new.
