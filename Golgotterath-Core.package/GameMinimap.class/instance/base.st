@@ -1,3 +1,3 @@
 accessing
 base
-	^ base
+	^ self position + base

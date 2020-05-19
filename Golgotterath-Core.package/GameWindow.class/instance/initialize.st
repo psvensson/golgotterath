@@ -21,7 +21,6 @@ initialize
 	self addMorph: gameboard.
 	self extent: 1150 @ 700.
 	Transcript show:'calling start game';cr.
-	gameboard startGame.
 	"self changed."
 	"gamebar changed."
 	self extent: 1150 @ 700.

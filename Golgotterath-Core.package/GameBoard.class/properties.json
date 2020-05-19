@@ -24,7 +24,8 @@
 		"openingDoor",
 		"levels",
 		"currentLevel",
-		"minimap"
+		"minimap",
+		"playerPointer"
 	],
 	"name" : "GameBoard",
 	"type" : "normal"
