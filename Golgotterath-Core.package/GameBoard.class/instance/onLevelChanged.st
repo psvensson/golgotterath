@@ -3,5 +3,10 @@ onLevelChanged
 	Transcript
 		show: '+++++++++++++++++++++++++++++++ onLevelChaged called';
 		cr.
-	minimap ifNotNil: [self removeMorph: minimap ].
-	self updateMinimap 
+	minimap
+		ifNotNil: [ minimap
+				gamemap: gameMap;
+				generateMap
+			"position: self position;"
+			"computeFullBounds;" ].
+	self updateMinimap

@@ -5,8 +5,8 @@ createDijkstraGraphAt: origo radius: radius
 	graph offset: (origo x - radius)@(origo y - radius).
 	graph acceptableTiles: { 0 }.
 	graph diagonalsEnabled: true.
-	Logger log:'creating graph from ';log:origo x - radius;log:',';log:origo y - radius;log:' to ';log:
-	 origo x + radius;log:',';log:origo y + radius;cr.
+	"Logger log:'creating graph from ';log:origo x - radius;log:',';log:origo y - radius;log:' to ';log:
+	 origo x + radius;log:',';log:origo y + radius;cr."
 	rows := OrderedCollection new.
 	origo y - radius to: origo y + radius do: [ :y | 
 		| row |

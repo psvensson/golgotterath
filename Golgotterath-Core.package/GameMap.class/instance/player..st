@@ -1,4 +1,8 @@
 accessing
 player: anObject
+	| actualrooms |
 	player := anObject.
-	player boardPosition: (self getUnoccupiedTileForRoom:  dungeon rooms first).
+	actualrooms := dungeon rooms
+		select: [ :r | (r area at: #type) = #room ].
+	player
+		boardPosition: (self getUnoccupiedTileForRoom: actualrooms first)

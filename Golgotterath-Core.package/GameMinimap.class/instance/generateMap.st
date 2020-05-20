@@ -1,6 +1,7 @@
 generation
 generateMap
 	| generator floor |
+	Transcript show:'minimap generateMap for level ',gamemap level asString;cr.
 	generator := gamemap dungeon.
 	self removeAllMorphs.
 	"m color: Color transparent ."
@@ -14,5 +15,6 @@ generateMap
 	(generator mapFilteredBy: 3)
 		do: [ :wall | 
 			self plotPointAt: wall  color: Color blue].
-	playerPointer := self plotPointAt: player boardPosition   color: Color red	
+	playerPointer := self plotPointAt: player boardPosition   color: Color red	.
+	self changed.	
 	

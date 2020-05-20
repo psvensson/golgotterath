@@ -7,5 +7,5 @@ moveTowardsTargetBoardPos
 		pos := path last.
 		pos ifNil: [ ^ self ].
 		dir := entity getDirectionFromPosition: pos.
-		Logger log:'mvoeTowardTargetBoardPost calling move to: ';log:dir;cr.
+		"Logger log:'moveTowardTargetBoardPos calling move to: ';log:dir;cr."
 		gameboard moveEntity: entity dir: dir ]

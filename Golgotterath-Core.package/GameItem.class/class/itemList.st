@@ -41,7 +41,7 @@ itemList
 					{(#name -> 'leather_armour').
 					(#kind -> 'armour').
 					(#longname -> 'Leather Armour').
-					(#dac -> -3).
+					(#dac -> -2).
 					(#level -> 1)}).
 	list
 		at: 'studded_leather_armour'
@@ -51,7 +51,7 @@ itemList
 					{(#name -> 'studded_leather_armour').
 					(#kind -> 'armour').
 					(#longname -> 'Studded Leather Armour').
-					(#dac -> -4).
+					(#dac -> -3).
 					(#level -> 1)}).
 	list
 		at: 'leather_helmet'

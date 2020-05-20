@@ -1,3 +1,3 @@
 initialization
 finalStep
-	^ 120
+	^ 80

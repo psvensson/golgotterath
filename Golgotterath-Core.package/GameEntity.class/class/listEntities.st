@@ -24,7 +24,7 @@ listEntities
 		#vulnerable->#().#resist->#().#special->#()}).		
 	list at: 'malelight' put: (Dictionary newFrom:
 		{#name->'malelight'.#speed->1.#sprite->MaleLight.#level->2.#dam->'1d3'.
-		#hp->11.#ac->8.#str->11.#con->13.#dex->13.#int->10.#wis->10.#exp->40.
+		#hp->11.#ac->10.#str->11.#con->13.#dex->13.#int->10.#wis->10.#exp->40.
 		#vulnerable->#().#resist->#().#special->#()}).	
 	list at: 'ogre' put: (Dictionary newFrom:
 		{#name->'ogre'.#speed->1.#sprite->Ogre.#level->5.#dam->'1d10'.
