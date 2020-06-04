@@ -1,3 +1,8 @@
 initialization
 addFloorAt: floor
-	self addTile: (self getTile: 'floor_grey') atx: floor x y: floor y
+	| r |
+	r := 5 atRandom.
+	self
+		addTile: (self getTile: 'cr_floor' , r asString)
+		atx: floor x
+		y: floor y

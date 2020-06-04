@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Sprite",
+	"category" : "Golgotterath-Core-Tile",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"tiles"
+	],
+	"name" : "CrackedTiles",
+	"type" : "normal"
+}

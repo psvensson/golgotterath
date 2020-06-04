@@ -9,6 +9,7 @@ initialize
 	img := self spriteImage.
 	self loadSpriteImage: img spriteWidth: 32 spritesPerRow: 17 offset: 32.
 	tiles := Dictionary new.
+	tiles at: 'invisibility_potion' put: (spriteImages at: 41).
 	tiles at: 'small_healing_potion' put: (spriteImages at: 42).
 	tiles at: 'large_healing_potion' put: (spriteImages at: 8).
 	tiles at: 'small_mana_potion' put: (spriteImages at: 2).

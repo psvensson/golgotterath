@@ -667,7 +667,7 @@ itemList
 					{(#name -> 'resist_heat_potion').
 					(#kind -> 'potion').
 					(#longname -> 'Resist Heat Potion').
-					(#subtype -> 'antidote').
+					(#subtype -> 'effect').
 					(#size -> 1).
 					(#level -> 1)}).
 	list
@@ -677,9 +677,20 @@ itemList
 				newFrom:
 					{(#name -> 'resist_cold_potion').
 					(#kind -> 'potion').
-					(#longname -> 'Resist ColdPotion').
-					(#subtype -> 'antidote').
+					(#longname -> 'Resist Cold Potion').
+					(#subtype -> 'effect').
 					(#size -> 1).
-					(#level -> 1)}).																																																
+					(#level -> 1)}).		
+	list
+		at: 'invisibility_potion'
+		put:
+			(Dictionary
+				newFrom:
+					{(#name -> 'invisibility_potion').
+					(#kind -> 'potion').
+					(#longname -> 'Invisibility Potion').
+					(#subtype -> 'effect').
+					(#size -> 1).
+					(#level -> 1)}).																																																						
 	"------------------------------------"
 	^ list

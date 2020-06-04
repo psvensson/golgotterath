@@ -6,3 +6,4 @@ createTiles
 	Transcript show:'creating tiles';cr.	
 	tiles := Tiles new.
 	newtiles := NewTiles new.
+	crackedTiles := CrackedTiles new.

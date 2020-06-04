@@ -1,17 +1,20 @@
 accessing
 getTile: tilename
-	| tile adjust sprite |
-	tile := tiles
-		tile: tilename
-		ifAbsent: [ | t |
-			t := newtiles tile: tilename.
-			adjust := newtiles tileAdjustment.
-			t ].
-	adjust ifNil: [ adjust := tiles tileAdjustment ].
-	"tilename = 'bluewall'
-		ifTrue: [ self debug ]."
+	| tileClasses tile selectedClass sprite |
+	tileClasses := {tiles.
+	newtiles.
+	crackedTiles}.
+	tileClasses
+		do: [ :tileClass | 
+			tile
+				ifNil: [ tile := tileClass
+						perform: 'tile:' asSymbol , 'ifAbsent:' asSymbol
+						withArguments: (Array with: tilename with: [  ]).
+					tile ifNotNil: [ selectedClass := tileClass ] ] ].
 	sprite := Sprite new
 		image: tile;
 		name: tilename.
-	sprite tileAdjustment: adjust.
+	sprite tileAdjustment: selectedClass tileAdjustment.
+	sprite hoffset: selectedClass hoffset.
+	sprite voffset: selectedClass voffset.
 	^ sprite

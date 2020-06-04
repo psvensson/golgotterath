@@ -19,7 +19,8 @@
 		"topbar",
 		"dungeon",
 		"player",
-		"level"
+		"level",
+		"crackedTiles"
 	],
 	"name" : "GameMap",
 	"type" : "normal"
