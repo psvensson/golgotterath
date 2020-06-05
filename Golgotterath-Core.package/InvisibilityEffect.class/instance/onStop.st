@@ -1,4 +1,4 @@
 accessing
 onStop
-	entity abilities removeKey: #invisible.
-	Transcript show:'disabling invisibility ', entity abilities asString;cr.
+	entity abilities removeKey: #invisible ifAbsent: [].
+	Transcript show:'disabling invisibility steps = ', step asString;cr.
