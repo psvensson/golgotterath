@@ -1,0 +1,3 @@
+accessing
+onStep
+	self subclassResponsibility

@@ -7,5 +7,6 @@ attack: entity
 			self dealDamageTo: entity] 
 		ifMiss: [
 			gamemap gameboard soundBoard play: 'swing'.
-			Logger log:'A miss!';cr.]
+			Logger log:'A miss!';cr.].
+	self actionHappened 	
 	

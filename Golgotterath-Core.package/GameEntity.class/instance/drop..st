@@ -6,4 +6,5 @@ drop: item
 		inventory remove: item.
 		gamemap addItem: item at: (self boardPosition). ] .
 	gamemap itemAt: (self boardPosition) ifPresent: [ 
-		Logger log: self name;log: ' could not drop ';log: item;log: ' because there was already something on the floor';cr]
+		Logger log: self name;log: ' could not drop ';log: item;log: ' because there was already something on the floor';cr].
+	self actionHappened

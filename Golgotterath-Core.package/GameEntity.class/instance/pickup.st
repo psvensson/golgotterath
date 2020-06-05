@@ -8,4 +8,5 @@ pickup
 			gamemap removeItemAt: self boardPosition.
 			inventory add: item.
 			gamemap gameboard addEffectForEntity: self text: 'Picked up ',(item longname).
-			gamemap gameboard changed ] ]
+			gamemap gameboard changed ] ].
+	self actionHappened

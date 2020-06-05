@@ -1,0 +1,3 @@
+accessing
+onStop
+	self subclassResponsibility

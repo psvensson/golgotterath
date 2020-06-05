@@ -9,4 +9,5 @@ quaffItem
 				inventory remove: item.
 				item handleEffectOn: self.
 				gamemap gameboard changed ] 
-			title: 'Wield Weapon'
+			title: 'Wield Weapon'.
+	self actionHappened		

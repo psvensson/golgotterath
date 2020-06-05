@@ -7,5 +7,6 @@ createPlayer
 	room := actualrooms first.
 	self addEntity: player at: (self getUnoccupiedTileForRoom: room).
 	dagger := GameItem new: 'dagger'.
+	player inventory add: (GameItem new: 'invisibility_potion').
 	player weapon: dagger.
 	^ player

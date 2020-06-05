@@ -11,5 +11,6 @@ initialize
 	stepCalls := 0.
 	inventory := OrderedCollection new.
 	inventorySize := 10.
+	effects := OrderedCollection new.
 	strategies := SortedCollection
 		sortBlock: [ :a :b | a priority < b priority ]

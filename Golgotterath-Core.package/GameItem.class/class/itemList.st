@@ -690,6 +690,7 @@ itemList
 					(#kind -> 'potion').
 					(#longname -> 'Invisibility Potion').
 					(#subtype -> 'effect').
+					(#commonality -> 2).
 					(#size -> 1).
 					(#level -> 1)}).																																																						
 	"------------------------------------"

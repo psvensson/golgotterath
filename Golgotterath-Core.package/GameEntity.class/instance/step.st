@@ -5,4 +5,4 @@ step
 	stepCalls = speed ifFalse: [ ^ self ].
 	strategies do: [ :strategy | 
 		stepCalls := 0.
-		strategy stepAndCheck ifTrue: [ ^ self ] ]
+		strategy stepAndCheck ifTrue: [ ^ self ] ].

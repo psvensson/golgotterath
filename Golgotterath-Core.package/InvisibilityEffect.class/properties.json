@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "EntityEffect",
+	"category" : "Golgotterath-Core-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "InvisibilityEffect",
+	"type" : "normal"
+}
