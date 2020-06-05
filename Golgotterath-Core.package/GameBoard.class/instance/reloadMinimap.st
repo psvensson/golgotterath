@@ -1,0 +1,3 @@
+accessing
+reloadMinimap
+	minimap reload.

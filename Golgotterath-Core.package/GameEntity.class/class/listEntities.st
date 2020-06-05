@@ -8,7 +8,7 @@ listEntities
 		#vulnerable->#('fire').#resist->#('edged').#special->#('slow')}).
 	list at: 'goblin' put: (Dictionary newFrom:
 		{#name->'goblin'.#speed->2.#sprite->Goblin.#level->1.#dam->'1d2'.
-		#hp->5.#ac->6.#str->8.#con->8.#dex->10.#int->10.#wis->6.#exp->15.
+		#hp->5.#ac->9.#str->8.#con->8.#dex->10.#int->10.#wis->6.#exp->15.
 		#vulnerable->#().#resist->#().#special->#()}).	
 	list at: 'human' put: (Dictionary newFrom:
 		{#name->'human'.#speed->1.#sprite->Human.#level->1.#dam->'1d3'.

@@ -9,5 +9,6 @@ tryToGrowDungeonFrom: pos
 					room walls do: [ :wpos | self addWallAt: wpos ].
 					room doors do: [ :door | self addDoorAt: (door at: #pos) ].
 					self createItemsFromRoom: room.
-					self createEntitiesFromRoom: room ] ] 
+					self createEntitiesFromRoom: room ] ] . 
+	gameboard reloadMinimap		
 
