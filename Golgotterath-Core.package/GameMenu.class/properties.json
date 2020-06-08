@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "Morph",
+	"category" : "Golgotterath-Core-View",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"newGameButton",
+		"joinLocalButton",
+		"startLocalButton",
+		"newGameCallback",
+		"joinServerCallback",
+		"startServerCallback"
+	],
+	"name" : "GameMenu",
+	"type" : "normal"
+}

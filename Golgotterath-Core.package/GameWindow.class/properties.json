@@ -7,7 +7,12 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"gameboard",
-		"gamebar"
+		"gamebar",
+		"menu",
+		"menuShowing",
+		"logo",
+		"logoAlpha",
+		"hideSteps"
 	],
 	"name" : "GameWindow",
 	"type" : "normal"

@@ -28,6 +28,7 @@ keyStroke: anEvent
 			keyValue = 103 ifTrue: [ player pickup . ].
 			keyValue = 100 ifTrue: [ player dropItem ].
 			keyValue = 111 ifTrue: [ openingDoor := true. ^ self ].
+			keyValue = 102 ifTrue: [ player fireWeapon ]. 
 			keyValue = 119 ifTrue: [ player wieldItem ].
 			keyValue = 113 ifTrue: [ player quaffItem ].
 			keyValue = 101 ifTrue: [ player equipItem ].

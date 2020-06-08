@@ -25,7 +25,8 @@
 		"levels",
 		"currentLevel",
 		"minimap",
-		"playerPointer"
+		"playerPointer",
+		"projectileToFire"
 	],
 	"name" : "GameBoard",
 	"type" : "normal"

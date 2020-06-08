@@ -296,7 +296,7 @@ itemList
 					(#longname -> 'Longbow').
 					(#dam -> '1d6').
 					(#subtype -> 'ranged').
-					(#tohit -> -2).
+					(#tohit -> -1).
 					(#level -> 3)}).	
 	list
 		at: 'arrow'

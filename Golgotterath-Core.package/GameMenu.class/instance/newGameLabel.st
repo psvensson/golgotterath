@@ -1,0 +1,3 @@
+initialization
+newGameLabel
+	^ 'New Game'
