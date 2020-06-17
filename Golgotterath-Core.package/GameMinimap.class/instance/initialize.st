@@ -8,7 +8,4 @@ initialize
 	"bounds := Rectangle center: base extent: 300 @ 300."
 	"self computeFullBounds ."
 	scale := 3.
-	Transcript
-		show:
-			'======================================================= Minimap created';
-		cr
+	

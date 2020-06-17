@@ -2,6 +2,7 @@ initialization
 initialize
 	mapRadius := 10.
 	entities := Dictionary new.
+	midair := Dictionary new.
 	map := Dictionary new.
 	items := Dictionary new.
 	entitiesArray := OrderedCollection new.

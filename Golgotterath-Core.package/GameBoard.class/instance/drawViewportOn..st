@@ -10,11 +10,11 @@ drawViewportOn: aCanvas
 				entitiesAt: worldpos
 				ifPresent: [ entity := self gameMap entitiesAt: worldpos.
 					self paintEntity: entity at: aCanvas] ].
-	self
+	"self
 		iterateOverVisibleArea: [ :darkpos | 
 			| worldpos |
-			worldpos := self getWorldCoordsFromOffset: darkpos
-			"self paintDarkness: worldpos canvas: aCanvas." ].
+			worldpos := self getWorldCoordsFromOffset: darkpos"
+			"self paintDarkness: worldpos canvas: aCanvas.]."
 	self animateEffectsOn: aCanvas
 	"minimap drawOn: aCanvas.	"
 	"minimap

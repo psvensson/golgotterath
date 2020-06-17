@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "MidAirEvent",
+	"category" : "Golgotterath-Core-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MidAirItem",
+	"type" : "normal"
+}
