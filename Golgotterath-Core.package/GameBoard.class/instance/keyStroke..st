@@ -5,6 +5,7 @@ keyStroke: anEvent
 		player hp < 1 ifTrue: [ ^self  ].
 		Logger log: 'key '; log:keyValue;cr .
 			keyValue = 32 ifTrue: [  ].
+			keyValue = 63 ifTrue: [ self showHelpWindow  ].
     		((keyValue = 30) or: (keyValue = 56))    "up arrow" 
        		ifTrue: [self moveEntity: (self player) dir: 'up']. 
 			keyValue = 55    "up arrow" 

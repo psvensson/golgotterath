@@ -10,5 +10,6 @@ initialize
 	runningAnimations := Set new.
 	effects := OrderedCollection new.
 	boardDrawOffset := 0 @ 0.
-	levels := Dictionary new
+	levels := Dictionary new.
+	helpWindow := self initializeHelpWindow.
 	

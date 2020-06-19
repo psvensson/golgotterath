@@ -9,7 +9,7 @@ digAt: pos depth: depth
 		at: #checked put: false;
 		at: #direction put: #down.
 	doors add: door.
-	[ currentDepth = depth and: doors isNotEmpty  ]
+	[ currentDepth = depth ]
 		whileFalse: [ | d room |
 			doors ifNotEmpty: [ 
 			d := doors removeFirst.

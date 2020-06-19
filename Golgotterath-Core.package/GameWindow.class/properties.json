@@ -12,7 +12,9 @@
 		"menuShowing",
 		"logo",
 		"logoAlpha",
-		"hideSteps"
+		"hideSteps",
+		"help",
+		"helpWindow"
 	],
 	"name" : "GameWindow",
 	"type" : "normal"

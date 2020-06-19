@@ -4,4 +4,5 @@ step
 	logo alpha: logoAlpha .
 	logoAlpha = 0 ifTrue: [ 
 		self stopStepping .
-		self removeMorph: logo ].
+		self removeMorph: logo .
+		].
