@@ -5,7 +5,7 @@ showInventoryFor: entity onSelect: aBlock
 	"inventorylist := InventoryList new openWithSpec."
 	soundBoard play: 'misc3'.
 	list := IconListPresenter new.
-	list
+	list 
 	items: (entity inventory collect: [ :item| item  ]);
 	icons: [ :item | item sprite image];
 	title: 'Inventory';

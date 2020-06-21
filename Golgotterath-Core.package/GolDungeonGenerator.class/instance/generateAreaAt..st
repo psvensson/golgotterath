@@ -11,5 +11,4 @@ generateAreaAt: door
 		at: #type put: #room;
 		at: #w put: w;
 		at: #h put: h.
-	"Transcript show:'++ ++ generateArea from ',pos asString,' h ',h asString,', w ',w asString;cr."
 	^ area
