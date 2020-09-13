@@ -1,7 +1,7 @@
 action
 moveEntityToOccupiedPosition: entity target: target dir: dir
 	self gameMap
-		entitiesAt: target
+		entityAt: target
 		ifAbsent: [ | feature |
 			feature := self gameMap featureAt: target.
 			"Transcript show:'unoccupied position feature found: ',feature asString;cr."

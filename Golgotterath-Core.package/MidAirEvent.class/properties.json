@@ -1,13 +1,14 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Golgotterath-Core-Base",
+	"category" : "Golgotterath-Core-Effects",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
 		"name",
 		"type",
+		"direction",
 		"referenceObject",
 		"speed",
 		"timespan"

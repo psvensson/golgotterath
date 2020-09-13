@@ -7,7 +7,7 @@ quaffItem
 			onSelect:[ :item |
 				Logger log: 'quaffItem got selected item';cr.
 				inventory remove: item.
-				item handleEffectOn: self.
+				item handleEffectOnHolder: self.
 				gamemap gameboard changed ] 
 			title: 'Wield Weapon'.
 	self actionHappened		

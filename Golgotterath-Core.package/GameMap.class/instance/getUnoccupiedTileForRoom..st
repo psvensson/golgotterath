@@ -7,5 +7,5 @@ getUnoccupiedTileForRoom: room
 		whileTrue: [ | fpos |
 			tries := tries + 1.
 			fpos := room floor at: room floor size atRandom.
-			self entitiesAt: fpos ifAbsent: [ tile := fpos ] ].
+			self entityAt: fpos ifAbsent: [ tile := fpos ] ].
 	^ tile

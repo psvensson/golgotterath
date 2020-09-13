@@ -6,6 +6,6 @@ stepAnimation
 	currentFrame := aFrame .
 	frame := frame + 1. 	
 	frame > frames size
-		ifFalse: [ ^ false ].
+		ifFalse: [ ^ true ].
 	frame := 1.
-	^ true.  
+	^ false.  

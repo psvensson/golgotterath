@@ -1,7 +1,7 @@
 testing
 openFloorAt: target for: entity
 	| tile cname |
-	self gameMap entitiesAt: target ifPresent: [:e | 
+	self gameMap entityAt: target ifPresent: [:e | 
 		e = entity ifFalse: [ 
 			 "Logger log:'openFloorAt: ';log:target;log:' occupied by entity ';log:e;cr."
 			^ false]].	

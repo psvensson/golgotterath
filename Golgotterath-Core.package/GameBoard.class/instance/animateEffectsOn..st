@@ -8,4 +8,4 @@ animateEffectsOn: aCanvas
 					(effect animateAndCheckIfDone: aCanvas)
 						ifTrue: [ effectsToRemove add: effect ] ].
 			effectsToRemove do: [ :each | effects remove: each ].
-			self changed ] ifTrue: [ steppingTime := 1000 ]
+			self changed ] ifTrue: [ steppingTime := 90 ]

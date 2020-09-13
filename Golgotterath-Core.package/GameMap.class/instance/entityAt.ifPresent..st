@@ -1,3 +1,3 @@
 accessing
-entitiesAt: pos ifPresent: aBlock
+entityAt: pos ifPresent: aBlock
 	^ entities at:pos ifPresent: aBlock.

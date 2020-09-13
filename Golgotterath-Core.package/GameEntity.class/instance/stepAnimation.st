@@ -1,0 +1,3 @@
+accessing
+stepAnimation
+	^ animatedSprite getOldAnimation stepAnimation

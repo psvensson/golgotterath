@@ -25,6 +25,7 @@ startGame
 	self playAnimation: 'walk' for: player.
 	self onLevelChanged.
 	self showHelpWindow .
+	self startStepping.
 	Logger
 		log: 'Golgotterath initialization took ';
 		log: now - then;

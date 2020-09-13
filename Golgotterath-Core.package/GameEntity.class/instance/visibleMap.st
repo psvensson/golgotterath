@@ -13,7 +13,7 @@ visibleMap
 	top to: bottom do: 
 		[ :y | left to: right do: 
 			[ :x |	
-				gamemap entitiesAt: x@y ifPresent: [ :entity |	entities add:entity	].
+				gamemap entityAt: x@y ifPresent: [ :entity |	entities add:entity	].
 				gamemap itemAt: x@y ifPresent: [ :item |	items add:item 	].
 				tiles add: (gamemap mapAt: x@y).  ] ].
 	 ^ maps

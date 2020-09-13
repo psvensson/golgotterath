@@ -9,6 +9,7 @@ buildButton: label action: action
 		menu: nil.
 	b
 		font: (LogicalFont familyName: 'Source Sans Pro' pointSize: 24);
+		color: Color lightGreen;
 		hResizing: #spaceFill
 		"vResizing: #spaceFill".
 	^ b

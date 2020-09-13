@@ -6,6 +6,7 @@ initialize
 		listDirection: #topToBottom;
 		cellInset: 10; color: Color black;
 		left:0;
+		color: Color transparent ;
 		cellPositioning: #topLeft.
 	self addMorph: self createTextField.
 	self addMorph: self createStatusField

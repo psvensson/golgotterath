@@ -8,7 +8,7 @@ getFreeFeatureTileForRoom: room
 			tries := tries + 1.
 			fpos := room floor at: room floor size atRandom.
 			self
-				entitiesAt: fpos
+				entityAt: fpos
 				ifAbsent: [ (self isWalkable: (self mapAt: fpos))
 						ifTrue: [ tile := fpos ] ] ].
 	^ tile

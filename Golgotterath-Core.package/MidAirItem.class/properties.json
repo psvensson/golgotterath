@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "MidAirEvent",
-	"category" : "Golgotterath-Core-Base",
+	"category" : "Golgotterath-Core-Effects",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

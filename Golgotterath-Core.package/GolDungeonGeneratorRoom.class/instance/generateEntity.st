@@ -1,6 +1,8 @@
 accessing
 generateEntity
-	| things list |
+	| things list entity|
 	list := GameEntity listEntities  .
 	things := list values select: [ :thing | (thing at: #level) < (level +1) ].
-	^ things at: things size atRandom
+	entity := things at: things size atRandom.
+	Transcript show:'generting entity:  ',(entity at: #name);cr.
+	^ entity

@@ -1,6 +1,7 @@
 initialization
 generateAreaAt: door
 	| area partial h w pos |
+	Transcript show:'generateArea at ',(door at: #pos) asString ;cr.
 	partial := MAX_SIZE - MIN_SIZE.
 	h := partial atRandom + MIN_SIZE.
 	w := partial atRandom + MIN_SIZE.

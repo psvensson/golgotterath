@@ -1,3 +1,3 @@
 accessing
-entitiesAt: pos
+entityAt: pos
 	^ entities at:pos.

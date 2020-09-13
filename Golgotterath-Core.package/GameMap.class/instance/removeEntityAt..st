@@ -1,7 +1,7 @@
 accessing
 removeEntityAt: pos
 	self
-		entitiesAt: pos
+		entityAt: pos
 		ifPresent: [ :entity | 
 			entities removeKey: pos.
 			"entity gamemap: nil."

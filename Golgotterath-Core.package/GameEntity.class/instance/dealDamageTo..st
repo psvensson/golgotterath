@@ -1,19 +1,27 @@
 accessing
 dealDamageTo: entity
-	| damage effect p |
+	| damage |
 	damage := 1.
-	self abilities at: #dam ifPresent:[ damage := self getRandomDamage ].
-	self weapon ifNotNil: [ damage := weapon getRandomDamage ].
-	entity hp: entity hp - damage.
-	effect := TextEffect new.
-	effect color: Color red; fontSize:15.
-	effect text: '-',damage asString.
-	p :=  (entity animatedSprite calculatePositionFromGameboard: gamemap gameboard) + (50@0).
-	gamemap gameboard addEffect: effect startPosition: p.
+	self weapon
+		ifNil: [ self abilities
+				at: #dam
+				ifPresent: [ damage := self getRandomDamage.
+					entity hp: entity hp - damage.
+					GolUtil
+						addTextEffect: damage asString
+						position:
+							(entity animatedSprite
+								calculatePositionFromGameboard: entity gamemap gameboard)
+						color: Color red
+						gamemap: entity gamemap ] ].
+	self weapon ifNotNil: [ damage := weapon handleEffectOnTarget: entity ].
 	entity hp < 1
-		ifTrue: [ self exp: self exp + (entity abilities at: 'exp').
-			Logger	log: '*** Experience is now: ';log: self exp;cr.
-			self checkLevelUp	.
+		ifTrue: [ self getExperienceFor: entity.
 			entity die ]
-		ifFalse: [ Logger log: entity;	log: ' took ';	log: damage;log: ' in damage';	cr.
+		ifFalse: [ Logger
+				log: entity;
+				log: ' took ';
+				log: damage;
+				log: ' in damage';
+				cr.
 			entity hurt ]

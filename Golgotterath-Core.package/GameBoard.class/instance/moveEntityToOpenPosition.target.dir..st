@@ -12,7 +12,7 @@ moveEntityToOpenPosition: entity target: target dir: dir
 	entity = player
 		ifFalse: [ ^ self ].
 	self updateMinimap.
-	self gameMap stepMap.
+	"self gameMap stepMap."
 	self addMoveEffectFor: entity.
 	worldLastPosition := player boardPosition.
 	self gameMap tryToGrowDungeonFrom: player boardPosition.

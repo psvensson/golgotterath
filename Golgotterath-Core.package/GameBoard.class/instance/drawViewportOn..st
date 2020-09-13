@@ -7,8 +7,8 @@ drawViewportOn: aCanvas
 			self paintTileAtPos: worldpos canvas: aCanvas.
 			self paintItemAtPos: worldpos canvas: aCanvas.
 			self gameMap
-				entitiesAt: worldpos
-				ifPresent: [ entity := self gameMap entitiesAt: worldpos.
+				entityAt: worldpos
+				ifPresent: [ entity := self gameMap entityAt: worldpos.
 					self paintEntity: entity at: aCanvas] ].
 	"self
 		iterateOverVisibleArea: [ :darkpos | 

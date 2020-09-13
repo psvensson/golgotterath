@@ -1,39 +1,60 @@
 event handler
 keyStroke: anEvent
-	| keyValue selectedItem | 
-		keyValue := anEvent keyValue. 
-		player hp < 1 ifTrue: [ ^self  ].
-		Logger log: 'key '; log:keyValue;cr .
-			keyValue = 32 ifTrue: [  ].
-			keyValue = 63 ifTrue: [ self showHelpWindow  ].
-    		((keyValue = 30) or: (keyValue = 56))    "up arrow" 
-       		ifTrue: [self moveEntity: (self player) dir: 'up']. 
-			keyValue = 55    "up arrow" 
-       		ifTrue: [self moveEntity: (self player) dir: 'upleft']. 
-			keyValue = 57    "up arrow" 
-       		ifTrue: [self moveEntity: (self player) dir: 'upright']. 
-			keyValue = 49    "up arrow" 
-       		ifTrue: [self moveEntity: (self player) dir: 'downleft']. 
-			keyValue = 51    "up arrow" 
-       		ifTrue: [self moveEntity: (self player) dir: 'downright']. 
-    		((keyValue = 31) or: (keyValue = 50))   "down arrow" 
-        	ifTrue: [self moveEntity: (self player) dir: 'down']. 
-    		((keyValue = 29) or: (keyValue = 54))    "right arrow" 
-        	ifTrue: [self moveEntity: (self player) dir: 'right']. 
-    		((keyValue = 28) or: (keyValue = 52))    "left arrow" 
-        	ifTrue: [self moveEntity: (self player) dir: 'left']. 
-			keyValue = 122 ifTrue: [ self playAnimation: 'hit' for: self player. ].
-			keyValue = 120 ifTrue: [ self playAnimation: 'shoot' for: self player. ].
-			keyValue = 99 ifTrue: [ self playAnimation: 'hurt' for: self player. ].
-			keyValue = 118 ifTrue: [ self playAnimation: 'die' for: self player. ].
-			keyValue = 103 ifTrue: [ player pickup . ].
-			keyValue = 100 ifTrue: [ player dropItem ].
-			keyValue = 111 ifTrue: [ openingDoor := true. ^ self ].
-			keyValue = 102 ifTrue: [ player fireWeapon ]. 
-			keyValue = 119 ifTrue: [ player wieldItem ].
-			keyValue = 113 ifTrue: [ player quaffItem ].
-			keyValue = 101 ifTrue: [ player equipItem ].
-			keyValue = 105 ifTrue: [ self showInventoryFor: player onSelect: [:item |
-					selectedItem := item] ].
-			openingDoor := false.
-			self gameMap stepMap.
+	| keyValue selectedItem |
+	keyValue := anEvent keyValue.
+	player hp < 1
+		ifTrue: [ ^ self ].
+	Logger
+		log: 'key ';
+		log: keyValue;
+		cr.
+	keyValue = 32
+		ifTrue: [  ].
+	keyValue = 63
+		ifTrue: [ self showHelpWindow ].
+	(keyValue = 30 or: keyValue = 56)
+		ifTrue: [ self moveEntity: self player dir: 'up' ].	"up arrow"
+	keyValue = 55
+		ifTrue: [ self moveEntity: self player dir: 'upleft' ].	"up arrow"
+	keyValue = 57
+		ifTrue: [ self moveEntity: self player dir: 'upright' ].	"up arrow"
+	keyValue = 49
+		ifTrue: [ self moveEntity: self player dir: 'downleft' ].	"up arrow"
+	keyValue = 51
+		ifTrue: [ self moveEntity: self player dir: 'downright' ].	"up arrow"
+	(keyValue = 31 or: keyValue = 50)
+		ifTrue: [ self moveEntity: self player dir: 'down' ].	"down arrow"
+	(keyValue = 29 or: keyValue = 54)
+		ifTrue: [ self moveEntity: self player dir: 'right' ].	"right arrow"
+	(keyValue = 28 or: keyValue = 52)
+		ifTrue: [ self moveEntity: self player dir: 'left' ].	"left arrow"
+	keyValue = 122
+		ifTrue: [ self playAnimation: 'hit' for: self player ].
+	keyValue = 120
+		ifTrue: [ self playAnimation: 'shoot' for: self player ].
+	keyValue = 99
+		ifTrue: [ self playAnimation: 'hurt' for: self player ].
+	keyValue = 118
+		ifTrue: [ self playAnimation: 'die' for: self player ].
+	keyValue = 103
+		ifTrue: [ player pickup ].
+	keyValue = 100
+		ifTrue: [ player dropItem ].
+	keyValue = 111
+		ifTrue: [ openingDoor := true.
+			^ self ].
+	keyValue = 102
+		ifTrue: [ fireWeapon := true.
+			player fireWeapon. ^ self].
+	keyValue = 119
+		ifTrue: [ player wieldItem ].
+	keyValue = 113
+		ifTrue: [ player quaffItem ].
+	keyValue = 101
+		ifTrue: [ player equipItem ].
+	keyValue = 105
+		ifTrue: [ self
+				showInventoryFor: player
+				onSelect: [ :item | selectedItem := item ] ].
+	openingDoor := false.
+	self gameMap stepMap

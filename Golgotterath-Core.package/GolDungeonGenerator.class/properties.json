@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "PeterSvensson 5/8/2020 10:24",
 	"super" : "Object",
-	"category" : "Golgotterath-Core-Base",
+	"category" : "Golgotterath-Core-DungeonGeneration",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

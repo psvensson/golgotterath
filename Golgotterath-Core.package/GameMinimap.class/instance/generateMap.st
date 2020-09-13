@@ -1,7 +1,7 @@
 generation
 generateMap
 	| generator floor |
-	Transcript show:'minimap generateMap for level ',gamemap level asString;cr.
+	"Transcript show:'minimap generateMap for level ',gamemap level asString;cr."
 	generator := gamemap dungeon.
 	self removeAllMorphs.
 	"m color: Color transparent ."

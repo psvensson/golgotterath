@@ -28,7 +28,8 @@
 		"playerPointer",
 		"projectileToFire",
 		"help",
-		"helpWindow"
+		"helpWindow",
+		"fireWeapon"
 	],
 	"name" : "GameBoard",
 	"type" : "normal"

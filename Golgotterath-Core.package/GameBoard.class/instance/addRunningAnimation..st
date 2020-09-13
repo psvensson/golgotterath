@@ -1,4 +1,4 @@
 accessing
-addRunningAnimation: anEntity
-	runningAnimations add: anEntity.
+addRunningAnimation: something
+	runningAnimations add: something.
 	self startStepping

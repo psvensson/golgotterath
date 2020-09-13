@@ -1,6 +1,7 @@
 initialization
 generateCorridorAt: door
 	| area partial h w pos vertical |
+	Transcript show:'generateCorridor at ',(door at: #pos) asString ;cr.
 	vertical := 2 atRandom.
 	partial := MAX_CORRIDOR_SIZE - MIN_CORRIDOR_SIZE.
 	vertical = 1

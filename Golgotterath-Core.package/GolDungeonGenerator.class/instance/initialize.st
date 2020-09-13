@@ -1,20 +1,12 @@
 initialization
-initialize 
-	"| door room |"
+initialize
 	MAX_SIZE := 9.
 	MIN_SIZE := 4.
-	
 	MAX_CORRIDOR_SIZE := 12.
 	MIN_CORRIDOR_SIZE := 5.
-	
 	map := Dictionary new.
 	rooms := OrderedCollection new.
-	
-	"door := Dictionary new.
-	door at: #pos put: (-2)@(-2); at: #direction put: #down.
-	room := self createRandomRoomAt: door depth: 1.
-	rooms add: room."
-	
+	level := 1.
 	currentDepth := 1.
 	quadTree := QuadTree
 		size: 1024

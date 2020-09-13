@@ -1,8 +1,5 @@
 initialization
-initializeButtons
-	newGameButton := PluggableButtonMorph new.
-	joinLocalButton := PluggableButtonMorph new.
-	startLocalButton := PluggableButtonMorph new.
+initializeButtons	
 	newGameButton := self buildButton: #newGameLabel action: #newGame.
 	joinLocalButton := self
 		buildButton: #joinLanLabel
