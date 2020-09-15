@@ -1,3 +1,3 @@
 accessing
-effectOnWall: wall gameMap: gamemap
+drawOn: aCanvas
 	self subclassResponsibility 

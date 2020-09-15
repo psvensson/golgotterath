@@ -8,9 +8,11 @@ initialize
 	currentLevel := 1.
 	openingDoor := false.
 	fireWeapon := false.
+	events := Set new.
 	runningAnimations := Set new.
 	effects := OrderedCollection new.
 	boardDrawOffset := 0 @ 0.
 	levels := Dictionary new.
 	helpWindow := self initializeHelpWindow.
+	arrows := ArrowTiles new.
 	

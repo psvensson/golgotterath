@@ -15,7 +15,8 @@ drawViewportOn: aCanvas
 			| worldpos |
 			worldpos := self getWorldCoordsFromOffset: darkpos"
 			"self paintDarkness: worldpos canvas: aCanvas.]."
-	self animateEffectsOn: aCanvas
+	self animateEffectsOn: aCanvas.
+	self animateEventsOn: aCanvas
 	"minimap drawOn: aCanvas.	"
 	"minimap
 		ifNotNil: [ minimap

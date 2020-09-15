@@ -8,9 +8,4 @@ stepMap
 				ifFalse: [ entity hp > 0
 						ifTrue: [ entity step ]
 						ifFalse: [ self removeEntityAt: entity boardPosition ] ] ].
-	midAirEvents := midAirEvents
-		select: [ :midAirEvent | 
-			| result |
-			result := midAirEvent moveOnMap: self.
-			self handleMidAirEventEffects: midAirEvent.
-			result ]
+	

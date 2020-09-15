@@ -4,8 +4,8 @@ attempToFindAreaAt: door direction: direction
 	
 	tries := 6.
 	[ tries > 0 and: area isNil ]
-		whileTrue: [ type := 4 atRandom.
-			area := type = 2
+		whileTrue: [ type := 3 atRandom.
+			area := type = 1
 				ifTrue: [ self generateAreaAt: door ]
 				ifFalse: [ self generateCorridorAt: door ].
 			self createAreaForDoor: door Area: area direction: direction.

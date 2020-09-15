@@ -1,6 +1,8 @@
-accessing
+initializing
 initialize
 	super initialize.
 	speed := 1.
-	timespan := 4.
-	type := 'item'
+	timespan := 8.
+	type := 'item'.
+	
+	

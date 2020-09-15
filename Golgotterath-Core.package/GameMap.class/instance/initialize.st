@@ -5,7 +5,7 @@ initialize
 	midair := Dictionary new.
 	map := Dictionary new.
 	items := Dictionary new.
-	midAirEvents := OrderedCollection  new.
+	
 	entitiesArray := OrderedCollection new.
 	random := Random new.
 	random useClockBasedSeed.

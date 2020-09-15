@@ -11,7 +11,11 @@
 		"direction",
 		"referenceObject",
 		"speed",
-		"timespan"
+		"timespan",
+		"gamemap",
+		"target",
+		"position",
+		"lastBoardPosition"
 	],
 	"name" : "MidAirEvent",
 	"type" : "normal"

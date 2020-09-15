@@ -1,13 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "MidAirEvent",
-	"category" : "Golgotterath-Core-Effects",
+	"super" : "Sprite",
+	"category" : "Golgotterath-Core-Tile",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"sprite"
+		"tiles"
 	],
-	"name" : "MidAirItem",
+	"name" : "ArrowTiles",
 	"type" : "normal"
 }

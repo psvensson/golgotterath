@@ -29,7 +29,10 @@
 		"projectileToFire",
 		"help",
 		"helpWindow",
-		"fireWeapon"
+		"fireWeapon",
+		"midAirEvents",
+		"events",
+		"arrows"
 	],
 	"name" : "GameBoard",
 	"type" : "normal"

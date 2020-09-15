@@ -44,8 +44,10 @@ keyStroke: anEvent
 		ifTrue: [ openingDoor := true.
 			^ self ].
 	keyValue = 102
-		ifTrue: [ fireWeapon := true.
-			player fireWeapon. ^ self].
+		ifTrue: [ .
+			projectileToFire := nil.
+			fireWeapon := player fireWeapon.
+			^ self ].
 	keyValue = 119
 		ifTrue: [ player wieldItem ].
 	keyValue = 113

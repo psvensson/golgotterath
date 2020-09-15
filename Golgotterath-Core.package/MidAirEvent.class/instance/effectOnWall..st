@@ -1,3 +1,3 @@
 accessing
-effectOnEntity: wall gameMap: gamemap
+effectOnWall: wall 
 	self subclassResponsibility 

@@ -1,3 +1,3 @@
 as yet unclassified
 levelWalls
-	^ #('bluewall'  'lightwall'  'sandwall'  'greywall'  'darkwall')
+	^ #('darkwall'  'lightwall'  'sandwall'  'greywall'  'bluewall')
