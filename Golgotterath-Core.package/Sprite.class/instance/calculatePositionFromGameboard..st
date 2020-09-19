@@ -1,14 +1,10 @@
 accessing
 calculatePositionFromGameboard: gameboard
-	| adjustCentre gw boardOffset wc dx dy rv |
+	| adjustCentre gw boardOffset rv |
 	gw := gameboard width / 2.
- 	adjustCentre := GolUtil toISO: gw@0.
- 	
-	wc := gameboard worldCoords .
-	dx := (wc x - boardPosition x) * 64. 
-	dy := (wc y - boardPosition y) * 64.
-	
-	boardOffset := gameboard boardDrawOffset - (GolUtil toISO:(dx@dy)).
+	adjustCentre := GolUtil toISO: gw @ 0.
+	boardOffset := gameboard boardDrawOffset - (self
+		getDeltaFromGameboard: gameboard).
 	rv := boardOffset + adjustCentre.
-	rv := ((rv x) asInteger)@((rv y) asInteger).
-	^ rv 
+	rv := rv x asInteger @ rv y asInteger.
+	^ rv

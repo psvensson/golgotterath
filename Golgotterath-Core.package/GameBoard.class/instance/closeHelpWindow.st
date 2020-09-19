@@ -1,3 +1,4 @@
 initialization
 closeHelpWindow
-	self removeMorph: help 
+Transcript show:'closing help window';cr.
+	self removeAllMorphs

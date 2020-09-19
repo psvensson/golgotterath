@@ -8,5 +8,8 @@ pickup
 			gamemap removeItemAt: self boardPosition.
 			inventory add: item.
 			gamemap gameboard addEffectForEntity: self text: 'Picked up ',(item longname).
-			gamemap gameboard changed ] ].
+			gamemap gameboard render.
+			gamemap gameboard topbar text:' ' ] ifTrue: [ 
+			Transcript show:'*** inventory full apparently size = ',inventory size asString;cr.
+			gamemap gameboard addEffectForEntity: self text: 'Inventory full '. ] ].
 	self actionHappened

@@ -1,7 +1,5 @@
 action
 dropInventoryItem: item
-	"Get an item from the floor (if present) and att to inventory (if possible)"
-
 	(inventory includes: item)
 		ifTrue: [ gamemap
 				itemAt: self boardPosition

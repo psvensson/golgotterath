@@ -1,19 +1,14 @@
 action
 moveEntityToOpenPosition: entity target: target dir: dir
-	| item features |
+	| features |
 	entity animatedSprite setTargetForDirectionString: dir.
 	entity moveTo: target.
-	item := self gameMap
-		itemAt: target
-		ifAbsent: [ topbar text: ''.
-			nil ].
-	item ifNotNil: [ topbar text: item longname ].
+	self showWhatIsOnFloor: target.
 	self playAnimation: 'walk' for: entity.
 	entity = player
 		ifFalse: [ ^ self ].
 	self updateMinimap.
 	"self gameMap stepMap."
-	self addMoveEffectFor: entity.
 	worldLastPosition := player boardPosition.
 	self gameMap tryToGrowDungeonFrom: player boardPosition.
 	features := self gameMap featuresNearby: entity.

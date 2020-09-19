@@ -8,4 +8,6 @@ addEffectForEntity: entity text: text
 	self
 		addEffect: effect
 		startPosition:
-		(entity animatedSprite calculatePositionFromGameboard: self)
+		(entity animatedSprite calculatePositionFromGameboard: self);
+		addMorphFront: effect.
+	self startStepping	

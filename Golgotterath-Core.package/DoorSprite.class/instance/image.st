@@ -1,3 +1,3 @@
 accessing
 image 
-	^ stateImages at: state
+	^ (stateImages at: state) copy

@@ -1,0 +1,4 @@
+initialization
+paint
+
+	^ self animateEffect 

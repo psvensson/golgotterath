@@ -1,3 +1,6 @@
 initialization
 tile: tilename
-	^ tiles at: tilename
+	| i |
+	i := tiles at: tilename.
+	image := i.
+	^ i

@@ -32,7 +32,9 @@
 		"fireWeapon",
 		"midAirEvents",
 		"events",
-		"arrows"
+		"arrows",
+		"oldMorphs",
+		"inventoryPanel"
 	],
 	"name" : "GameBoard",
 	"type" : "normal"

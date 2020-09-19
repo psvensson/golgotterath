@@ -26,6 +26,8 @@ initializeHelpWindow
 	help addMorph: (GameBar getText: 'q - quaff a potion').
 	help addMorph: (GameBar getText: 'e - equip an armour').
 	help addMorph: (GameBar getText: 'w - wield a weapon').
+	help addMorph: (GameBar getText: 'o <dir> - open a door').
+	help addMorph: (GameBar getText: 'f <dir> - fire a ranged weapon').
 	help addMorph: (GameBar getText: 'd - drop an item').
 	help addMorph: (GameBar getText: 'g - get an item off the ground').
 	help addMorph: (GameBar getText: 'i - show Inventory').

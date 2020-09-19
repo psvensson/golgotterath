@@ -16,12 +16,6 @@ updateMinimap
 			startpos := gameMap getFreeTileForRoom: actualrooms first.
 			minimap plotPointAt: startpos color: Color yellow.
 			minimap plotPointAt: downpos color: Color black ]
-		ifNotNil: [ ].
-	"self
-		iterateOverVisibleArea: [ :pos | 
-			| tile c | 
-			tile := gameMap mapAt: pos.
-			c := (gameMap isWalkable: tile) ifTrue: [ Color green ] ifFalse: [ Color blue ] .
-			minimap plotPointAt: pos color: c ].	"
+		ifNotNil: [  ].
 	minimap updatePlayerPointer.
-	minimap changed.
+	minimap changed

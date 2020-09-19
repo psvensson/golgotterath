@@ -12,4 +12,5 @@ update: gameboard
 			level contents: player level asString,'  '.
 			exp contents: player exp asString,'  '.
 			hp contents: player hp asString,'  '.
-			ac contents: player ac asString ,'  ']
+			ac contents: player ac asString ,'  '].
+		self color: Color transparent 

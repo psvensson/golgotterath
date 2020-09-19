@@ -6,8 +6,12 @@ initializeGameboard
 		top: 30;
 		left: 0.
 	self addMorph: gameboard.
-	self extent: 1150 @ 700.
+	self
+		extent: 1150 @ 700;
+		color: Color black.
 	gameboard startGame.
+	
 	gameboard
 		extent: 1150 @ 700;
-		changed.
+		color: Color black;
+		changed

@@ -3,7 +3,9 @@ newGame
 	Transcript
 		show: 'New Game';
 		cr.
-	self hideMenu.
+	self
+		color: Color black;
+		hideMenu.
 	logoAlpha := 1.0.
-	hideSteps := 10.	
+	hideSteps := 10.
 	self startStepping

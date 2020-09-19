@@ -4,7 +4,8 @@ initialize
 	self
 		layoutPolicy: RowLayout new;
 		listDirection: #topToBottom;
-		cellInset: 10; color: Color black;
+		color: Color transparent;
+		cellInset: 10; 
 		left:0;
 		color: Color transparent ;
 		cellPositioning: #topLeft.

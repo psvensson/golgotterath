@@ -18,13 +18,5 @@ createDungeonGeneratorMap
 	actualrooms first entities: OrderedCollection new.
 	level > 1
 		ifTrue: [ startpos
-				ifNotNil: [ self addFeature: StairsUp new At: startpos + (0 @ 1) ] ]
-		ifFalse: [ self
-				addTile: (self getTile: 'statue_dragon')
-				atx: startpos x
-				y: startpos y ].
-	downpos
-		ifNotNil: [ self addFeature: StairsDown new At: startpos.
-			Transcript
-				show: '++++ down stair created';
-				cr ]
+				ifNotNil: [ self addFeature: StairsUp new At: startpos + (0 @ 1) ] ].
+	downpos ifNotNil: [ self addFeature: StairsDown new At: startpos ]

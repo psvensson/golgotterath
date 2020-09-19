@@ -4,6 +4,7 @@ createStatusField
 	statusRow := Morph new.
 	statusRow
 		layoutPolicy: RowLayout new;
+		color: Color transparent;
 		listDirection: #rightToLeft;
 		"wrapCentering: #topLeft;"
 			cellPositioning: #bottomLeft;

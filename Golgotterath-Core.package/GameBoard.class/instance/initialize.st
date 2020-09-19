@@ -1,9 +1,11 @@
 initialization
 initialize
 	super initialize.
-	Logger log: 'Golgotterath initialization starting';cr.
+	Logger
+		log: 'Golgotterath initialization starting';
+		cr.
 	"self bounds: (0 @ 0 corner: 1050 @ 600)."
-	"self showLoadingMessage."	
+	"self showLoadingMessage."
 	steppingTime := 90.
 	currentLevel := 1.
 	openingDoor := false.
@@ -15,4 +17,6 @@ initialize
 	levels := Dictionary new.
 	helpWindow := self initializeHelpWindow.
 	arrows := ArrowTiles new.
+	oldMorphs := OrderedCollection new.
+	inventoryPanel := GameListPanel new.
 	

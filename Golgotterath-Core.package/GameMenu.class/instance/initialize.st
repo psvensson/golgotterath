@@ -5,6 +5,7 @@ initialize
 		layoutPolicy: TableLayout new;
 		"height: 700;"
 		listDirection: #topToBottom;
+		color: Color transparent;
 		"listCentering: #justified ;"
 			"cellInset: 5;"
 			height: 500;

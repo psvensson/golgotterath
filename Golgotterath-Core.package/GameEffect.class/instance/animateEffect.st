@@ -1,0 +1,3 @@
+initialization
+animateEffect
+	self subclassResponsibility

@@ -5,5 +5,7 @@ stepAndSelectRunningAnimations
 			| res |
 			res := something stepAnimation.
 			res
-				ifFalse: [ self handlePostMoveFor: something ].
+				ifFalse: [ 
+					
+					self handlePostMoveFor: something ].
 			res ]

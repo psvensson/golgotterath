@@ -5,6 +5,6 @@ getDarknessAlpha: worldpos
 	diffy := (worldpos y - player boardPosition y) abs.
 	diff := diffx max: diffy.
 	alpha := 1.
-	alpha :=  (diff < 2) ifTrue: [0] ifFalse: [(diff * 0.15) + 0.35].
+	alpha := (diff < 2) ifTrue: [0] ifFalse: [1 - (diff * 0.25) + 0.15].
 	^ alpha
 	

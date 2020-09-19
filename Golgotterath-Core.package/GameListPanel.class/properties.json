@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "PanelMorph",
+	"category" : "Golgotterath-Core-View",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"selectedCallback",
+		"list",
+		"listCollection",
+		"selectedIndex"
+	],
+	"name" : "GameListPanel",
+	"type" : "normal"
+}

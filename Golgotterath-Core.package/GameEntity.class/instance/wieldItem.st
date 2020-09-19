@@ -15,6 +15,7 @@ wieldItem
 				cr.
 			weapon ifNotNil: [ inventory add: item ].
 			inventory remove: item.
+			inventory add: self weapon.
 			self weapon: item.
 			gamemap gameboard changed ]
 		title: 'Wield Weapon'.
