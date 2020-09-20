@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Golgotterath-Core-DungeonGeneration",
+	"category" : "Golgotterath-Core-Features",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

@@ -1,7 +1,7 @@
 action
 die
 	| goscreen |
-	Logger log:self;log:' has died! ***************** ';cr.
+	Logger log:self;log:' has died! ***************** player = ',player asString;cr.
 	 
 	gamemap ifNotNil: 
 		[	| pos body bodypos |
@@ -18,5 +18,6 @@ die
 			gamemap gameboard soundBoard play: 'hurt2'.
 			goscreen := GameOverScreen new.
 			goscreen position: gamemap gameboard position.
-			gamemap gameboard addMorph: goscreen. ]
+			Transcript show:'showing Game Over screen';cr.
+			gamemap gameboard addMorphFront: goscreen. ]
 		ifFalse: [ gamemap gameboard soundBoard play: 'monster2' ]

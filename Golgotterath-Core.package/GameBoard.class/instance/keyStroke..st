@@ -13,21 +13,21 @@ keyStroke: anEvent
 	keyValue = 63
 		ifTrue: [ self showHelpWindow ].
 	(keyValue = 30 or: keyValue = 56)
-		ifTrue: [ self moveEntity: self player dir: 'up' ].	"up arrow"
+		ifTrue: [ self movePlayer: self player dir: 'up' ].	"up arrow"
 	keyValue = 55
-		ifTrue: [ self moveEntity: self player dir: 'upleft' ].	"up arrow"
+		ifTrue: [ self movePlayer: self player dir: 'upleft' ].	"up arrow"
 	keyValue = 57
-		ifTrue: [ self moveEntity: self player dir: 'upright' ].	"up arrow"
+		ifTrue: [ self movePlayer: self player dir: 'upright' ].	"up arrow"
 	keyValue = 49
-		ifTrue: [ self moveEntity: self player dir: 'downleft' ].	"up arrow"
+		ifTrue: [ self movePlayer: self player dir: 'downleft' ].	"up arrow"
 	keyValue = 51
-		ifTrue: [ self moveEntity: self player dir: 'downright' ].	"up arrow"
+		ifTrue: [ self movePlayer: self player dir: 'downright' ].	"up arrow"
 	(keyValue = 31 or: keyValue = 50)
-		ifTrue: [ self moveEntity: self player dir: 'down' ].	"down arrow"
+		ifTrue: [ self movePlayer: self player dir: 'down' ].	"down arrow"
 	(keyValue = 29 or: keyValue = 54)
-		ifTrue: [ self moveEntity: self player dir: 'right' ].	"right arrow"
+		ifTrue: [ self movePlayer: self player dir: 'right' ].	"right arrow"
 	(keyValue = 28 or: keyValue = 52)
-		ifTrue: [ self moveEntity: self player dir: 'left' ].	"left arrow"
+		ifTrue: [ self movePlayer: self player dir: 'left' ].	"left arrow"
 	keyValue = 122
 		ifTrue: [ self playAnimation: 'hit' for: self player ].
 	keyValue = 120

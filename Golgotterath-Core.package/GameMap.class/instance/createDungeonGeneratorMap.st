@@ -8,8 +8,7 @@ createDungeonGeneratorMap
 	(dungeon mapFilteredBy: 1) do: [ :floor | self addFloorAt: floor ].
 	(dungeon mapFilteredBy: 2) do: [ :door | self addDoorAt: door ].
 	(dungeon mapFilteredBy: 3) do: [ :wall | self addWallAt: wall ].
-	actualrooms := dungeon rooms
-		select: [ :r | (r area at: #type) = #room ].
+	actualrooms := self actualRooms.
 	dungeon rooms
 		do:
 			[ :room | room features do: [ :feature | self createFeaturesFromRoom: room ] ].

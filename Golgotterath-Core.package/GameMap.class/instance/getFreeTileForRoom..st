@@ -1,6 +1,6 @@
 accessing
 getFreeTileForRoom: room
-	| tries tile pos |
+	| tries tile |
 	tries := 0.
 	tile := nil.
 	[ tries < 10 and: tile isNil ]

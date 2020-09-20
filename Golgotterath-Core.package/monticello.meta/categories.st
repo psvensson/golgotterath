@@ -2,6 +2,7 @@ SystemOrganization addCategory: #'Golgotterath-Core'!
 SystemOrganization addCategory: #'Golgotterath-Core-Base'!
 SystemOrganization addCategory: #'Golgotterath-Core-DungeonGeneration'!
 SystemOrganization addCategory: #'Golgotterath-Core-Effects'!
+SystemOrganization addCategory: #'Golgotterath-Core-Features'!
 SystemOrganization addCategory: #'Golgotterath-Core-Manifest'!
 SystemOrganization addCategory: #'Golgotterath-Core-Sprite'!
 SystemOrganization addCategory: #'Golgotterath-Core-Strategies'!

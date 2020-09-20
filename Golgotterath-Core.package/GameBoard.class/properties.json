@@ -34,7 +34,8 @@
 		"events",
 		"arrows",
 		"oldMorphs",
-		"inventoryPanel"
+		"inventoryPanel",
+		"playerIsMoving"
 	],
 	"name" : "GameBoard",
 	"type" : "normal"
