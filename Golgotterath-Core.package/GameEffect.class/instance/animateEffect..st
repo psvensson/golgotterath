@@ -1,3 +1,0 @@
-initialization
-animateEffect: aCanvas
-	self subclassResponsibility

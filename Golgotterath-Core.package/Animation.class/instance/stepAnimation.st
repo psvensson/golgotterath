@@ -1,6 +1,7 @@
 stepping and presenter
 stepAnimation
 	| aFrame directionFrames |	
+		"Transcript show:'Animation stepAnimation frame = ',frame asString;cr."
 	directionFrames := frames at: frame.
 	aFrame := directionFrames at: direction.	
 	currentFrame := aFrame .

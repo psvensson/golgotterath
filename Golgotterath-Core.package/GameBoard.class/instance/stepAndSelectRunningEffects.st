@@ -5,7 +5,5 @@ stepAndSelectRunningEffects
 			| res |
 			res := something animateAndCheckIfDone.
 			res
-				ifFalse: [ Transcript
-						show: '*** removing event';
-						cr. ].
+				ifFalse: [  ].
 			res ]

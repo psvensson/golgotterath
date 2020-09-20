@@ -11,7 +11,8 @@ die
 			bodypos := pos.
 			gamemap itemAt: pos ifPresent: [ pos:= (gamemap getItemFreeTileForRoom: (gamemap dungeon getRoomAt: pos)) ].
 			gamemap addItem: body at: bodypos.
-			gamemap gameboard playAnimation: 'die' for: self. ].
+			gamemap gameboard playAnimation: 'die' for: self.
+			Logger log:'entity emptied and removed' ].
 	player
 		ifTrue: [ 			
 			gamemap gameboard soundBoard play: 'hurt2'.

@@ -1,11 +1,11 @@
 accessing
 stepAndSelectRunningAnimations
 	^ runningAnimations
-		select: [ :something | 
+		select: [ :entity | 
 			| res |
-			res := something stepAnimation.
+			res := entity stepAnimation.
 			res
 				ifFalse: [ 
 					
-					self handlePostMoveFor: something ].
+					self handlePostMoveFor: entity ].
 			res ]

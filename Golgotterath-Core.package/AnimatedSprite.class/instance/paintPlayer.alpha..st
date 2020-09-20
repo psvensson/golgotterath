@@ -10,11 +10,14 @@ paintPlayer: gameboard alpha: alpha
 			img
 				alpha: alpha;
 				position:p.
+			"animation position: p."
 			self position: p.	
 					
-			"Logger
-				log: 'PaintPlayer ';
+		"Logger
+				log: 'Sprite ';
 				log: name;
 				log: ' painted at ';
 				log: img position;
-				cr" ]
+				log: ' animation frame ',animation frame asString;
+				log: ' worldAnimationFrame ',gameboard worldAnimationFrame asString;
+				cr." ]

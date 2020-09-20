@@ -5,8 +5,6 @@ startGame
 	topbar
 		text: 'Starting game...';
 		left: 100.
-	self showWelcomeEffect.
-	self initializeWorld.
 	self initializeGameMap.
 	"onSuccessDo: [ :result | "
 	self
@@ -22,13 +20,18 @@ startGame
 	self
 		color: Color black;
 		changed.
-	self playAnimation: 'walk' for: player.
 	self onLevelChanged.
-	
-	self startStepping.
 	self render.
-	
 	Logger
 		log: 'Golgotterath initialization took ';
 		log: now - then;
-		log: ' seconds '	"]"
+		log: ' seconds ';
+		cr.
+	self startStepping.
+	"self showWelcomeEffect"
+	Transcript
+		show:
+			'****************************** startGame worldCoord = '
+				, worldCoords asString;
+		cr.
+	self playAnimation: 'walk' for: player

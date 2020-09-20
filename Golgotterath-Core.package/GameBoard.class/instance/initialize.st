@@ -1,12 +1,13 @@
 initialization
 initialize
 	super initialize.
+	self initializeWorld.
 	Logger
 		log: 'Golgotterath initialization starting';
 		cr.
 	"self bounds: (0 @ 0 corner: 1050 @ 600)."
 	"self showLoadingMessage."
-	steppingTime := 90.
+	steppingTime := 22.
 	currentLevel := 1.
 	openingDoor := false.
 	fireWeapon := false.
