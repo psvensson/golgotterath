@@ -2,7 +2,7 @@
 
 I am an experimental isometric game engine written in Pharo Smalltalk.
 
-![Screenshot](https://github.com/psvensson/golgotterath/blob/master/Screenshot%20from%202020-09-20%2020-21-18.png?raw=true)
+![Screenshot](https://github.com/psvensson/golgotterath/blob/master/gamescreenshot.png?raw=true)
 
 ## Loading
 ```
