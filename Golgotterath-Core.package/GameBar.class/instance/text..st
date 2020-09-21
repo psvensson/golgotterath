@@ -1,7 +1,7 @@
 initialization
 text: aText
 	"Transcript
-		show: 'top showing text: ' , aText;
+		show: 'gamebar showing text: ' , aText;
 		cr."
 	text backgroundColor: Color transparent .
 	text color: Color white.

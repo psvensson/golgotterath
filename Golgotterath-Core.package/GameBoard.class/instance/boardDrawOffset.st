@@ -1,3 +1,3 @@
 accessing
 boardDrawOffset	
-	^  (self position) + boardDrawOffset 
+	^  (self position) 

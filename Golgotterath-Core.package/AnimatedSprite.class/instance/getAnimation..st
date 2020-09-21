@@ -1,3 +1,3 @@
 accessing
-getAnimation: name
-	^	animations at: name
+getAnimation: n
+	^	animations at: n

@@ -59,4 +59,5 @@ keyStroke: anEvent
 				showInventoryFor: player
 				onSelect: [ :item | selectedItem := item ] ].
 	openingDoor := false.
-	self gameMap stepMap
+	self gameMap stepMap.
+	topbar update: self.

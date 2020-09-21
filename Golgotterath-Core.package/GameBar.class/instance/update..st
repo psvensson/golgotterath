@@ -1,6 +1,8 @@
 initialization
 update: gameboard
 	| player |
+	"Transcript show:'gamebar update ...';cr."
+	self text: ''.
 	player := gameboard player.
 	player
 		ifNotNil: [ player weapon

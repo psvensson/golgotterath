@@ -6,7 +6,7 @@ getPathToTarget: aBlock
 	graph := gamemap
 		         createDijkstraGraphAt: pos
 		         radius: entity lightradius.
-	Logger log: 'getPathToTarget from ';	log: pos;	log: ' radius ';log: entity lightradius;log:' target ';
+	Logger log: 'MoveStrategy getPathToTarget from ';	log: pos;	log: ' radius ';log: entity lightradius;log:' target ',targetEntity asString;
 		log: targetBoardPos;
 		cr.
 	gamemap

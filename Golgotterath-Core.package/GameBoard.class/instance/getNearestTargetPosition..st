@@ -1,2 +1,0 @@
-action
-getNearestTargetPosition: dir

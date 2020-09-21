@@ -8,7 +8,5 @@ growRoom: room
 			| r |
 			r := self createRandomRoomAt: door depth: 1.
 			r ifNotNil: [ rs add: r ].
-			Transcript
-				show: '*************************** growRoom creates new room: ' , r asString;
-				cr ].
+			 ].
 	^ rs

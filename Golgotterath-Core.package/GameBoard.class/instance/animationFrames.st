@@ -1,3 +1,3 @@
 accessing
 animationFrames
-	^ 16
+	^ 8

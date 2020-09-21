@@ -8,11 +8,9 @@ createPlayer
 	self addEntity: player at: (self getUnoccupiedTileForRoom: room).
 	dagger := GameItem new: 'dagger'.	
 	player weapon: dagger.
+	player hp:100.
 	player inventory add: (GameItem new: 'invisibility_potion').
 	player inventory add: (GameItem new: 'short_bow').
-	player inventory add: (GameItem new: 'arrow').
-	player inventory add: (GameItem new: 'arrow').
-	player inventory add: (GameItem new: 'arrow').
 	player inventory add: (GameItem new: 'arrow').
 	player inventory add: (GameItem new: 'arrow').
 	player inventory add: (GameItem new: 'arrow').

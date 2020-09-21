@@ -1,6 +1,7 @@
 action
 launchProjectile: dir for: entity
 	| midAirItem arrowSprite targetpos pos |
+	entity animatedSprite setTargetForDirectionString: dir.
 	pos := (entity animatedSprite
 		calculatePositionFromGameboard: entity gamemap gameboard) + entity animatedSprite tileSize .
 	projectileToFire

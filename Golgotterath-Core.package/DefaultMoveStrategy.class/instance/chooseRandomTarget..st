@@ -9,13 +9,14 @@ chooseRandomTarget: view
 		ifNotEmpty: [ | possibleTarget |
 			index := others size atRandom.
 			possibleTarget := others at: index.
-			(possibleTarget invisible)
+			possibleTarget invisible
 				ifFalse: [ (GolUtil
 						isPosition: possibleTarget boardPosition
 						withinRadius: entity lightradius
 						of: entity boardPosition)
-						ifTrue: [ target := possibleTarget
+						ifTrue: [ target := possibleTarget.
+							targetEntity := target
 							"Logger log: entity name;log:entity boardPosition;
 										log:' choose target: ';	log:possibleTarget name;
-										log:' pos ';log: possibleTarget boardPosition; cr." ] ] ] .
+										log:' pos ';log: possibleTarget boardPosition; cr." ] ] ].
 	^ target

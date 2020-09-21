@@ -12,6 +12,6 @@ render
 		color: Color black;
 		renderViewport;
 		renderEffects.
-	topbar update: self.
+	
 	self updateMinimap .
 	self addMorphFront: minimap.
