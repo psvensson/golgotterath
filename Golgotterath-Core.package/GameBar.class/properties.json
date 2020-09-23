@@ -12,7 +12,9 @@
 		"hp",
 		"ac",
 		"weapon",
-		"armour"
+		"armour",
+		"textField",
+		"statusField"
 	],
 	"name" : "GameBar",
 	"type" : "normal"

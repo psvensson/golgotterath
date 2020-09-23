@@ -1,14 +1,13 @@
 accessing
 getUnoccupiedTileForRoom: room
-	| tries tile |
+	| tries tilepos |
 	tries := 0.
-	tile := nil.
-	[ tries < 100 and: tile isNil ]
+	[ tries < 100 and: tilepos isNil ]
 		whileTrue: [ | fpos |
 			tries := tries + 1.
-			fpos := room floor at: room floor size atRandom.
+			fpos := room getRandomTile.
 			self
 				entityAt: fpos
 				ifAbsent: [ (GolUtil isFloor: (self mapAt: fpos))
-						ifTrue: [ tile := fpos ] ] ].
-	^ tile
+						ifTrue: [ tilepos := fpos ] ] ].
+	^ tilepos

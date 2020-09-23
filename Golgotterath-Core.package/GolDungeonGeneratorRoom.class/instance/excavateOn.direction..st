@@ -12,7 +12,7 @@ excavateOn: generator direction: dir
 		direction: dir
 		edge: 1
 		do: [ :ix :iy | 
-			floor add: ix @ iy.
+			floor at: ix @ iy put: 1.
 			generator mapAt: ix @ iy put: 1 ].
 	self createRandomDoorsOn: generator Direction: dir.
 	doors do: [ :door | generator mapAt: (door at: #pos) put: type ].

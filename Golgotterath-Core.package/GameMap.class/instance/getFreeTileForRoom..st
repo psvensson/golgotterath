@@ -6,7 +6,7 @@ getFreeTileForRoom: room
 	[ tries < 10 and: tile isNil ]
 		whileTrue: [ | fpos |
 			tries := tries + 1.
-			fpos := room floor at: room floor size atRandom.
-			(self isWalkable: (self mapAt: fpos))
+			fpos := room getRandomTile.
+			(GolUtil isFloor: (self mapAt: fpos))
 				ifTrue: [ self itemAt: fpos ifAbsent: [ tile := fpos ] ] ].
 	^ tile

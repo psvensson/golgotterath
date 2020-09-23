@@ -6,7 +6,7 @@ initialize
 	entities := OrderedCollection new.
 	items := OrderedCollection new.
 	walls := OrderedCollection new.
-	floor := OrderedCollection new.
+	floor := Dictionary new.
 	features := OrderedCollection new.
 	depth := 0.
 	level := 1.

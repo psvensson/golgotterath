@@ -1,6 +1,6 @@
 accessing
 goToLevel: l
-	| effect p |
+	| effect p tile|
 	currentLevel := l.
 	Transcript
 		show:
@@ -17,10 +17,10 @@ goToLevel: l
 		startPosition: (player animatedSprite calculatePositionFromGameboard: self).
 	gameMap := self getMapForLevel: currentLevel.
 	player gamemap: gameMap.
-	p := gameMap getUnoccupiedTileForRoom: gameMap actualRooms first.
 	self onLevelChanged.
-	Transcript
-		show: 'goToLevel found free position for player on new level: ' , p asString;
-		cr.
+	p := gameMap getFreeTileFromFirstRoom.
+	tile := (gameMap mapAt: p).
 	player boardPosition: p.
-	self playAnimation: 'walk' for: player
+	Transcript show:'player is put at boardPosition ',p asString ,' on new level. isFloor = ',(GolUtil isFloor: tile) asString,' tile = ',tile name;cr.
+	self playAnimation: 'walk' for: player.
+	topbar position: self position + (40 @ -30)

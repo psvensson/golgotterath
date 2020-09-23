@@ -5,7 +5,7 @@ tryToGrowDungeonFrom: pos
 	room
 		ifNotNil: [ (dungeon growRoom: room)
 				do: [ :newroom | 
-					room floor do: [ :fpos | self addFloorAt: fpos ].
+					room floor keys do: [ :fpos | self addFloorAt: fpos ].
 					room walls do: [ :wpos | self addWallAt: wpos ].
 					room doors do: [ :door | self addDoorAt: (door at: #pos) ].
 					self createItemsFromRoom: room.

@@ -9,5 +9,7 @@ initialize
 		left:0;
 		color: Color transparent ;
 		cellPositioning: #topLeft.
-	self addMorph: self createTextField.
-	self addMorph: self createStatusField
+	textField := self createTextField.	
+	self addMorph: textField.
+	statusField := self createStatusField.
+	self addMorph: statusField

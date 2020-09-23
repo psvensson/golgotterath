@@ -22,7 +22,10 @@
 		"player",
 		"level",
 		"crackedTiles",
-		"midAirEvents"
+		"midAirEvents",
+		"upstairsPos",
+		"downstairsPos",
+		"actualrooms"
 	],
 	"name" : "GameMap",
 	"type" : "normal"

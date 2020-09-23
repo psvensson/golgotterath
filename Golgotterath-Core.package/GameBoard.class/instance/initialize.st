@@ -7,7 +7,7 @@ initialize
 		cr.
 	"self bounds: (0 @ 0 corner: 1050 @ 600)."
 	"self showLoadingMessage."
-	steppingTime := 22.
+	steppingTime := 30.
 	currentLevel := 1.
 	openingDoor := false.
 	fireWeapon := false.

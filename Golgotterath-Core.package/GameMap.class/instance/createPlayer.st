@@ -1,11 +1,9 @@
 initialization
 createPlayer
-	|  dagger actualrooms room |
+	|  dagger p |
 	player := GameEntity new: 'malelight'.
-	actualrooms := dungeon rooms
-		select: [ :r | (r area at: #type) = #room ].
-	room := actualrooms first.
-	self addEntity: player at: (self getUnoccupiedTileForRoom: room).
+	p := self getFreeTileForRoom: actualrooms first.
+	self addEntity: player at: p.
 	dagger := GameItem new: 'dagger'.	
 	player weapon: dagger.
 	player hp:100.
