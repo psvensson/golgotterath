@@ -21,4 +21,5 @@ die
 				cr ].
 	player
 		ifTrue: [ gamemap gameboard soundBoard play: 'hurt2' ]
-		ifFalse: [ gamemap gameboard soundBoard play: 'monster2' ]
+		ifFalse: [ gamemap gameboard soundBoard play: 'monster2' ].
+	gamemap gameboard updateTopbar 	

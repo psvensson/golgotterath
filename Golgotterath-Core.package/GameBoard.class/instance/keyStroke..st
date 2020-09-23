@@ -60,4 +60,4 @@ keyStroke: anEvent
 				onSelect: [ :item | selectedItem := item ] ].
 	openingDoor := false.
 	self gameMap stepMap.
-	topbar update: self.
+	"topbar update: self."

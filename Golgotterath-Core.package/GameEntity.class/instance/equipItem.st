@@ -16,4 +16,5 @@ equipItem
 			ac := ac + (armour attributes at: #dac).
 			self changed ]
 		title: 'Equip Armor'.
-	self actionHappened
+	self actionHappened.
+	gamemap gameboard updateTopbar 

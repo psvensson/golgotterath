@@ -24,4 +24,5 @@ dealDamageTo: entity
 				log: damage;
 				log: ' in damage';
 				cr.
-			entity hurt ]
+			entity hurt ].
+		gamemap gameboard updateTopbar 

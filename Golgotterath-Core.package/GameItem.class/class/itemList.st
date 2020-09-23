@@ -631,7 +631,7 @@ itemList
 		put:
 			(Dictionary
 				newFrom:
-					{(#name -> 'increase_consitution_potion').
+					{(#name -> 'increase_constitution_potion').
 					(#kind -> 'potion').
 					(#longname -> 'Increase Constitution Potion').
 					(#subtype -> 'stats').

@@ -19,4 +19,5 @@ wieldItem
 			self weapon: item.
 			gamemap gameboard changed ]
 		title: 'Wield Weapon'.
-	self actionHappened
+	self actionHappened.
+	gamemap gameboard updateTopbar 

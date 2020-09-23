@@ -12,4 +12,5 @@ pickup
 			gamemap gameboard topbar text:' ' ] ifTrue: [ 
 			Transcript show:'*** inventory full apparently size = ',inventory size asString;cr.
 			gamemap gameboard addEffectForEntity: self text: 'Inventory full '. ] ].
-	self actionHappened
+	self actionHappened.
+	gamemap gameboard updateTopbar 

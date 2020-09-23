@@ -5,4 +5,5 @@ getExperienceFor: entity
 		log: '*** Experience is now: ';
 		log: self exp;
 		cr.
-	self checkLevelUp
+	self checkLevelUp.
+	gamemap gameboard updateTopbar 

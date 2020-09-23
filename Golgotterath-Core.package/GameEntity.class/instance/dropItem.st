@@ -24,6 +24,8 @@ dropItem
 					gamemap gameboard
 						addEffectForEntity: self
 						text: 'Dropped ' , item longname.
-					gamemap
-						addItem: item at: self boardPosition.
-						gamemap gameboard render;showWhatIsOnFloor: self boardPosition  ] ]
+					gamemap addItem: item at: self boardPosition.
+					gamemap gameboard
+						render;
+						showWhatIsOnFloor: self boardPosition ] ].
+	gamemap gameboard updateTopbar

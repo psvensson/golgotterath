@@ -21,6 +21,7 @@ goToLevel: l
 	p := gameMap getFreeTileFromFirstRoom.
 	tile := (gameMap mapAt: p).
 	player boardPosition: p.
+	player animatedSprite target: p.
 	Transcript show:'player is put at boardPosition ',p asString ,' on new level. isFloor = ',(GolUtil isFloor: tile) asString,' tile = ',tile name;cr.
 	self playAnimation: 'walk' for: player.
-	topbar position: self position + (40 @ -30)
+	self updateTopbar
