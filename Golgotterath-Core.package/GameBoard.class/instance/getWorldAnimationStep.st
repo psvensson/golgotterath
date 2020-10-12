@@ -4,5 +4,5 @@ getWorldAnimationStep
 	psprite := player animatedSprite.
 	delta := (GolUtil getDeltaForDirectionValue: psprite direction) .
 	reversedelta := (delta x negated)@(delta y negated).
-	stepSize := 1 / psprite getOldAnimation frames size.
-	^ reversedelta * stepSize
+	stepSize := 1 / self animationFrames.
+	^ delta * stepSize

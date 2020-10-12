@@ -2,11 +2,11 @@ accessing
 stepAnimation: worldAnimationFrame
 	| delta anim stepSize |
 	anim := animatedSprite getOldAnimation.
-	Transcript
+	"Transcript
 		show:
 			'entity stepAnimation visible position is ' , visiblePosition asString
 				, ' dir = ' , anim direction asString;
-		cr.
+		cr."
 	delta := GolUtil getDeltaForDirectionValue: animatedSprite direction.
 	stepSize := 1 / anim frames size.
 	visiblePosition := visiblePosition + (delta * stepSize).
