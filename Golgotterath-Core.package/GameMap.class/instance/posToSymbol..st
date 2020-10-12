@@ -1,3 +1,0 @@
-accessing
-posToSymbol: pos
-	^ pos 

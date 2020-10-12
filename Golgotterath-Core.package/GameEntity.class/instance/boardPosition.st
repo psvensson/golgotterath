@@ -1,3 +1,0 @@
-accessing
-boardPosition
-	^ animatedSprite boardPosition 

@@ -15,7 +15,7 @@ createDijkstraGraphAt: origo radius: radius
 		origo x - radius to: origo x + radius do: [ :x | 
 			| tile |
 			tile := self mapAt: x @ y.
-			(self isWalkable: tile)
+			(GolUtil isFloor: tile)
 				ifTrue: [ row add: 0 ]
 				ifFalse: [ row add: 1 ] ] ].
 	graph setGrid: rows.	

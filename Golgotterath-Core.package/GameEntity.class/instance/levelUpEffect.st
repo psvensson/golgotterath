@@ -8,4 +8,4 @@ levelUpEffect
 		addEffect: effect
 		startPosition:
 			(animatedSprite calculatePositionFromGameboard:
-				  gamemap gameboard)
+				  gamemap gameboard boardPosition: self boardPosition)

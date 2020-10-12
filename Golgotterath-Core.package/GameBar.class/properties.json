@@ -14,7 +14,10 @@
 		"weapon",
 		"armour",
 		"textField",
-		"statusField"
+		"statusField",
+		"increaseButton",
+		"decreaseButton",
+		"gameboard"
 	],
 	"name" : "GameBar",
 	"type" : "normal"

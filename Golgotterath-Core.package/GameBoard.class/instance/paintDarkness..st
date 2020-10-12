@@ -8,8 +8,7 @@ paintDarkness: worldpos
 	alpha :=  (diff < 3) ifTrue: [0] ifFalse: [( (diff * 0.05) + 0.1)].
 	position:= worldpos.
 	tile := self gameMap getTile: 'floor'.
-	tile boardPosition: position.
-	i := tile paint: self alpha: alpha.
+	i := tile sprite paint: self alpha: alpha boardPosition: player boardPosition .
 	i color: Color transparent.
 	self addMorph: i.
 	

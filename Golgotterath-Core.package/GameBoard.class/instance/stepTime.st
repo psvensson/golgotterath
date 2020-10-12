@@ -1,4 +1,4 @@
-accessing
+animations
 stepTime
 	"Play animation starting from sprite 1"
  	^ steppingTime 

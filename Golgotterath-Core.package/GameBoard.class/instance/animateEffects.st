@@ -1,4 +1,4 @@
-accessing
+animations
 animateEffects
 	effects isEmpty
 		ifTrue: [ ^ self ].

@@ -1,7 +1,6 @@
 drawing
-paintFloorUnderneath: position
+paintFloorUnderneath: boardPosition
 	| tile |
 	tile := self gameMap getTile: 'cr_floor1'.
-	tile boardPosition: position.
-	tile paint: self.
-	self addMorph: tile image.
+	tile sprite paint: self boardPosition: boardPosition.
+	self addMorph: tile sprite image.

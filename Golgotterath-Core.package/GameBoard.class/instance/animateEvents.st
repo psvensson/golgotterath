@@ -1,4 +1,4 @@
-accessing
+animations
 animateEvents
 	events
 		do: [ :event | 

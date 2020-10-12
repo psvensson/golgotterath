@@ -12,6 +12,7 @@ initializeGameMap
 		text: 'Generating dungeon...';
 		left: 100.
 	gameMap createDungeonGeneratorMap.
+	"gameMap createDefaultMap ."
 	gameMap createDefaultEntities.
 	player := gameMap createPlayer.
 	gameMap createDefaultItems

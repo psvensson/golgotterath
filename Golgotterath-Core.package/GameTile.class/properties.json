@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "GameObject",
+	"category" : "Golgotterath-Core-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GameTile",
+	"type" : "normal"
+}

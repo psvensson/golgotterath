@@ -6,7 +6,7 @@ die
 		cr.
 	gamemap
 		ifNotNil: [ | pos body bodypos |
-			pos := self animatedSprite boardPosition.
+			pos := self boardPosition.
 			body := self createDeadEntityitem.
 			gamemap removeEntityAt: pos.
 			bodypos := pos.

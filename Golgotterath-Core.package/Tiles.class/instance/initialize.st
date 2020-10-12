@@ -2,6 +2,7 @@ initialization
 initialize 
 	| img |
 	super initialize.
+	tileAdjustment := (0)@(0).
 	img := self spriteImage.
 	self loadSpriteImage: img spriteWidth: 64 spritesPerRow: 10.
 	tiles := Dictionary new.

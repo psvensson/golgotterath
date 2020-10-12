@@ -1,24 +1,19 @@
-stepping and presenter
+animations
 step
-	| stop |
-	stop := true.
+	| continue |
+	continue := false.
 	worldAnimationFrame > self animationFrames
-		ifTrue: [ worldAnimationFrame := 0 ].
-	runningAnimations
-		ifNotNil: [ runningAnimations isEmpty
-				ifFalse: [ stop := false.
-					worldAnimationFrame \\ 4 = 0
-						ifTrue: [ runningAnimations := self stepAndSelectRunningAnimations ] ] ].
-	events
-		ifNotNil: [ events isEmpty
-				ifFalse: [ events := self stepAndSelectRunningEvents.
-					stop := false ] ].
-	effects
-		ifNotNil: [ effects isEmpty
-				ifFalse: [ effects := self stepAndSelectRunningEffects.
-					stop := false ] ].
+		ifTrue: [ continue := false ].
+	self stepAndSelectRunningAnimations
+		ifTrue: [ continue := true ].
+	self stepAndSelectRunningEvents
+		ifTrue: [ continue := true ].
+	self stepAndSelectRunningEffects
+		ifTrue: [ continue := true ].
 	self stepWorld.
 	self render.
-	stop
-		ifTrue: [ self stopStepping ].
-	worldAnimationFrame := worldAnimationFrame + 1
+	worldAnimationFrame := worldAnimationFrame + 1.
+	continue
+		ifTrue: [ ^ self ].
+	self stopStepping.
+	worldAnimationFrame := 1

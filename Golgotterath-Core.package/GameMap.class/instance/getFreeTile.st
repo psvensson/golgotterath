@@ -9,6 +9,6 @@ getFreeTile
 			x := (self mapRadius * 2) atRandom - self mapRadius.
 			y := (self mapRadius * 2) atRandom - self mapRadius.
 			((x abs > 4) and: (y abs > 4))
-				ifTrue: [ (self isWalkable: (self mapAt: x @ y))
+				ifTrue: [ (GolUtil isFloor: (self mapAt: x @ y))
 						ifTrue: [ self itemAt: x @ y ifAbsent: [ tile := x @ y ] ] ] ].
 	^ tile

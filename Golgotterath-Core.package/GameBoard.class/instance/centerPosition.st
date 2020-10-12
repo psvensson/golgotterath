@@ -1,0 +1,3 @@
+accessing
+centerPosition
+	^ owner center

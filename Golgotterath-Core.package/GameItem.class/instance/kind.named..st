@@ -9,6 +9,6 @@ kind: k named: tname
 	kind := k.
 	sprite := (Sprite new) 
 		image: (tiles tile: tname); 
-		tileAdjustment: (self armortiles tileadjustx)@(self armortiles tileadjusty); 
+		tileAdjustment: tiles tileAdjustment ; 
 		name: tname;
-		tileSize: (armortiles tileSize).
+		tileSize: (tiles tileSize).

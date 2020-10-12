@@ -1,12 +1,8 @@
 initialization
 initialize
-	super initialize .
-	tileSizeV := 128.
-	tileSizeH := 128. 
-	boardPosition := 0@0.
-	tileAdjustment := 0@0.
-	tileAdjustmentY := 0.
-	hoffset := 64.
-	voffset := 64.
-	open = false
-	
+	super initialize.
+	tileSize := 128.
+	scaleSize := 128.
+	tileAdjustment := 0 @ 0.
+	hoffset := 0.
+	voffset := 0

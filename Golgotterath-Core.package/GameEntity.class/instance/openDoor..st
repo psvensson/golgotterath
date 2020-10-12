@@ -1,10 +1,10 @@
 initialization - private
 openDoor: dir
-	| target door |
-	target := animatedSprite getTargetForDirectionString: dir.
-	door := gamemap mapAt: target.
+	| t door |
+	t := self getTargetForDirectionString: dir boardPosition: boardPosition .
+	door := gamemap mapAt: t.
 	(GolUtil isDoor: door)
-		ifTrue: [ door toggle ]
+		ifTrue: [ door sprite toggle ]
 		ifFalse: [ Transcript
 				show: 'No door there..';
 				cr ]

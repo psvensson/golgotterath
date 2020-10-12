@@ -1,4 +1,4 @@
-testing
+action
 openFloorAt: target for: entity
 	| tile cname |
 	self gameMap
@@ -14,12 +14,12 @@ openFloorAt: target for: entity
 					^ false ] ].
 	tile := self gameMap mapAt: target.
 	cname := tile name.
-	Logger log:'openFloorAt: ';log:target;log:' name = ',cname;cr.
+	"Logger log:'openFloorAt: ';log:target;log:' name = ',cname;cr."
 	(cname findString: 'door') > 0
 		ifTrue: [ Logger
 				log: 'openFloorAt: ';
 				log: target;
-				log: ' is door open = ' , tile isOpen asString;
+				log: ' is door open = ' , tile sprite isOpen asString;
 				cr.
-			^ tile isOpen ].
+			^ tile sprite isOpen ].
 	^ (cname findString: 'floor') > 0

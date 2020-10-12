@@ -1,7 +1,7 @@
 action
 updateMinimap
 	| actualrooms downpos startpos |
-	minimap
+	"minimap
 		ifNil: [ minimap := GameMinimap new.
 			self addMorph: minimap inFrontOf: self.
 			minimap
@@ -18,4 +18,4 @@ updateMinimap
 			minimap plotPointAt: downpos color: Color black ]
 		ifNotNil: [  ].
 	minimap updatePlayerPointer.
-	minimap changed
+	minimap changed"

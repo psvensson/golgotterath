@@ -13,7 +13,7 @@ loadSpriteImage: img spriteWidth: _width spriteHeight: _height spritesPerRow: _s
 						corner: (x + _width - hoffset) @ (y + _height - voffset)).			
 								
 			aMorph := AlphaImageMorph new image: i.
-			aMorph resize: tileSizeH @ tileSizeV.	
+			aMorph resize: tileSize @ tileSize.	
 			"aMorph borderColor: (Color green); borderWidth: 1."
 			sprites at: index put: aMorph.
 			index := index + 1 ] ].

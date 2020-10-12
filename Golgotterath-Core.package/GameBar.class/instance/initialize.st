@@ -12,4 +12,5 @@ initialize
 	textField := self createTextField.	
 	self addMorph: textField.
 	statusField := self createStatusField.
-	self addMorph: statusField
+	self addMorph: statusField.
+	self initializeButtons 

@@ -1,3 +1,3 @@
 accessing
 getWorldCoordsFromOffset: pos
-	^ worldCoords + pos 
+	^ gameboardFocus  + pos 

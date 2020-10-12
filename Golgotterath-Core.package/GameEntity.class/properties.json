@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "GlamorousAuthor 11/19/2019 14:31",
-	"super" : "Object",
+	"super" : "GameObject",
 	"category" : "Golgotterath-Core-Base",
 	"classinstvars" : [ ],
 	"pools" : [ ],
@@ -24,7 +24,8 @@
 		"weapon",
 		"armour",
 		"oldPosition",
-		"effects"
+		"effects",
+		"target"
 	],
 	"name" : "GameEntity",
 	"type" : "normal"

@@ -10,6 +10,7 @@ initialize
 	self addMorph: background.
 	self initializeGamebar.
 	self initializeGameboard.
+	gamebar gameboard: gameboard .
 	self showLogo.
 	self initializeMenu.
 	self changed.

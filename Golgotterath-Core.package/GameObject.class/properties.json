@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Golgotterath-Core-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"boardPosition",
+		"visiblePosition",
+		"sprite"
+	],
+	"name" : "GameObject",
+	"type" : "normal"
+}

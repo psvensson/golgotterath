@@ -1,6 +1,6 @@
 action
 moveEntityToOccupiedPosition: entity target: target dir: dir
-	entity boardAndOldPosition: entity animatedSprite target.
+	entity visiblePosition: entity boardPosition .
 	self gameMap
 		entityAt: target
 		ifAbsent: [ | feature |

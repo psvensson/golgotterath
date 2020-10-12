@@ -1,3 +1,0 @@
-initialization
-tileSize
-	^ 24

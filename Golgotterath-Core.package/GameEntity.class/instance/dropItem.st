@@ -23,7 +23,7 @@ dropItem
 					inventory remove: item.
 					gamemap gameboard
 						addEffectForEntity: self
-						text: 'Dropped ' , item longname.
+						text: 'Dropped ' , item longname boardPosition: self boardPosition.
 					gamemap addItem: item at: self boardPosition.
 					gamemap gameboard
 						render;

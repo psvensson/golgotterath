@@ -18,7 +18,7 @@ initialize
 	levels := Dictionary new.
 	helpWindow := self initializeHelpWindow.
 	arrows := ArrowTiles new.
-	oldMorphs := OrderedCollection new.
 	inventoryPanel := GameListPanel new.
 	playerIsMoving := false.
-	
+	tesselation := 64.
+	scaleFactor := 1.0

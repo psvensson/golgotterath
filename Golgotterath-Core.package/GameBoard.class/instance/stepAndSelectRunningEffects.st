@@ -1,9 +1,7 @@
-accessing
+animations
 stepAndSelectRunningEffects
-	^ effects
-		select: [ :something | 
-			| res |
-			res := something animateAndCheckIfDone.
-			res
-				ifFalse: [  ].
-			res ]
+	effects isEmpty
+		ifFalse: [ effects := effects
+				select: [ :something | something animateAndCheckIfDone ].
+			^ true ].
+	^ false

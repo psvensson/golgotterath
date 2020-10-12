@@ -1,6 +1,6 @@
 accessing
 referenceObject: anObject
 	referenceObject := anObject.
-	position := GolUtil
+	position := (GolUtil
 		calculatePositionFromGameboard: gamemap gameboard
-		position: anObject boardPosition
+		position: anObject boardPosition) + anObject sprite tileAdjustment

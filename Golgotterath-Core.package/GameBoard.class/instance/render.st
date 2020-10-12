@@ -1,6 +1,7 @@
 drawing
 render
 	| goscreen |
+	"Transcript show:'render: gameboard owner position is ',(self owner position asString),' center is ',self owner center asString;cr."
 	self
 		removeAllMorphs;
 		color: Color black;

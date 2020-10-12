@@ -1,7 +1,7 @@
 accessing
 getTile: tilename
-	| tileClasses tile selectedClass sprite |
-	tileClasses := {tiles.
+	| tileClasses tile selectedClass sprite gametile |
+	tileClasses := {tiles. 
 	newtiles.
 	crackedTiles}.
 	tileClasses
@@ -13,8 +13,13 @@ getTile: tilename
 					tile ifNotNil: [ selectedClass := tileClass ] ] ].
 	sprite := Sprite new
 		image: tile;
+		tileSize: selectedClass tileSize ;
+		scaleSize: selectedClass scaleSize ;
 		name: tilename.
 	sprite tileAdjustment: selectedClass tileAdjustment.
 	sprite hoffset: selectedClass hoffset.
 	sprite voffset: selectedClass voffset.
-	^ sprite
+	gametile :=GameTile new.
+	gametile sprite: sprite.
+	
+	^ gametile

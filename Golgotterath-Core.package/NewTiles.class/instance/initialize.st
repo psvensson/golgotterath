@@ -2,13 +2,13 @@ initialization
 initialize 
 	| img |
 	super initialize.
-	tileSizeV := 160.
-	tileSizeH := 160.
+	tileSize := 160.
+	scaleSize := 160.
 	hoffset := 91.
 	voffset := 102.
-	tileAdjustment := 0@(-30).
+	tileAdjustment := (-30)@(-30).
 	img := self spriteImage.
-	self loadSpriteImage: img spriteWidth: 91 spritesPerRow: 12.
+	self loadSpriteImage: img spriteWidth: hoffset spritesPerRow: 12.
 	tiles := Dictionary new.	
 	tiles at: 'door1_open' put: (spriteImages at: 1).
 	tiles at: 'door1_open_rot' put: (spriteImages at: 2).

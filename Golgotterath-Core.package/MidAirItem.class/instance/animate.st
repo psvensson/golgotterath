@@ -2,8 +2,7 @@ accessing
 animate
 	| oldpos |
 	oldpos := position.
-	position := position + self calculateAnimationOffset.
-	timespan = 1 ifTrue: [ position := position + self calculateAnimationOffset. ].
+	position := position + self animationOffsetForboard: gamemap gameboard Position: position.
 	Transcript
 		show: 'MidAirItem drawOn position is now ' , position asString;
 		cr.

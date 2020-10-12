@@ -16,13 +16,11 @@
 		"name",
 		"target",
 		"tileAdjustment",
-		"tileAdjustmentY",
-		"boardPosition",
 		"open",
 		"hoffset",
 		"voffset",
-		"tileSizeV",
-		"tileSizeH"
+		"tileSize",
+		"scaleSize"
 	],
 	"name" : "Sprite",
 	"type" : "normal"

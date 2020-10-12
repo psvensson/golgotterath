@@ -1,3 +1,3 @@
 accessing
 tileSize
-	^ tileSizeV
+	^ tileSize

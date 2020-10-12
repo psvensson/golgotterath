@@ -1,8 +1,9 @@
 initialization
 addFloorAt: floor
-	| r |
+	| r tile |
 	r := 10 atRandom.
-	self
-		addTile: (self getTile: 'cr_floor' , r asString)
-		atx: floor x
-		y: floor y
+	tile := self getTile: 'cr_floor' , r asString.
+	"tile := r > 0
+		ifTrue: [ self getTile: 'floor_grey' ]
+		ifFalse: [ self getTile: 'cr_floor' , r asString ]."
+	self addTile: tile at: floor x @ floor y

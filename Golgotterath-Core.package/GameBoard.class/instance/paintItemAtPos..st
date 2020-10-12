@@ -1,11 +1,7 @@
 drawing
 paintItemAtPos: worldpos
-		self gameMap itemAt: worldpos ifPresent: [ :item | | i|
-			item boardPosition: worldpos.
-			i := item sprite paint: self.
+		self gameMap itemAt: worldpos ifPresent: [ :item | | i |			
+			i := item sprite paint: self boardPosition: worldpos.
 			self addMorph: i.
-			"item sprite image borderColor: (Color yellow); borderWidth: 1."
-			
-			"self paintOverlappingEntity: worldpos ."
 		]
 		

@@ -1,3 +1,3 @@
-accessing
+animations
 worldAnimationFrame: anObject
 	worldAnimationFrame := anObject

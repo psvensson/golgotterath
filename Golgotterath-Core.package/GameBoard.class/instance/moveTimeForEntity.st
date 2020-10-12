@@ -1,0 +1,3 @@
+animations
+moveTimeForEntity
+	^ 400  

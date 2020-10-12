@@ -1,11 +1,8 @@
-accessing
+animations
 stepAndSelectRunningEvents
-	^ events
-		select: [ :something | 
-			| res |
-			res := something stepAnimation.
-			res
-				ifFalse: [ Transcript
-						show: '*** removing event';
-						cr. ].
-			res ]
+	events
+		ifNotEmpty: [ events := events
+				select: [ :something | 
+					something stepAnimation: worldAnimationFrame .
+					^ true ] ].
+	^ false

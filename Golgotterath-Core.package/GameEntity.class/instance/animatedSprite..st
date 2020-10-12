@@ -1,3 +1,3 @@
 accessing
-animatedSprite: sprite
-	animatedSprite := sprite
+animatedSprite: aSprite
+	animatedSprite := aSprite

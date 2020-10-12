@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "GlamorousAuthor 11/20/2019 14:05",
-	"super" : "Object",
+	"super" : "GameObject",
 	"category" : "Golgotterath-Core-Base",
 	"classinstvars" : [
 		"armortiles",
@@ -9,7 +9,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"sprite",
 		"kind",
 		"attributes",
 		"armortiles",
