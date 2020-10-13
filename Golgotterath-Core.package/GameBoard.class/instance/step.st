@@ -2,8 +2,9 @@ animations
 step
 	| continue |
 	continue := false.
-	worldAnimationFrame > self animationFrames
-		ifTrue: [ continue := false ].
+	
+	worldAnimationFrame < self animationFrames
+		ifTrue: [ continue := true ].
 	self stepAndSelectRunningAnimations
 		ifTrue: [ continue := true ].
 	self stepAndSelectRunningEvents
@@ -13,6 +14,7 @@ step
 	self stepWorld.
 	self render.
 	worldAnimationFrame := worldAnimationFrame + 1.
+	"Transcript show:'--- step worldAnimationFram = ',worldAnimationFrame asString;cr."
 	continue
 		ifTrue: [ ^ self ].
 	self stopStepping.

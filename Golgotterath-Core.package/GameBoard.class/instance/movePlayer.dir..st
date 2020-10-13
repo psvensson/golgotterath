@@ -14,7 +14,7 @@ movePlayer: entity dir: dir
 	"handlePostMove sets playerIsMoving to false again"
 	playerIsMoving := true.
 	self moveEntity: player dir: dir.
-	gameboardFocus := player boardPosition .
+	"gameboardFocus := player boardPosition ."
 	self showWhatIsOnFloor: player boardPosition.
 	self updateMinimap.
 	"self gameMap tryToGrowDungeonFrom: player boardPosition."
