@@ -5,5 +5,5 @@ stepWorld
 	animationStep := self getWorldAnimationStep.
 	boardDrawOffset := boardDrawOffset + animationStep.	
 	"gameboardFocus := (gameboardFocus + animationStep@animationStep)    .	"
-	"Transcript show:'--- stepWorld boardDrawOffset = ',boardDrawOffset asString;cr."
+	Transcript show:'--- stepWorld boardDrawOffset = ',boardDrawOffset asString;cr.
 	self changed

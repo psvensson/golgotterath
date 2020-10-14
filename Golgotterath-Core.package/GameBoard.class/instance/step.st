@@ -1,6 +1,8 @@
 animations
 step
 	| continue |
+	player isMoving
+		ifTrue: [ self stepWorld ].
 	continue := false.
 	worldAnimationFrame < self animationFrames
 		ifTrue: [ continue := true ].
@@ -10,8 +12,6 @@ step
 		ifTrue: [ continue := true ].
 	self stepAndSelectRunningEffects
 		ifTrue: [ continue := true ].
-	player isMoving
-		ifTrue: [ self stepWorld ].
 	self render.
 	self changed.
 	worldAnimationFrame := worldAnimationFrame + 1.

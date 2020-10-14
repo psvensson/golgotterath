@@ -12,9 +12,10 @@ movePlayer: entity dir: dir
 							self playAnimation: 'walk' for: entity.
 							^ self ] ] ].
 	"handlePostMove sets playerIsMoving to false again"
-	player isMoving: true.
+	"player isMoving: true."
 	self moveEntity: player dir: dir.
-	"gameboardFocus := player boardPosition ."
+	boardDrawOffset := 0@0.
+	gameboardFocus := player visiblePosition .
 	self showWhatIsOnFloor: player boardPosition.
 	self updateMinimap.
 	"self gameMap tryToGrowDungeonFrom: player boardPosition."

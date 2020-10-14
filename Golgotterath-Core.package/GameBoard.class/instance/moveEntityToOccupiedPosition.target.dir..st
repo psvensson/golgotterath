@@ -1,6 +1,7 @@
 action
 moveEntityToOccupiedPosition: entity target: target dir: dir
-	entity visiblePosition: entity boardPosition;isMoving: false .
+	entity visiblePosition: entity boardPosition
+	";isMoving: false" .
 	self gameMap
 		entityAt: target
 		ifAbsent: [ | feature |
