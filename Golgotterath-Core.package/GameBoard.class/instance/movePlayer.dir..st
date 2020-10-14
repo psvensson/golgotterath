@@ -2,7 +2,7 @@ action
 movePlayer: entity dir: dir
 	| features |
 	"Transcript show:'movePlayer ',dir;cr."
-	playerIsMoving
+	player isMoving
 		ifFalse: [ entity player
 				ifTrue: [ fireWeapon
 						ifTrue: [ self launchProjectile: dir for: entity.
@@ -12,7 +12,7 @@ movePlayer: entity dir: dir
 							self playAnimation: 'walk' for: entity.
 							^ self ] ] ].
 	"handlePostMove sets playerIsMoving to false again"
-	playerIsMoving := true.
+	player isMoving: true.
 	self moveEntity: player dir: dir.
 	"gameboardFocus := player boardPosition ."
 	self showWhatIsOnFloor: player boardPosition.

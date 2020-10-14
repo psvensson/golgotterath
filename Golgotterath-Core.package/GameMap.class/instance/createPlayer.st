@@ -13,4 +13,6 @@ createPlayer
 	player inventory add: (GameItem new: 'arrow').
 	player inventory add: (GameItem new: 'arrow').
 	player inventory add: (GameItem new: 'arrow').
+	player inventory add: (GameItem new: 'arrow').
+	player inventory add: (GameItem new: 'arrow').
 	^ player

@@ -10,7 +10,7 @@ massageImage: img gameboard: gameboard boardPosition: boardPosition
 	img
 		resize: resizeside @ resizeside;
 		extent: extentside @ extentside;
-		borderWidth: 1;
+		borderWidth: 0;
 		borderColor: Color transparent ;
 		"color: Color transparent;"
 		position: position	.

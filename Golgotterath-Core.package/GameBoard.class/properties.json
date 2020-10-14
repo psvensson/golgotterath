@@ -33,7 +33,6 @@
 		"events",
 		"arrows",
 		"inventoryPanel",
-		"playerIsMoving",
 		"scaleFactor",
 		"tesselation"
 	],

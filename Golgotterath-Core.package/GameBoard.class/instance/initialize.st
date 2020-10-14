@@ -19,6 +19,5 @@ initialize
 	helpWindow := self initializeHelpWindow.
 	arrows := ArrowTiles new.
 	inventoryPanel := GameListPanel new.
-	playerIsMoving := false.
 	tesselation := 64.
 	scaleFactor := 1.0

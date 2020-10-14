@@ -3,7 +3,7 @@ launchProjectile: dir for: entity
 	| midAirItem arrowSprite targetpos pos |
 	
 	pos := (entity animatedSprite
-		calculatePositionFromGameboard: entity gamemap gameboard boardPosition: entity boardPosition) + entity animatedSprite tileSize  .
+		calculatePositionFromGameboard: entity gamemap gameboard boardPosition: entity boardPosition) + ((entity animatedSprite tileSize) / 2) asInteger  .
 	projectileToFire
 		ifNil: [ GolUtil
 				addTextEffect: 'No projectile for weapon'
