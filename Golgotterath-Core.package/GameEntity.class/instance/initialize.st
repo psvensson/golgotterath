@@ -7,6 +7,7 @@ initialize
 	level := 1.
 	exp := 0.
 	player := false.
+	isMoving := false.
 	lightradius := 3.
 	stepCalls := 0.
 	inventory := OrderedCollection new.

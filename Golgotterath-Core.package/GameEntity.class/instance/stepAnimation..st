@@ -9,5 +9,6 @@ stepAnimation: worldAnimationFrame
 		cr."
 	delta := GolUtil getDeltaForDirectionValue: animatedSprite direction.
 	stepSize := 1 / anim frames size.
-	visiblePosition := visiblePosition + (delta * stepSize).
+	isMoving
+		ifTrue: [ visiblePosition := visiblePosition + (delta * stepSize) ].
 	^ anim stepAnimation: worldAnimationFrame

@@ -25,7 +25,8 @@
 		"armour",
 		"oldPosition",
 		"effects",
-		"target"
+		"target",
+		"isMoving"
 	],
 	"name" : "GameEntity",
 	"type" : "normal"
