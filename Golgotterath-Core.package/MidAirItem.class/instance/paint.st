@@ -2,7 +2,7 @@ accessing
 paint
 	| oldpos line |
 	oldpos := position.
-	position := position + self animationOffsetForboard: gamemap gameboard  Position: position .
+	position := position + (self calculateAnimationOffset ).
 	Transcript
 		show: 'MidAirItem drawOn position is now ' , position asString;
 		cr.

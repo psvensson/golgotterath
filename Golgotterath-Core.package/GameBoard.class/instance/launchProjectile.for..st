@@ -1,7 +1,7 @@
 action
 launchProjectile: dir for: entity
 	| midAirItem arrowSprite targetpos pos |
-	entity setTargetForDirectionString: dir.
+	
 	pos := (entity animatedSprite
 		calculatePositionFromGameboard: entity gamemap gameboard boardPosition: entity boardPosition) + entity animatedSprite tileSize  .
 	projectileToFire
@@ -25,4 +25,5 @@ launchProjectile: dir for: entity
 		direction: dir.
 	self addEvent: midAirItem.
 	self playAnimation: 'shoot' for: entity.
-	fireWeapon := false
+	fireWeapon := false.
+	entity isMoving: false.

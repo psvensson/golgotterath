@@ -4,7 +4,6 @@ step
 	continue := false.
 	worldAnimationFrame < self animationFrames
 		ifTrue: [ continue := true ].
-	"--- only change boardDrawOffset in animations"
 	self stepAndSelectRunningAnimations
 		ifTrue: [ continue := true ].
 	self stepAndSelectRunningEvents

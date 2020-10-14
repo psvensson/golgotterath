@@ -3,4 +3,4 @@ referenceObject: anObject
 	referenceObject := anObject.
 	position := (GolUtil
 		calculatePositionFromGameboard: gamemap gameboard
-		position: anObject boardPosition) + anObject sprite tileAdjustment
+		position: anObject boardPosition) "- anObject sprite tileAdjustment"

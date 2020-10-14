@@ -2,6 +2,7 @@ event handler
 keyStroke: anEvent
 	| keyValue selectedItem |
 	keyValue := anEvent keyValue.
+	player isMoving: false.
 	player hp < 1
 		ifTrue: [ ^ self ].
 	Logger

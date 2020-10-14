@@ -1,5 +1,5 @@
 action
-stepAnimation
+stepAnimation: wolrdAnimatioonFrame
 	"returns false if the event should be removed, true if it should continue"
 
 	| destination |
