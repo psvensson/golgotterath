@@ -1,4 +1,4 @@
-event handler
+action
 keyStroke: anEvent
 	| keyValue selectedItem |
 	keyValue := anEvent keyValue.

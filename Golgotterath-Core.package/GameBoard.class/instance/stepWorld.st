@@ -1,9 +1,10 @@
 animations
 stepWorld
 	| animationStep |
-	"TODO: scroll the viewport either of four ways, if world is animated"	
+	"TODO: scroll the viewport either of four ways, if world is animated"
 	animationStep := self getWorldAnimationStep.
-	boardDrawOffset := boardDrawOffset + animationStep.	
-	"gameboardFocus := (gameboardFocus + animationStep@animationStep)    .	"
-	Transcript show:'--- stepWorld boardDrawOffset = ',boardDrawOffset asString;cr.
+	boardDrawOffset := boardDrawOffset - animationStep.	
+	Transcript
+		show: '--- stepWorld boardDrawOffset = ' , boardDrawOffset asString,' player direction =  ',player animatedSprite direction asString;
+		cr.
 	self changed

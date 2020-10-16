@@ -1,21 +1,15 @@
 action
 movePlayer: entity dir: dir
 	| features |
-	"Transcript show:'movePlayer ',dir;cr."
-	player isMoving
-		ifFalse: [ entity player
-				ifTrue: [ fireWeapon
-						ifTrue: [ self launchProjectile: dir for: entity.
-							^ self ].
-					openingDoor
-						ifTrue: [ entity openDoor: dir.
-							self playAnimation: 'walk' for: entity.
-							^ self ] ] ].
-	"handlePostMove sets playerIsMoving to false again"
-	"player isMoving: true."
+	fireWeapon
+		ifTrue: [ self launchProjectile: dir for: player.
+			^ self ].
+	openingDoor
+		ifTrue: [ player openDoor: dir.
+			self playAnimation: 'walk' for: player.
+			^ self ].
 	self moveEntity: player dir: dir.
-	boardDrawOffset := 0@0.
-	gameboardFocus := player visiblePosition .
+	"gameboardFocus := player boardPosition ."
 	self showWhatIsOnFloor: player boardPosition.
 	self updateMinimap.
 	"self gameMap tryToGrowDungeonFrom: player boardPosition."

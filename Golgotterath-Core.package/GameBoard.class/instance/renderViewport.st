@@ -1,7 +1,7 @@
 drawing
 renderViewport
 	self
-		iterateOverVisibleArea: [ :pos | 
+		iterateOverVisibleMovingArea: [ :pos | 
 			| worldpos entity |
 			worldpos := self getWorldCoordsFromOffset: pos.
 			"Transcript show:'renderViewport: ',worldpos asString;cr."

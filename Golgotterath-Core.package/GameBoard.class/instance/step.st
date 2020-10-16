@@ -1,8 +1,9 @@
-animations
+stepping and presenter
 step
 	| continue |
 	player isMoving
-		ifTrue: [ self stepWorld ].
+		ifTrue: [ self stepWorld.
+			"player visiblePosition: player visiblePosition - boardDrawOffset" ].
 	continue := false.
 	worldAnimationFrame < self animationFrames
 		ifTrue: [ continue := true ].
