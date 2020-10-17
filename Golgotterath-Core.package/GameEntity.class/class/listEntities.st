@@ -27,7 +27,7 @@ listEntities
 		#hp->11.#ac->10.#str->11.#con->13.#dex->13.#int->10.#wis->10.#exp->40.
 		#vulnerable->#().#resist->#().#special->#()}).	
 	list at: 'ogre' put: (Dictionary newFrom:
-		{#name->'ogre'.#speed->1.#sprite->Ogre.#level->5.#dam->'1d10'.
+		{#name->'ogre'.#speed->1.#sprite->Ogre.#level->8.#dam->'1d10'.
 		#hp->25.#ac->8.#str->20.#con->15.#dex->8.#int->6.#wis->6.#exp->150.
 		#vulnerable->#('fire').#resist->#().#special->#()}).
 	list at: 'skeleton' put: (Dictionary newFrom:
@@ -35,7 +35,7 @@ listEntities
 		#hp->6.#ac->8.#str->8.#con->8.#dex->8.#int->1.#wis->1. 
 		#vulnerable->#('blunt'.'holy').#resist->#().#special->#() }).	
 	list at: 'werewolf' put: (Dictionary newFrom:
-		{#name->'werewolf'.#speed->2.#sprite->Werewolf.#level->6.#dam->'2d6'.
+		{#name->'werewolf'.#speed->2.#sprite->Werewolf.#level->7.#dam->'2d6'.
 		#hp->16.#ac->8.#str->16.#con->14.#dex->12.#int->8.#wis->12.#exp->200.
 		#vulnerable->#('holy').#resist->#().#special->#('poison')}).		
 	list at: 'zombie' put: (Dictionary newFrom:

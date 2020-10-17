@@ -34,7 +34,8 @@
 		"arrows",
 		"inventoryPanel",
 		"scaleFactor",
-		"tesselation"
+		"tesselation",
+		"animationStepSize"
 	],
 	"name" : "GameBoard",
 	"type" : "normal"

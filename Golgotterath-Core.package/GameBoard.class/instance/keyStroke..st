@@ -5,10 +5,10 @@ keyStroke: anEvent
 	"player isMoving: false."
 	player hp < 1
 		ifTrue: [ ^ self ].
-	Logger
+	"Logger
 		log: 'key ';
 		log: keyValue;
-		cr.
+		cr."
 	keyValue = 32
 		ifTrue: [  ].
 	keyValue = 63

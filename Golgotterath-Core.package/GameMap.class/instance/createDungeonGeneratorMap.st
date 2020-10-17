@@ -5,6 +5,7 @@ createDungeonGeneratorMap
 		level: level;
 		digAt: 0 @ 0 depth: 36.
 	self addDungeonTiles: dungeon.
+	self pruneDoors: (dungeon mapFilteredBy: 1).
 	actualrooms := self actualRooms.
 	dungeon rooms
 		do:
