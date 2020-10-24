@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "PeterSvensson 10/19/2020 18:43",
+	"super" : "Object",
+	"category" : "Golgotterath-Core-DungeonGeneration",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"map",
+		"level",
+		"currentDepth",
+		"quadTree"
+	],
+	"name" : "GolPerlingDungeonGenerator",
+	"type" : "normal"
+}

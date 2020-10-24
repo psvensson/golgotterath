@@ -17,7 +17,9 @@
 		"statusField",
 		"increaseButton",
 		"decreaseButton",
-		"gameboard"
+		"gameboard",
+		"rotateRButton",
+		"rotateLButton"
 	],
 	"name" : "GameBar",
 	"type" : "normal"

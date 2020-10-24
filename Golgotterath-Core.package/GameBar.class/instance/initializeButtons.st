@@ -1,22 +1,24 @@
 initialization
 initializeButtons
-	increaseButton := IconicButton new.
-	increaseButton
-		labelGraphic:
-			((Smalltalk ui theme iconNamed: #glamorousZoomIn)
-				scaledToSize: 16 @ 16);
-		color: Color transparent.
-	decreaseButton := IconicButton new.
-	decreaseButton
-		labelGraphic:
-			((Smalltalk ui theme iconNamed: #glamorousZoomOut)
-				scaledToSize: 16 @ 16);
-		color: Color transparent.
+	increaseButton := self createButton: #glamorousZoomIn.
+	decreaseButton := self createButton: #glamorousZoomOut.
+	rotateRButton := self createButton: #smallRedo.
+	rotateLButton := self createButton: #smallUndo.
+	
+	self addMorph: rotateRButton.
+	self addMorph: rotateLButton.		
 	self addMorph: decreaseButton.
-	self addMorphFront: increaseButton.
+	self addMorph: increaseButton.
+	
 	increaseButton
 		target: self;
 		actionSelector: #zoomIn.
 	decreaseButton
 		target: self;
-		actionSelector: #zoomOut
+		actionSelector: #zoomOut.
+	rotateRButton
+		target: self;
+		actionSelector: #rotateR.
+	rotateLButton
+		target: self;
+		actionSelector: #rotateL		
