@@ -24,5 +24,6 @@ startGame
 		cr.
 	self startStepping.
 	self playAnimation: 'walk' for: player.
+	self showHelpWindow .
 	animationStepSize := 1 / "self animationFrames" player animatedSprite getOldAnimation frames size .
 	

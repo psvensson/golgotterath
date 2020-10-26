@@ -5,7 +5,7 @@ initialize
 		layoutPolicy: RowLayout new;
 		listDirection: #topToBottom;
 		color: Color transparent;
-		cellInset: 10; 
+		cellInset: 1; 
 		left:0;
 		color: Color transparent ;
 		cellPositioning: #topLeft.

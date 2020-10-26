@@ -1,4 +1,4 @@
 accessing
 updateTopbar
-	topbar update: self.
-	topbar position: self position + (40 @ -30)
+	topbar update.
+	"topbar position: self position + (40 @ -30)"

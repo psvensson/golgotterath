@@ -1,5 +1,5 @@
 initialization
-update: gameboard
+update
 	| player |
 	"Transcript show:'gamebar update ... position = ',self position asString;cr."
 	self text: ''.
