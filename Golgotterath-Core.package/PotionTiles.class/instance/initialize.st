@@ -6,7 +6,7 @@ initialize
 	voffset := 32.
 	tileSize := 32.
 	scaleSize := 16.
-	tileAdjustment := 65@(15).
+	tileAdjustment := 100@60.
 	img := self spriteImage.
 	self loadSpriteImage: img spriteWidth: 32 spritesPerRow: 17 offset: 32.
 	tiles := Dictionary new.
