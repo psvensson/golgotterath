@@ -2,7 +2,7 @@ initialization
 createPlayer
 	|  dagger p |
 	player := GameEntity new: 'malelight'.
-	p := "self getFreeTileForRoom: actualrooms first." 0@0.
+	p := self getFreeTileForRoom: actualrooms first.
 	self addEntity: player at: p.
 	dagger := GameItem new: 'dagger'.	
 	player weapon: dagger.
