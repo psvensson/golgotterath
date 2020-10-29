@@ -1,4 +1,4 @@
-as yet unclassified
+drawing
 drawMapFor: gameMap
 	| m generator pl scale |
 	scale := 3.

@@ -1,17 +1,10 @@
 action
 dropItem
+	| pos |
 	gamemap gameboard
 		showInventoryFor: self
 		onSelect: [ :item | 
-			gamemap
-				itemAt: self boardPosition
-				ifPresent: [ Logger
-						log: self name;
-						log: ' could not drop ';
-						log: item;
-						log: ' because there was already something on the floor';
-						cr.
-					^ self ].
+			pos := gamemap getItemFreeTileForPos: self boardPosition .
 			gamemap
 				itemAt: self boardPosition
 				ifAbsent: [ Logger
@@ -24,7 +17,7 @@ dropItem
 					gamemap gameboard
 						addEffectForEntity: self
 						text: 'Dropped ' , item longname boardPosition: self boardPosition.
-					gamemap addItem: item at: self boardPosition.
+					gamemap addItem: item at: pos.
 					gamemap gameboard
 						render;
 						showWhatIsOnFloor: self boardPosition ] ].

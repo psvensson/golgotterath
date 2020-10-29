@@ -40,6 +40,6 @@ listEntities
 		#vulnerable->#('holy').#resist->#().#special->#('poison')}).		
 	list at: 'zombie' put: (Dictionary newFrom:
 		{#name->'zombie'.#speed->1.#sprite->Zombie.#level->2.#dam->'1d4'.
-		#hp->10.#ac->6.#str->12.#con->8.#dex->10.#int->1.#wis->1.#exp->40.
+		#hp->10.#ac->7.#str->12.#con->8.#dex->10.#int->1.#wis->1.#exp->40.
 		#vulnerable->#('holy').#resist->#().#special->#()}).															
 	^ list

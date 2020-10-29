@@ -1,4 +1,6 @@
 accessing
 effectOnWall: wall 
 	"Transcript show:'effectOnWall not implemented';cr."
-	gamemap addItem: referenceObject  at: lastBoardPosition 
+	| pos |
+	pos := gamemap getItemFreeTileForPos: lastBoardPosition .
+	gamemap addItem: referenceObject  at:  pos
