@@ -1,13 +1,15 @@
 initialization
 createStatusField
+
 	| statusRow acmorph armourmorph weaponmorph hpmorph levelmorph expmorph |
 	statusRow := Morph new.
 	statusRow
 		layoutPolicy: RowLayout new;
 		color: Color transparent;
+		hResizing: #shrinkWrap;
 		listDirection: #rightToLeft;
-		"wrapCentering: #topLeft;"
-			cellPositioning: #bottomLeft;
+		wrapCentering: #topLeft;
+		cellPositioning: #bottomLeft;
 		layoutInset: 5.
 	armourmorph := self class getLabel: 'Armour: ' text: 'None'.
 	statusRow addMorph: armourmorph.

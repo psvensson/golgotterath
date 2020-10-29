@@ -7,13 +7,13 @@ getLabel: label text: aText
 	l := StringMorph new.
 	l backgroundColor: Color darkGray.
 	l color: Color lightOrange .
-	l font: (LogicalFont familyName: 'Source Sans Pro' pointSize: 20).
+	l font: (LogicalFont familyName: 'Source Sans Pro' pointSize: self defaultTextSize ).
 	l contents: label, ' '.
 	
 	t := StringMorph new.
 	t backgroundColor: Color darkGray.
 	t color: Color white.
-	t font: (LogicalFont familyName: 'Source Sans Pro' pointSize: 20).
+	t font: (LogicalFont familyName: 'Source Sans Pro' pointSize: self defaultTextSize).
 	t contents: aText , '  '.
 	"t left: 50."
 	m addMorph: t; addMorph: l.

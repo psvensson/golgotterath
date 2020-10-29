@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "SpPresenter",
+	"category" : "Golgotterath-Core-View",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"gameboard",
+		"gamebar",
+		"menu",
+		"toolbar",
+		"logo",
+		"game"
+	],
+	"name" : "SpGameWindow",
+	"type" : "normal"
+}

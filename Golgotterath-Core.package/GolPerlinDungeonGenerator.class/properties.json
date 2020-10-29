@@ -11,6 +11,6 @@
 		"currentDepth",
 		"quadTree"
 	],
-	"name" : "GolPerlingDungeonGenerator",
+	"name" : "GolPerlinDungeonGenerator",
 	"type" : "normal"
 }

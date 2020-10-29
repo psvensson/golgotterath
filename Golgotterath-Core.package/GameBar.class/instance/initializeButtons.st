@@ -3,11 +3,12 @@ initializeButtons
 
 	| buttonMorph |
 	buttonMorph := Morph new
-		               "extent: 150 @ 30;"
 		               layoutPolicy: RowLayout new;
-		               listDirection: #topToBottom;
 		               color: Color transparent;
-		               cellPositioning: #topLeft.
+		               hResizing: #shrinkWrap;
+		               wrapCentering: #topLeft;
+		               listCentering: #topLeft.
+	"extent: 150 @ 30;"
 	increaseButton := self
 		                  createButton: #glamorousZoomIn
 		                  selector: #zoomIn.
@@ -17,9 +18,9 @@ initializeButtons
 	rotateRButton := self createButton: #smallRedo selector: #rotateR.
 	rotateLButton := self createButton: #smallUndo selector: #rotateL.
 
-	"buttonMorph addMorph: rotateRButton.
-	buttonMorph addMorph: rotateLButton after: rotateRButton."
-	buttonMorph addMorph: decreaseButton after: rotateRButton.
-	buttonMorph addMorph: increaseButton after: rotateRButton.
+	buttonMorph addMorph: rotateRButton.
+	buttonMorph addMorph: rotateLButton after: rotateRButton.
+	buttonMorph addMorph: decreaseButton after: rotateLButton.
+	buttonMorph addMorph: increaseButton after: decreaseButton.
 
 	self addMorph: buttonMorph

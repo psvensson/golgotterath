@@ -1,0 +1,4 @@
+initialization
+defaultTextSize
+	
+	^  14

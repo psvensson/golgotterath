@@ -3,12 +3,12 @@ initialize
 	super initialize.
 	self
 		layoutPolicy: RowLayout new;
-		listDirection: #topToBottom;
-		color: Color transparent;
+		color: Color yellow ;
 		cellInset: 1; 
-		left:0;
-		color: Color transparent ;
-		cellPositioning: #topLeft.
+		hResizing: #shrinkWrap;
+		wrapCentering: #topLeft;
+		listCentering: #topLeft;
+		left:0.
 	textField := self createTextField.	
 	self addMorph: textField.
 	statusField := self createStatusField.
