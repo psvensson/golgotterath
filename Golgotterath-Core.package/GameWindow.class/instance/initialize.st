@@ -4,8 +4,8 @@ initialize
 	| background |
 	super initialize.
 	self
-		layoutPolicy: ProportionalLayout new;
-		removeCloseBox.
+		layoutPolicy: ProportionalLayout new";
+		removeCloseBox".
 	background := Morph new.
 	background
 		extent: 1150 @ 683;
@@ -20,4 +20,4 @@ initialize
 	self changed.
 	self
 		color: Color black;
-		"deleteCloseBox;"title: ''
+		title: ''

@@ -1,5 +1,6 @@
 initialization - private
 startGame
+
 	| then now |
 	then := DateAndTime now.
 	self initializeGameMap.
@@ -24,7 +25,10 @@ startGame
 		cr.
 	self startStepping.
 	"self playAnimation: 'walk' for: player."
-	self showHelpWindow .
-	self updateTopbar .
-	animationStepSize := 1 / "self animationFrames" player animatedSprite getOldAnimation frames size .
+	self showHelpWindow.
+	self updateTopbar.
 	
+	animationStepSize := 1
+	                     /
+	                     player animatedSprite getOldAnimation frames
+		                     size "self animationFrames"

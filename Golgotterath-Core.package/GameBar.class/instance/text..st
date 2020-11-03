@@ -5,5 +5,5 @@ text: aText
 		cr."
 	text backgroundColor: Color transparent .
 	text color: Color white.
-	text font: (LogicalFont familyName: 'Source Sans Pro' pointSize: 18).
+	text font: (LogicalFont familyName: 'Source Sans Pro' pointSize: self class defaultTextSize).
 	text contents: aText

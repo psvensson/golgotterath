@@ -6,8 +6,7 @@ initializeButtons
 		               layoutPolicy: RowLayout new;
 		               color: Color transparent;
 		               hResizing: #shrinkWrap;
-		               wrapCentering: #topLeft;
-		               listCentering: #topLeft.
+		               layoutInset: 5.
 	"extent: 150 @ 30;"
 	increaseButton := self
 		                  createButton: #glamorousZoomIn

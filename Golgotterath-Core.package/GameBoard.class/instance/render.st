@@ -1,16 +1,17 @@
 drawing
 render
+
 	| goscreen |
 	"Transcript show:'render: gameboard owner position is ',(self owner position asString),' center is ',self owner center asString;cr."
 	self
 		removeAllMorphs;
 		color: Color black;
 		renderViewport;
-		renderEffects.
-	self updateMinimap.
+		renderEffects;
+		updateMinimap.
+	self addDarknessMask.
 	self addMorphFront: minimap.
-	player hp < 0
-		ifFalse: [ ^ self ].
+	player hp < 0 ifFalse: [ ^ self ].
 	goscreen := GameOverScreen new.
 	goscreen position: self position.
 	Transcript

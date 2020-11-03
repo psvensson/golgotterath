@@ -1,4 +1,4 @@
-action
+drawing
 updateMinimap
 
 	| actualrooms downpos startpos |
