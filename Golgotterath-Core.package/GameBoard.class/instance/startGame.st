@@ -3,8 +3,8 @@ startGame
 
 	| then now |
 	then := DateAndTime now.
-	self initializeGameMap.
 	self
+		initializeGameMap;
 		initializeViewport;
 		initializePlayer;
 		initializeInventoryList;
@@ -14,9 +14,9 @@ startGame
 	self gameboardFocus: player boardPosition.
 	self
 		color: Color black;
-		changed.
-	self onLevelChanged.
-	self render.
+		changed;
+		onLevelChanged;
+		render.
 	now := DateAndTime now.
 	Logger
 		log: 'Golgotterath initialization took ';
@@ -27,7 +27,7 @@ startGame
 	"self playAnimation: 'walk' for: player."
 	self showHelpWindow.
 	self updateTopbar.
-	
+
 	animationStepSize := 1
 	                     /
 	                     player animatedSprite getOldAnimation frames
