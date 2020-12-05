@@ -11,6 +11,9 @@ baseline: spec
     			baseline: 'Easystar'
     			with: [ spec repository: 'github://psvensson/Easystar-st:master/src' ].
 			spec
+    			baseline: 'ShadowCast'
+    			with: [ spec repository: 'github://psvensson/Shadowcast:master/src' ].
+			spec
     			baseline: 'QuadTree'
     			with: [ spec repository: 'github://psvensson/QuadTree:master' ].
 			spec

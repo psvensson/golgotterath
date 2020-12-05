@@ -36,7 +36,10 @@
 		"scaleFactor",
 		"tesselation",
 		"animationStepSize",
-		"darknessMask"
+		"darknessMask",
+		"shadowCaster",
+		"visibleTiles",
+		"tileMemory"
 	],
 	"name" : "GameBoard",
 	"type" : "normal"

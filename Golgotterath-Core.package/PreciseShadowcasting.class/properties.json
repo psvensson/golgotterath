@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "FOV",
+	"category" : "Golgotterath-Core-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PreciseShadowcasting",
+	"type" : "normal"
+}

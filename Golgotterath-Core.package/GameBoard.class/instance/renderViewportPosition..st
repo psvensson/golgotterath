@@ -2,7 +2,7 @@ drawing
 renderViewportPosition: pos
 
 	| worldpos entity |
-	worldpos := self getWorldCoordsFromOffset: pos.
+	worldpos := "self getWorldCoordsFromOffset:" pos.
 	"Transcript show:'renderViewport: ',worldpos asString;cr."
 	self paintTileAtPos: worldpos.
 	self paintItemAtPos: worldpos.

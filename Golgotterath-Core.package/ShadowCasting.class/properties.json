@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Golgotterath-Core-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"updatedLight",
+		"updatedMemory",
+		"getTileBlock",
+		"isTileFloorBlock",
+		"width",
+		"height"
+	],
+	"name" : "ShadowCasting",
+	"type" : "normal"
+}

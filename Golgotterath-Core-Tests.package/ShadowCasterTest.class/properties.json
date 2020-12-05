@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "TestCase",
+	"category" : "Golgotterath-Core-Tests-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"shadowCaster",
+		"gamemap"
+	],
+	"name" : "ShadowCasterTest",
+	"type" : "normal"
+}

@@ -1,11 +1,9 @@
 drawing
 renderViewport
 
-	self iterateOverVisibleMovingArea: [ :pos | 
+	visibleTiles removeAll.
+	tileMemory := Dictionary new.
+	shadowCaster computeFov: player boardPosition.
+	visibleTiles do: [ :pos | 
+		"Transcript show:'rendering pos ',pos asString;cr."
 		self renderViewportPosition: pos ]
-	"self
-		iterateOverVisibleAreaBorder:  [ :pos | 
-			| worldpos  |
-			worldpos := self getWorldCoordsFromOffset: pos.
-			self paintDarkness: worldpos 
-			].	"

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Golgotterath-Core-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"lightPassesCallback",
+		"topology"
+	],
+	"name" : "FOV",
+	"type" : "normal"
+}

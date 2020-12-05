@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "PeterSvensson 11/11/2020 08:11",
+	"super" : "Object",
+	"category" : "Golgotterath-Core-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"gamemap"
+	],
+	"name" : "ShadowCaster",
+	"type" : "normal"
+}

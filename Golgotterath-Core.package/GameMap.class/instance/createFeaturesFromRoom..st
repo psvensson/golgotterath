@@ -5,8 +5,8 @@ createFeaturesFromRoom: room
 		do: [ :feature | 
 			| name |
 			name := feature name.
-			Logger
+			"Logger
 				log: 'Creating feature ' , name;
-				cr.
+				cr."
 			pos := self getFreeTileForRoom: room.
 			pos ifNotNil: [ self addFeature: feature At: pos ] ]
