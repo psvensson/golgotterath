@@ -19,6 +19,7 @@ launchProjectile: dir for: entity
 	midAirItem
 		gamemap: gameMap;
 		referenceObject: projectileToFire;
+		referenceEntity: entity;
 		position: pos;
 		sprite: arrowSprite;
 		target: targetpos;

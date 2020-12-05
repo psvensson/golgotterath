@@ -1,8 +1,8 @@
 action
 die
 	Logger
-		log: self;
-		log: ' has died! ***************** player = ' , player asString;
+		log: self name;
+		log: ' has died! ***************** ';
 		cr.
 	gamemap
 		ifNotNil: [ | pos body bodypos |
@@ -15,6 +15,9 @@ die
 				ifPresent: [ pos := gamemap
 						getItemFreeTileForRoom: (gamemap dungeon getRoomAt: pos) ].
 			gamemap addItem: body at: bodypos.
+			self inventory do: [ :item |  | p |
+				p := gamemap getItemFreeTileForPos: self boardPosition.
+				gamemap addItem: item at: p].
 			gamemap gameboard playAnimation: 'die' for: self.
 			Logger
 				log: 'entity emptied and removed';

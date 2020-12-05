@@ -6,20 +6,7 @@ dealDamageTo: entity
 	self weapon ifNil: [ 
 		self abilities at: #dam ifPresent: [ 
 			damage := self getRandomDamage.
-			entity hp: entity hp - damage.
-			entity addDamageEffect: damage] ].
+			] ].
 	self weapon ifNotNil: [ 
 		damage := weapon handleEffectOnTarget: entity ].
-	entity hp < 1
-		ifTrue: [ 
-			self getExperienceFor: entity.
-			entity die ]
-		ifFalse: [ 
-			Logger
-				log: entity;
-				log: ' took ';
-				log: damage;
-				log: ' in damage';
-				cr.
-			entity hurt ].
-	gamemap gameboard updateTopbar
+	self dealDamageTo: entity damage: damage

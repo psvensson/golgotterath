@@ -10,6 +10,7 @@
 		"type",
 		"direction",
 		"referenceObject",
+		"referenceEntity",
 		"speed",
 		"timespan",
 		"gamemap",

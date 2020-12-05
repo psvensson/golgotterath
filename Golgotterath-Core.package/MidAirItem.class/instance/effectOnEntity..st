@@ -1,4 +1,6 @@
 accessing
 effectOnEntity: entity 
 	"Transcript show:'effectOnEntity not implemented';cr."
-	referenceObject handleEffectOnTarget: entity
+	| damage |
+	damage := referenceObject handleEffectOnTarget: entity.
+	referenceEntity dealDamageTo: entity  damage: damage
