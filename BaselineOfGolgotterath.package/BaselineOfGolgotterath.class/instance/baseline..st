@@ -22,7 +22,5 @@ baseline: spec
 			spec
     			baseline: 'PharoSound'
     			with: [ spec repository: 'github://psvensson/PharoSound' ].	 
-			spec
-				baseline: 'TaskIt'
-				with: [ spec repository: 'github://sbragagnolo/taskit' ].	
+				
 		].
