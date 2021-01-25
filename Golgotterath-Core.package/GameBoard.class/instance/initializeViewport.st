@@ -7,17 +7,4 @@ initializeViewport
 	viewPort at: #bottom put: 3.
 	viewPort at: #right put: 3.
 
-	shadowCaster := ShadowCast new.
-	tileMemory := Dictionary new.
-	visibleTiles := SortedCollection sortBlock: [ :a :b | 
-		                self sortTiles: a b: b ].
-	shadowCaster
-		markVisible: [ :pos | 
-			tileMemory at: pos ifPresent: [  ] ifAbsent: [ 
-					visibleTiles add: pos.
-					tileMemory at: pos put: pos ] ];
-		isBlocking: [ :pos | 
-			| rv |
-			rv := gameMap isWallAt: pos.
-			rv ];
-		radius: 3
+	gameboardView := GameBoardView new gameMap: gameMap .

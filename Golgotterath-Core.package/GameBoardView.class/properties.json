@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "",
+	"super" : "Morph",
+	"category" : "Golgotterath-Core-View",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"shadowCaster",
+		"maxX",
+		"maxY",
+		"minX",
+		"minY",
+		"visibleTiles",
+		"gameMap"
+	],
+	"name" : "GameBoardView",
+	"type" : "normal"
+}

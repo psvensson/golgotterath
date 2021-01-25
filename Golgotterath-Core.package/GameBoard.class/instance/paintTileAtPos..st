@@ -12,4 +12,5 @@ paintTileAtPos: worldpos
 		ifFalse: [ self paintFloorUnderneath: worldpos.
 			self addMorph: image ]
 		ifTrue: [ self addMorphBack: image ].
-	"self paintOverlappingEntity: worldpos"
+	self paintOverlappingEntity: worldpos.
+	"self repaintEntityInFrontOfWall: tile"

@@ -11,7 +11,6 @@
 		"runningAnimations",
 		"gameMap",
 		"worldAnimationFrame",
-		"worldCoords",
 		"gameboardFocus",
 		"boardDrawOffset",
 		"moveCallback",
@@ -20,7 +19,6 @@
 		"soundBoard",
 		"effects",
 		"loadingMorph",
-		"steppingTime",
 		"openingDoor",
 		"levels",
 		"currentLevel",
@@ -29,7 +27,6 @@
 		"help",
 		"helpWindow",
 		"fireWeapon",
-		"midAirEvents",
 		"events",
 		"arrows",
 		"inventoryPanel",
@@ -39,7 +36,12 @@
 		"darknessMask",
 		"shadowCaster",
 		"visibleTiles",
-		"tileMemory"
+		"tileMemory",
+		"viewPortMinX",
+		"viewPortMaxX",
+		"viewPortMinY",
+		"viewPortMaxY",
+		"gameboardView"
 	],
 	"name" : "GameBoard",
 	"type" : "normal"

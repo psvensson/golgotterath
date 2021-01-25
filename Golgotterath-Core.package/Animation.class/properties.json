@@ -10,7 +10,8 @@
 		"direction",
 		"frames",
 		"frame",
-		"currentFrame"
+		"currentFrame",
+		"duration"
 	],
 	"name" : "Animation",
 	"type" : "normal"
