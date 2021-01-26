@@ -14,4 +14,6 @@ initialize
 	inventorySize := 10.
 	effects := OrderedCollection new.
 	strategies := SortedCollection
-		sortBlock: [ :a :b | a priority < b priority ]
+		sortBlock: [ :a :b | a priority < b priority ].
+	gameboardView := GameBoardView new
+		

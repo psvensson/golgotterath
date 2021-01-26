@@ -26,7 +26,8 @@
 		"oldPosition",
 		"effects",
 		"target",
-		"isMoving"
+		"isMoving",
+		"gameboardView"
 	],
 	"name" : "GameEntity",
 	"type" : "normal"

@@ -1,3 +1,4 @@
 accessing
 gamemap: aGamemap
-	gamemap := aGamemap 
+	gamemap := aGamemap .
+	gameboardView gameMap: gamemap
