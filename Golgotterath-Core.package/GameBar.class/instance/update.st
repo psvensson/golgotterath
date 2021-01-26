@@ -1,7 +1,7 @@
 initialization
 update
 	| player |
-	"Transcript show:'gamebar update ... position = ',self position asString;cr."
+	Transcript show:'gamebar update ... position = ',self position asString;cr.
 	self text: ''.
 	player := gameboard player.
 	player
