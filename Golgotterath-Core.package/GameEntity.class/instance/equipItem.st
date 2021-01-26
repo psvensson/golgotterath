@@ -14,7 +14,8 @@ equipItem
 			inventory remove: item.
 			self armour: item.
 			ac := ac + (armour attributes at: #dac).
-			self changed ]
+			self changed.
+			gamemap gameboard updateTopbar  ]
 		title: 'Equip Armor'.
 	self actionHappened.
-	gamemap gameboard updateTopbar 
+	
