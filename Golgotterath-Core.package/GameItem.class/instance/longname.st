@@ -1,3 +1,3 @@
 accessing
-longname 
+longname
 	^ longname

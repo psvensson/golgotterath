@@ -3,7 +3,7 @@ wrapSelector
 	| morph text |
 	text := TextMorph new
 		contents: name;
-		color: Color black.
+		color: Color white.
 	morph := Morph new.
 	morph
 		color: Color transparent;

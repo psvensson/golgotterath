@@ -2,7 +2,7 @@ inventory
 showInventoryFor: entity onSelect: aBlock
 	soundBoard play: 'misc3'.
 	self addMorphFront: inventoryPanel.
-	inventoryPanel position: self position.
+	inventoryPanel position: self position + (25@25).
 	inventoryPanel listCollection: entity inventory.
 	inventoryPanel
 		onItemSelected: [ :changedItem | 
