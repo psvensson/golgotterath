@@ -1,17 +1,14 @@
 inventory
 showInventoryFor: entity selectWith: selectBlock onSelect: aBlock
-	| list |	
+
 	soundBoard play: 'misc3'.
-	list := IconListPresenter new.
-	list		
-		items: (entity inventory select: selectBlock);
-		icons: [ :item | item sprite image ];
-		title: 'Inventory';
-		whenSelectedItemChanged: [ :changedItem | 
-			inventorylist close.
-			Logger
-				log: 'showInvetoryFor item selected: ';
-				log: changedItem;
-				cr.
-			aBlock value: changedItem ].
-	inventorylist := list openWithSpec
+	self addMorphFront: inventoryPanel.
+	inventoryPanel position: self position + (25 @ 25).
+	inventoryPanel listCollection: (entity inventory select: selectBlock).
+	inventoryPanel onItemSelected: [ :changedItem | 
+		self removeMorph: inventoryPanel.
+		Logger
+			log: 'showInvetoryFor item selected: ';
+			log: changedItem;
+			cr.
+		aBlock value: changedItem ]

@@ -307,7 +307,7 @@ itemList
 					(#kind -> 'weapon').
 					(#longname -> 'Arrow').
 					(#dam -> '1d4').
-					(#subtype -> 'ranged').
+					(#subtype -> 'ranged_ammo').
 					(#tohit -> 0).
 					(#level -> 1)}).	
 	list
@@ -319,7 +319,7 @@ itemList
 					(#kind -> 'weapon').
 					(#longname -> 'Bolt').
 					(#dam -> '2d4').
-					(#subtype -> 'ranged').
+					(#subtype -> 'ranged_ammo').
 					(#tohit -> 1).
 					(#level -> 3)}).																						
 	"--------------------------- Treasure"

@@ -8,4 +8,4 @@ listCollection: aCollection
 		changeSelected: #itemSelected:
 		menu: nil
 		keystroke: nil.
-	aCollection isEmpty ifFalse: [ self itemSelectedIndex: 1 ].
+	"aCollection isEmpty ifFalse: [ self itemSelectedIndex: 1 ]."

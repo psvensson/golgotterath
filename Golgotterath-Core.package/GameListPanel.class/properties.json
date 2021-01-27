@@ -9,7 +9,8 @@
 		"selectedCallback",
 		"list",
 		"listCollection",
-		"selectedIndex"
+		"selectedIndex",
+		"label"
 	],
 	"name" : "GameListPanel",
 	"type" : "normal"

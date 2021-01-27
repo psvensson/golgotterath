@@ -1,6 +1,7 @@
 accessing
 initializeLayout
 	self
+		borderWidth: 2;
 		layoutPolicy: TableLayout new;
 		listDirection: #topToBottom;
 		cellInset: 10 @ 20;

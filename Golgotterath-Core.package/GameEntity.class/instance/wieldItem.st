@@ -3,12 +3,9 @@ wieldItem
 
 	gamemap gameboard
 		showInventoryFor: self
-		selectWith: [ :item | item kind = 'weapon' ]
-		onSelect: [ :item | 
-			weapon ifNotNil: [ inventory add: weapon ].
-			inventory remove: item.
-			self weapon: item.
-			gamemap gameboard changed.
-			gamemap gameboard updateTopbar ]
+		selectWith: [ :item | 
+			item kind = 'weapon' and:
+				(item attributes at: #subtype) ~= 'ranged_ammo' ]
+		onSelect: [ :item | self wieldItem: item ]
 		title: 'Wield Weapon'.
 	self actionHappened
