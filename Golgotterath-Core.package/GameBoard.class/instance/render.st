@@ -8,7 +8,8 @@ render
 		color: Color black;
 		renderViewport;
 		renderEffects;
-		updateMinimap.
+		updateMinimap;
+		renderMarkers.
 	self addDarknessMask.
 	self addMorphFront: minimap.
 	player hp < 0 ifFalse: [ ^ self ].

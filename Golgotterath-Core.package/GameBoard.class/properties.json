@@ -36,7 +36,12 @@
 		"shadowCaster",
 		"visibleTiles",
 		"tileMemory",
-		"gameboardView"
+		"gameboardView",
+		"yellowMarker",
+		"redMarker",
+		"paintMarkers",
+		"stepTime",
+		"inventoryShown"
 	],
 	"name" : "GameBoard",
 	"type" : "normal"

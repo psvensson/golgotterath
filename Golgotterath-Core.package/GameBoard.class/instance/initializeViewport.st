@@ -1,4 +1,5 @@
 initialization - private
 initializeViewport
 
-	gameboardView := GameBoardView new gameMap: gameMap
+	gameboardView := GameBoardView new gameMap: gameMap.
+	

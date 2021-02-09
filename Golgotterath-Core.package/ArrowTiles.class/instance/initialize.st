@@ -2,7 +2,7 @@ initialization
 initialize 
 	| img |
 	super initialize.
-	tileSize := 64.
+	tileSize := 48.
 	"hoffset := 64.
 	voffset := 32."
 	tileAdjustment := (0)@(0).

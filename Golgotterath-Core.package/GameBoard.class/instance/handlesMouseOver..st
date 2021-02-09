@@ -1,3 +1,3 @@
-event handler
-handlesMouseOver: anEvent 
+event handling
+handlesMouseOver:  anEvent
 	^ true

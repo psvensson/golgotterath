@@ -1,4 +1,8 @@
 initialization
 closeHelpWindow
-Transcript show:'closing help window';cr.
-	self removeMorph: helpWindow
+
+	Transcript
+		show: 'closing help window';
+		cr.
+	self removeMorph: helpWindow.
+	inventoryShown := false

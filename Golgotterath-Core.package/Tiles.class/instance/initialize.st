@@ -35,4 +35,6 @@ initialize
 	tiles at: 'portal_green' put: (spriteImages at: 186).
 	tiles at: 'statue_dragon' put: (spriteImages at: 53).
 	tiles at: 'statue_head' put: (spriteImages at: 65).
-	tiles at: 'basic_pool' put: (spriteImages at: 41)
+	tiles at: 'basic_pool' put: (spriteImages at: 41).
+	tiles at: 'yellow_marker' put: (spriteImages at: 71).
+	tiles at: 'red_marker' put: (spriteImages at: 83)

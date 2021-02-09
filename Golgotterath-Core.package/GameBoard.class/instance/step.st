@@ -1,23 +1,19 @@
 stepping and presenter
 step
+
 	| continue |
-	player isMoving
-		ifTrue: [ self stepWorld.
-			"player visiblePosition: player visiblePosition - boardDrawOffset" ].
+	player isMoving ifTrue: [ self stepWorld ].
 	continue := false.
-	worldAnimationFrame < self animationFrames
-		ifTrue: [ continue := true ].
-	self stepAndSelectRunningAnimations
-		ifTrue: [ continue := true ].
-	self stepAndSelectRunningEvents
-		ifTrue: [ continue := true ].
-	self stepAndSelectRunningEffects
-		ifTrue: [ continue := true ].
+	paintMarkers > 0 ifTrue: [ continue := true ].
+	worldAnimationFrame < self animationFrames ifTrue: [ 
+		continue := true ].
+	self stepAndSelectRunningAnimations ifTrue: [ continue := true ].
+	self stepAndSelectRunningEvents ifTrue: [ continue := true ].
+	self stepAndSelectRunningEffects ifTrue: [ continue := true ].
 	self render.
-	self changed.
+	self layoutChanged.
 	worldAnimationFrame := worldAnimationFrame + 1.
-	"Transcript show:'--- step worldAnimationFram = ',worldAnimationFrame asString;cr."
-	continue
-		ifTrue: [ ^ self ].
+	continue ifTrue: [ ^ self ].
 	self stopStepping.
+	stepTime := 45.
 	worldAnimationFrame := 1

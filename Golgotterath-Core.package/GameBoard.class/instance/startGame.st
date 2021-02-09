@@ -9,6 +9,7 @@ startGame
 		initializePlayer;
 		initializeInventoryList;
 		initializeSoundboard.
+	
 	minimap := GameMinimap new.
 	minimap player: player.
 	self gameboardFocus: player boardPosition.
@@ -24,6 +25,8 @@ startGame
 		log: ' seconds ';
 		cr.
 	self startStepping.
+	yellowMarker := gameMap getTile: 'yellow_marker'.
+	redMarker := gameMap getTile: 'red_marker'.	
 	"self playAnimation: 'walk' for: player."
 	self showHelpWindow.
 	self updateTopbar.

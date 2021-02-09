@@ -7,9 +7,12 @@ initialize
 		cr.
 	"self bounds: (0 @ 0 corner: 1050 @ 600)."
 	"self showLoadingMessage."
+	stepTime := 45.
 	currentLevel := 1.
+	paintMarkers := 0.
 	openingDoor := false.
 	fireWeapon := false.
+	inventoryShown := true.
 	events := Set new.
 	runningAnimations := Set new.
 	effects := OrderedCollection new.

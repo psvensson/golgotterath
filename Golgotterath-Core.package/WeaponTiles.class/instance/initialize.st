@@ -4,7 +4,7 @@ initialize
 	super initialize.
 	hoffset := 32.
 	voffset := 32.
-	tileSize := 64.
+	tileSize := 48.
 	scaleSize := 16.
 	tileAdjustment := 55@(25).
 	img := self spriteImage.
