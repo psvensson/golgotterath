@@ -17,6 +17,7 @@ goToLevel: l
 		startPosition: (player animatedSprite calculatePositionFromGameboard: self boardPosition: player boardPosition ).
 	gameMap := self getMapForLevel: currentLevel.
 	player gamemap: gameMap.
+	gameboardView := GameBoardView new gameMap: gameMap.
 	self onLevelChanged.
 	p := gameMap getFreeTileFromFirstRoom.
 	tile := (gameMap mapAt: p).
