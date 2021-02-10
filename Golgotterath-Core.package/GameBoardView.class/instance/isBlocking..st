@@ -1,6 +1,8 @@
 initialization
 isBlocking: pos
 
-	| rv |
-	rv := gameMap isWallAt: pos.
-	^ rv
+	| tile |
+	tile := gameMap mapAt: pos.
+	tile isDoor
+		ifTrue: [ ^ tile isOpenDoor not ]
+		ifFalse: [ ^ tile isWall ]
