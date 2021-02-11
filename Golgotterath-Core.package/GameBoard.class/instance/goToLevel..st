@@ -1,4 +1,4 @@
-accessing
+action
 goToLevel: l
 
 	| effect p tile |

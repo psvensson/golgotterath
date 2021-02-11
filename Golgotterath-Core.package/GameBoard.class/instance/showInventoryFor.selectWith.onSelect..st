@@ -1,9 +1,12 @@
 inventory
 showInventoryFor: entity selectWith: selectBlock onSelect: aBlock
+
 	inventoryShown := true.
 	soundBoard play: 'misc3'.
 	self addMorphFront: inventoryPanel.
-	inventoryPanel position: self position + (25 @ 25).
+	inventoryPanel
+		title: 'Inventory';
+		position: self position + (25 @ 25).
 	inventoryPanel listCollection: (entity inventory select: selectBlock).
 	inventoryPanel onItemSelected: [ :changedItem | 
 		self removeMorph: inventoryPanel.

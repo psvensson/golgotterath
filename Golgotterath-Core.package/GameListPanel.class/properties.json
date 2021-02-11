@@ -10,7 +10,8 @@
 		"list",
 		"listCollection",
 		"selectedIndex",
-		"label"
+		"label",
+		"closeButton"
 	],
 	"name" : "GameListPanel",
 	"type" : "normal"
