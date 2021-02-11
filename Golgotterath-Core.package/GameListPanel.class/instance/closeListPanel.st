@@ -1,3 +1,6 @@
 accessing
-closeListPanel 	
-	self owner removeMorph: self
+closeListPanel
+
+	self owner
+		inventoryShown: false;
+		removeMorph: self
