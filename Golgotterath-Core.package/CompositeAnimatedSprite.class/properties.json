@@ -1,18 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "Morph",
 	"category" : "Golgotterath-Core-Sprite",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"section",
-		"animationDefinitions",
-		"image",
-		"renderSize",
-		"renderOffset",
-		"animatedSprite"
+		"layers",
+		"selectedAtLayer"
 	],
-	"name" : "SpriteBuilder",
+	"name" : "CompositeAnimatedSprite",
 	"type" : "normal"
 }

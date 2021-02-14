@@ -6,13 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"section",
-		"animationDefinitions",
-		"image",
-		"renderSize",
-		"renderOffset",
-		"animatedSprite"
+		"compositeSprite",
+		"definition"
 	],
-	"name" : "SpriteBuilder",
+	"name" : "CompositeSpriteBuilder",
 	"type" : "normal"
 }

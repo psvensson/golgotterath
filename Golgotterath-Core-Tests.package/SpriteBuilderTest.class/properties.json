@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "TestCase",
+	"category" : "Golgotterath-Core-Tests-Sprite",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"testDefinition"
+	],
+	"name" : "SpriteBuilderTest",
+	"type" : "normal"
+}

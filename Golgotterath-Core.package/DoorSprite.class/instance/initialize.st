@@ -5,8 +5,7 @@ initialize
 	img := self spriteImage.
 	name := 'doorsprite'.
 	state := 3.
-	tileSizeV := 150.
-	tileSizeH := 150.
+	
 	hoffset := 91.
 	voffset := 102.
 	tileAdjustment := 0@(-15).

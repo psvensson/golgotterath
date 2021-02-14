@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "GlamorousAuthor 11/12/2019 19:24",
 	"super" : "Morph",
-	"category" : "Golgotterath-Core-Base",
+	"category" : "Golgotterath-Core-Sprite",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
@@ -11,7 +11,9 @@
 		"frames",
 		"frame",
 		"currentFrame",
-		"duration"
+		"duration",
+		"stepTime",
+		"shownFrame"
 	],
 	"name" : "Animation",
 	"type" : "normal"

@@ -1,5 +1,11 @@
 access
 initializeAnimations
+	animations := Dictionary new.
+	direction := 1.
+	self tileSize: 256.
+	scaleSize := 64.
+	tileAdjustment := (-105)@(-35).
+	self loadSpriteImage: (self spriteImage) spriteWidth: 256 spritesPerRow: 8.
 	self
 		addAnimation: (self createSpecifiedAnimation: 'walk' anims: #(3 4 1 2)).
 	self

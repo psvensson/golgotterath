@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "PeterSvensson 2/13/2021 09:12",
+	"super" : "AnimatedSprite",
+	"category" : "Golgotterath-Core-Sprite",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"content"
+	],
+	"name" : "GenericAnimatedSprite",
+	"type" : "normal"
+}
