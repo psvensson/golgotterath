@@ -13,7 +13,9 @@
 		"currentFrame",
 		"duration",
 		"stepTime",
-		"shownFrame"
+		"shownFrame",
+		"type",
+		"playDirection"
 	],
 	"name" : "Animation",
 	"type" : "normal"

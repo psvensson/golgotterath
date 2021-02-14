@@ -5,9 +5,7 @@ stepAnimation
 	directionFrames := frames at: frame.
 	aFrame := directionFrames at: direction.	
 	currentFrame := aFrame .
-	frame := frame + 1. 	
-	frame > frames size
-		ifFalse: [ ^ true ].
-	frame := 1.
-	self stopStepping .
-	^ false.  
+	"TODO: take care of animation types 'play_once', 'looped' and 'back_forth"
+	((type isNil) or: [type = 'play_once']) ifTrue: [self playOnce].  
+	(type = 'looped') ifTrue: [ self playLooped  ].
+	(type = 'back_forth') ifTrue: [ self playbackAndForth   ].
