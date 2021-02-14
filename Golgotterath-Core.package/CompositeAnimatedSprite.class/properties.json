@@ -7,7 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"layers",
-		"selectedAtLayer"
+		"selectedAtLayer",
+		"savedDirection"
 	],
 	"name" : "CompositeAnimatedSprite",
 	"type" : "normal"

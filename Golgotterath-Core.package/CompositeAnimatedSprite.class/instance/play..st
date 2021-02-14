@@ -4,4 +4,7 @@ play: animationName
 	self removeAllMorphs.
 	selectedAtLayer valuesDo: [ :sprite | 
 		self addMorph: sprite.
-		sprite play: animationName ]
+		sprite
+			direction: savedDirection;
+			position: self position;
+			play: animationName ]

@@ -1,7 +1,7 @@
 test
 testCompositeSprite
 
-	| compositeSpriteBuilder leather head sword head2 shortSword shortBow clothes steel |
+	| compositeSpriteBuilder leather head sword head2 shortSword shortBow rod greatSword clothes steel |
 	leather := self getImageLeatherArmour.
 	clothes := self getImageClothes .
 	steel := self getImageSteelarmour .
@@ -10,6 +10,8 @@ testCompositeSprite
 	sword := self getImageLongSword.
 	shortSword := self getImageShortsword .
 	shortBow := self getImageShortbow .
+	rod := self getImageRod .
+	greatSword := self getImageGreatsword .
 	compositeSpriteBuilder := CompositeSpriteBuilder from: testDefinition.
 	compositeSpriteBuilder addCompositeLayer: 'head' spriteName: 'male_head1' image: head.
 	compositeSpriteBuilder addCompositeLayer: 'head' spriteName: 'male_head2' image: head2.
@@ -19,4 +21,6 @@ testCompositeSprite
 	compositeSpriteBuilder addCompositeLayer: 'weapon' spriteName: 'long_sword' image: sword.
 	compositeSpriteBuilder addCompositeLayer: 'weapon' spriteName: 'short_sword' image: shortSword .
 	compositeSpriteBuilder addCompositeLayer: 'weapon' spriteName: 'short_bow' image: shortBow .
+	compositeSpriteBuilder addCompositeLayer: 'weapon' spriteName: 'rod' image: rod.
+	compositeSpriteBuilder addCompositeLayer: 'weapon' spriteName: 'great_sword' image: greatSword.
 	compositeSpriteBuilder inspect
