@@ -21,6 +21,6 @@ baseline: spec
     			with: [ spec repository: 'github://psvensson/BetterDungeons-st' ].
 			spec
     			baseline: 'Sound'
-    			with: [ spec repository: 'github://pharo-contributions/Sound' ].	 
+    			with: [ spec repository: 'github://thorstenruth/Sound' ].	 
 				
 		].
