@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #BaselineOfGolgotterath!
+self packageOrganizer ensurePackage: #BaselineOfGolgotterath withTags: #()!
